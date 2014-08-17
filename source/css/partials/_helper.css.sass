@@ -1,0 +1,41 @@
+// *************************************
+//
+//   helper classes
+//
+//
+// *************************************
+
+.blur
+  +filter(blur($blur))
+
+.trans-1s
+  +transition(all, 1s)
+.trans-05s
+  +transition(all, 0.5s)
+
+.box-shadow
+  +box-shadow(rgba(black, 0.6) 0 0 15px)
+
+.off-canvas
+  margin-right: -$w-mobile
+
+.hidden
+  display: none
+
+
+// go die IE
+//
+// how to use:
+//
+// +godie_ie(8)
+//   -style here-
+$default_godie_ie: 7 8 9 10 !default;
+@mixin godie_ie($versions: $default_godie_ie) {
+  $sel: ();
+  @each $v in $versions {
+    $sel: append($sel, unquote('.ie#{$v} &'), comma);
+  }
+  #{$sel} {
+    @content;
+  }
+}
