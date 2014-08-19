@@ -33,7 +33,7 @@
 //    +godie_ie(8)
 //      -style here-
 $default_godie_ie: 7 8 9 10 !default
-@mixin godie_ie($versions: $default_godie_ie)
+=godie_ie($versions: $default_godie_ie)
   $sel: ()
   @each $v in $versions
     $sel: append($sel, unquote('.ie#{$v} &'), comma)
