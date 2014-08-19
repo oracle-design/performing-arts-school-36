@@ -84,13 +84,44 @@ body
 .index_slider
   width: 100%
   .slider-wrapper
-    padding: $polaroid
-    margin: $polaroid 0
+    @extend %polaroid
     background-color: $c-background
   .nivo-controlNav
     margin-top: -20px
     +breakpoint($b-mobile)
       margin-top: -25px
+
+.index_news
+  @extend %polaroid
+  +span(12)
+  padding: 0
+  +breakpoint($b-mobile)
+    padding: $polaroid $polaroid $polaroid 0
+    margin-top: 0
+    +span(7.5)
+.index_facebook
+  @extend %polaroid
+  padding: 0 0 $polaroid 0
+  +span(12)
+  +breakpoint($b-mobile)
+    padding: $polaroid 0 $polaroid 0
+    margin-top: 0
+    +span(4.5)
+.index_main-inner
+  background-color: $c-background
+  min-height: 400px
+
+
+.index_banners
+  .index_banner-unit
+    +gallery(2.4)
+    height: 80px
+    margin-bottom: $polaroid
+    padding: 0 $polaroid/2
+
+  .index_banner-inner
+    background-color: #FFF
+    padding: $polaroid/2
 
 
 .footer_info

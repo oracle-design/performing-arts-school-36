@@ -7,6 +7,7 @@
         <!-- facebook and back2home link icon -->
         <div class="header_banner-icons hidden-mobile">
           <% link_to 'https://www.facebook.com/pas36', :target => '_blank', :class => "trans-05s" do %>
+
             <span class="fa-stack fa-lg">
               <i class="fa fa-circle fa-stack-2x"></i>
               <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
@@ -14,6 +15,7 @@
           <% end %>
 
           <% link_to './', :class => "trans-05s" do %>
+
             <span class="fa-stack fa-lg">
               <i class="fa fa-circle fa-stack-2x"></i>
               <i class="fa fa-home fa-stack-1x fa-inverse"></i>
@@ -24,8 +26,10 @@
         <div class="header_banner-logo">
           <div class="logo-wraper">
             <% link_to '/' do %>
+
               <%= image_tag 'header_logo.png', :class => 'img-responsive'%>
             <% end %>
+
           </div>
         </div>
         <div class="header_banner-subscribe hidden-mobile">

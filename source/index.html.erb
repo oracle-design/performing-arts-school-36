@@ -6,13 +6,42 @@ title: 表演 36 房
   <!-- slider -->
   <div class="index_slider">
     <div class="container">
-      <div class="slider-wrapper theme-default">
-        <div id="slider" class="nivoSlider">
-          <!-- slider img place here -->
-          <% data.index.slider.each do |f| %>
-            <img class="img-responsive" src="<%= f.img %>" alt="">
-          <% end %>
-        </div>
-      </div>
+      <%= partial "partials/slider" %>
     </div>
   </div><!-- e/o slider -->
+
+  <!-- index main content => news and FB -->
+  <div class="index_main">
+    <div class="container">
+
+      <!-- 最新消息 -->
+      <div class="index_news">
+        <div class="index_main-inner">
+
+        </div>
+      </div><!-- e/o 最新消息 -->
+
+      <!-- facebook -->
+      <div class="index_facebook">
+        <div class="index_main-inner">
+
+        </div>
+      </div><!-- e/o facebook -->
+
+    </div>
+  </div>
+
+  <!-- little banners -->
+  <div class="index_banners">
+    <div class="container">
+
+      <% data.index.banner.each do |f| %>
+      <div class="index_banner-unit">
+        <div class="index_banner-inner">
+          <img class="img-responsive" src="http://placehold.it/350x150" alt="placeholder">
+        </div>
+      </div>
+      <% end %>
+
+    </div>
+  </div>
