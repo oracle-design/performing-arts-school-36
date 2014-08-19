@@ -128,34 +128,31 @@ body
 
 // about
 .page_title
-  margin-top: $polaroid
+  margin: $polaroid 0
   .page_title-inner
     background-color: $c-background
-    min-height: 300px
     padding: $polaroid
   .page_title-content
     position: relative
     background-color: darken($c-background, 30%)
-    width: 100%
-    height: 100%
-    .title
-      position: relative
-      margin-top: -3em
-      top: 0
-      +text-shadow(0 0 5px $c-shadow)
-      h2
-        @extend %m0auto
-        font-size: $fz-l
-        color: $c-pagetitle
-        text-align: center
+
+    h2
+      width: 100%
+      position: absolute
+      font-size: $fz-l
+      color: $c-pagetitle
+      text-align: center
+      margin-top: 1.1em
+      +text-shadow(0 -1px 1px $c-shadow)
       +breakpoint($b-mobile)
-        margin-top: -6.5em
-        h2
-          font-size: $fz-xxl
+        margin-top: 2.3em
+        font-size: $fz-xxl
       +breakpoint($b-pad)
-        margin-top: -8em
+        margin-top: 4.2em
       +breakpoint($b-desktop)
-        margin-top: -10em
+    img
+      top: 0
+
 
 // footer
 footer
