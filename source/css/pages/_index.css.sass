@@ -8,6 +8,7 @@
 body
   background-image: url("../img/bg-paper.png")
 
+// container setting
 .container
   @extend %m0auto
   +container($w-mobile)
@@ -18,7 +19,7 @@ body
   +breakpoint($b-desktop)
     +container($w-large)
 
-
+// header
 .header
   position: relative
   width: 100%
@@ -81,6 +82,7 @@ body
     color: lighten($c-red, 5%)
 
 
+// index
 .index_slider
   width: 100%
   .slider-wrapper
@@ -115,7 +117,6 @@ body
 .index_banners
   .index_banner-unit
     +span(6)
-    height: 80px
     margin-bottom: $polaroid
     padding: 0 $polaroid/2
     +breakpoint($b-mobile)
@@ -125,10 +126,40 @@ body
     background-color: #FFF
     padding: $polaroid/2
 
+// about
+.page_title
+  margin-top: $polaroid
+  .page_title-inner
+    background-color: $c-background
+    min-height: 300px
+    padding: $polaroid
+  .page_title-content
+    position: relative
+    background-color: darken($c-background, 30%)
+    width: 100%
+    height: 100%
+    .title
+      position: relative
+      margin-top: -3em
+      top: 0
+      +text-shadow(0 0 5px $c-shadow)
+      h2
+        @extend %m0auto
+        font-size: $fz-l
+        color: $c-pagetitle
+        text-align: center
+      +breakpoint($b-mobile)
+        margin-top: -6.5em
+        h2
+          font-size: $fz-xxl
+      +breakpoint($b-pad)
+        margin-top: -8em
+      +breakpoint($b-desktop)
+        margin-top: -10em
 
+// footer
 footer
   margin-bottom: 1em
-  margin-top: 3px
 .footer_info
   background-color: $c-background
   min-height: 80px
