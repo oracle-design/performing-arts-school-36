@@ -6,7 +6,7 @@
 // *************************************
 
 body
-  background-image: url("../img/bg-paper.png")
+  background-image: url("../img/asset/bg-paper.png")
 
 // container setting
 .container
@@ -111,9 +111,14 @@ body
     +span(4.5)
   .facebook_block
     width: 100%
+    height: 500px
+    margin: 0
+    background-image: url("../img/asset/exclusive_paper.png")
+    +image-2x("../img/asset/exclusive_paper_@2X.png", 560px, 420px)
 .index_main-inner
   background-color: $c-background
   min-height: 400px
+  padding: $polaroid $polaroid 6px $polaroid
 
 
 .index_banners
