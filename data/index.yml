@@ -18,17 +18,17 @@ news:
 
 slider:
   -
-    img: "http://placehold.it/1280x400&text=Pic+1"
+    img: "http://lorempixel.com/1280/400/food/1"
   -
-    img: "http://placehold.it/1280x400&text=Pic+2"
+    img: "http://lorempixel.com/1280/400/food/2"
   -
-    img: "http://placehold.it/1280x400&text=Pic+3"
+    img: "http://lorempixel.com/1280/400/food/3"
   -
-    img: "http://placehold.it/1280x400&text=Pic+4"
+    img: "http://lorempixel.com/1280/400/food/4"
   -
-    img: "http://placehold.it/1280x400&text=Pic+5"
+    img: "http://lorempixel.com/1280/400/food/5"
   -
-    img: "http://placehold.it/1280x400&text=Pic+6"
+    img: "http://lorempixel.com/1280/400/food/6"
 
 
 banner:
