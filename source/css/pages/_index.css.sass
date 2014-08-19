@@ -4,3 +4,56 @@
 //
 //
 // *************************************
+
+body
+  background-image: url("../img/bg-paper.png")
+
+.container
+  @extend %m0auto
+  +container($w-mobile)
+  +breakpoint($b-mobile)
+    +container($w-pad)
+  +breakpoint($b-pad)
+    +container($w-desktop)
+  +breakpoint($b-desktop)
+    +container($w-large)
+
+
+.header
+  position: relative
+  width: 100%
+  height: auto
+  text-align: center
+
+  .header_banner
+    +span(12)
+    background-color: #FFF
+    padding: 1em 0
+    border-top: 1em solid $c-red
+
+  .header_banner-icons
+    +span(3)
+    font-size: $fz-s
+    padding-top: 1.2em
+    a
+      color: $c-logo
+      &:hover
+        text-decoration: none
+        color: lighten($c-logo, 10%)
+
+
+
+  .header_banner-logo
+    +span(12)
+    .logo-wraper
+      width: 200px
+      @extend %m0auto
+    +breakpoint($b-mobile)
+      +span(6)
+
+
+  .header_banner-subscribe
+    +span(3)
+    padding-top: 1em
+    .subscribe-button
+      +sassy-button("simple", 3px, $fz-s, darken($c-red, 1%))
