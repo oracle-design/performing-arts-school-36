@@ -27,9 +27,11 @@ body
 
   .header_banner
     +span(12)
-    background-color: #FFF
+    background-color: $c-background
     padding: 1em 0
     border-top: 1em solid $c-red
+    +breakpoint($b-mobile)
+      margin-top: 1em
 
   .header_banner-icons
     +span(3)
@@ -40,9 +42,6 @@ body
       &:hover
         text-decoration: none
         color: lighten($c-logo, 10%)
-
-
-
   .header_banner-logo
     +span(12)
     .logo-wraper
@@ -50,10 +49,34 @@ body
       @extend %m0auto
     +breakpoint($b-mobile)
       +span(6)
-
-
   .header_banner-subscribe
     +span(3)
     padding-top: 1em
     .subscribe-button
-      +sassy-button("simple", 3px, $fz-s, darken($c-red, 1%))
+      +sassy-button("flat", 5px, $fz-s, darken($c-red, 1%))
+
+  nav
+    height: 44px
+    background-color: $c-background
+    padding-top: 0.5em
+  ul
+    display: block
+    list-style: none
+    margin: 0
+    +span(8)
+    +push(2)
+  li
+    float: left
+    +span(2)
+    a
+      color: $c-logo
+      font-size: $fz-s
+      +transition(color 0.5s)
+      &:hover
+        color: lighten($c-red, 5%)
+        text-decoration: none
+  li + li
+    border-left: 1px solid lighten($c-logo, 30%)
+  .active
+    color: lighten($c-red, 5%)
+
