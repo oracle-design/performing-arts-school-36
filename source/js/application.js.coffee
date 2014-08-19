@@ -4,3 +4,6 @@
 #
 #
 # *************************************
+$(window).load ->
+  $(".nivoSlider").nivoSlider()
+  return

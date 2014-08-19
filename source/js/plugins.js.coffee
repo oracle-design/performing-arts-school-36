@@ -16,5 +16,6 @@
 ##   jQuery / helper plugins
 ## -------------------------------------
 #= require "bootstrap-sprockets"
+#= require "vendor/_slider"
 #
 #

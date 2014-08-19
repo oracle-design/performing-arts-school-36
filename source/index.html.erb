@@ -3,8 +3,16 @@ title: 表演 36 房
 ---
 <!-- index.html -->
 
+  <!-- slider -->
   <div class="index_slider">
     <div class="container">
-
+      <div class="slider-wrapper theme-default">
+        <div id="slider" class="nivoSlider">
+          <!-- slider img place here -->
+          <% data.index.slider.each do |f| %>
+            <img class="img-responsive" src="<%= f.img %>" alt="">
+          <% end %>
+        </div>
+      </div>
     </div>
-  </div>
+  </div><!-- e/o slider -->

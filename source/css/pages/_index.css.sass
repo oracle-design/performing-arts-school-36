@@ -83,8 +83,14 @@ body
 
 .index_slider
   width: 100%
-  height: 500px
-  background-color: #aaa
+  .slider-wrapper
+    padding: $polaroid
+    margin: $polaroid 0
+    background-color: $c-background
+  .nivo-controlNav
+    margin-top: -20px
+    +breakpoint($b-mobile)
+      margin-top: -25px
 
 
 .footer_info

@@ -16,6 +16,21 @@ news:
     title: 優人禪武課程2014全新開班招生中！
     link: "#"
 
+slider:
+  -
+    img: "http://placehold.it/1280x500&text=Pic+1"
+  -
+    img: "http://placehold.it/1280x500&text=Pic+2"
+  -
+    img: "http://placehold.it/1280x500&text=Pic+3"
+  -
+    img: "http://placehold.it/1280x500&text=Pic+4"
+  -
+    img: "http://placehold.it/1280x500&text=Pic+5"
+  -
+    img: "http://placehold.it/1280x500&text=Pic+6"
+
+
 banner:
   -
     title: banner1
