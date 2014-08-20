@@ -183,6 +183,7 @@ button::-moz-focus-inner
 .course_list-wrapper
   background-color: $c-background
   padding: $polaroid
+  color: $c-ptext
   .event_block
     @extend %mainBlock
   .course_block
@@ -229,7 +230,30 @@ button::-moz-focus-inner
     border-top: 1em solid $c-course
 
 
-
+// zen
+.zen_main_content
+  margin-top: $polaroid
+.zen_main-wrapper
+  background-color: $c-background
+  padding: $polaroid
+  color: $c-ptext
+  h3
+    text-align: center
+    border-bottom: 5px solid #aaa
+    padding-bottom: 0.2em
+    margin-bottom: 1em
+  p
+    +breakpoint($b-mobile)
+      +container(600px)
+  .navi-buttons
+    width: 100%
+    +clearfix
+    .back, .next
+      +span(6)
+      padding: $polaroid/2
+    button
+      width: 100%
+      +sassy-button("flat", 3px, $fz-s, $c-grey, $c-grey, #eee, "inset")
 // footer
 footer
   margin-top: $polaroid
