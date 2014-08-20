@@ -1,0 +1,13 @@
+slider:
+  -
+    img: "./img/index_slider/01.jpg"
+    title: Title 標題一
+  -
+    img: "./img/index_slider/02.jpg"
+    title: Title 標題二
+  -
+    img: "./img/index_slider/03.jpg"
+    title: Title 標題三
+  -
+    img: "http://placehold.it/1280x400"
+    title: Title 標題四
