@@ -84,14 +84,7 @@ body
 
 // index
 .index_slider
-  width: 100%
-  .slider-wrapper
-    @extend %polaroid
-    background-color: $c-background
-  .nivo-controlNav
-    margin-top: -20px
-    +breakpoint($b-mobile)
-      margin-top: -25px
+  @extend %slider
 
 .index_news
   @extend %polaroid
@@ -125,7 +118,6 @@ body
 .index_banners
   .index_banner-unit
     +span(6)
-    margin-bottom: $polaroid
     padding: 0 $polaroid/2
     +breakpoint($b-mobile)
       +gallery(2.4)
@@ -160,8 +152,26 @@ body
         margin-top: 4.2em
 
 
+// course
+.course_slider
+  @extend %slider
+  .nivo-caption
+    text-align: center
+    font-size: $fz-m
+    top: 0
+    +breakpoint($b-mobile)
+      font-size: $fz-xl
+      top: 150px
+    +breakpoint($b-pad)
+      font-size: $fz-xxl
+      top: 200px
+    +breakpoint($b-desktop)
+      font-size: $fz-xxl
+      top: 300px
+
 // footer
 footer
+  margin-top: $polaroid
   margin-bottom: 1em
 .footer_info
   background-color: $c-background

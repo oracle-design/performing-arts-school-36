@@ -19,5 +19,15 @@
 %polaroid
   padding: $polaroid
   margin: $polaroid 0 0 0
-// index
 
+// slider
+
+%slider
+  width: 100%
+  .slider-wrapper
+    @extend %polaroid
+    background-color: $c-background
+  .nivo-controlNav
+    margin-top: -20px
+    +breakpoint($b-mobile)
+      margin-top: -25px
