@@ -11,3 +11,23 @@ slider:
   -
     img: "http://placehold.it/1280x400"
     title: Title 標題四
+
+courses:
+  -
+    title: 成人擊鼓班
+    img: http://placehold.it/500x500
+    content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus incidunt suscipit eos voluptates dolor amet, vero magnam. Magni, repellat vero consequatur similique dolorem, magnam soluta asperiores, aliquam incidunt ad debitis?"
+  -
+    title: 兒童擊鼓班
+    img: http://placehold.it/500x500
+    content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est, tempore vel similique eligendi incidunt dolores veritatis ipsam expedita nostrum quam nisi saepe natus animi laudantium maxime doloremque dignissimos modi blanditiis!"
+
+events:
+  -
+    title: 何必遠方
+    img: http://placehold.it/500x500
+    content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam vel reprehenderit cumque incidunt! Beatae cupiditate ea repellendus, vel alias, dolor ut commodi neque eius rem, optio illo dolore nisi!"
+  -
+    title: "太極引導"
+    img: http://placehold.it/500x500
+    content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci qui ut excepturi, sunt fugiat soluta natus ullam, autem laborum, ipsa eum consequuntur dolore blanditiis, voluptatum omnis non! Dolores, libero, quis."

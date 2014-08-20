@@ -8,6 +8,13 @@
 body
   background-image: url("../img/asset/bg-paper.png")
 
+button:focus
+  outline: 0
+
+button::-moz-focus-inner
+  border: 0
+
+
 // container setting
 .container
   @extend %m0auto
@@ -169,6 +176,59 @@ body
     +breakpoint($b-desktop)
       font-size: $fz-xxl
       top: 300px
+
+.course_list
+  margin-top: $polaroid
+
+.course_list-wrapper
+  background-color: $c-background
+  padding: $polaroid
+  .event_block
+    @extend %mainBlock
+  .course_block
+    @extend %mainBlock
+    margin-top: $polaroid
+
+  .unit
+    padding: $polaroid
+    .unit-inner
+      background-image: url("../img/asset/paper_fibers.png")
+      +image-2x("../img/asset/paper_fibers_@2X.png", 410px, 410px)
+    h3
+      text-align: center
+      font-size: $fz-l
+      padding: 0.5em 0
+      margin: 0
+    & + .unit
+      margin-top: $polaroid
+    .mobile-photo
+      padding: $polaroid
+      +breakpoint($b-pad)
+        +span(5)
+    .description
+      padding: $polaroid
+      p:last-child
+        margin: 0
+      +breakpoint($b-pad)
+        +span(7)
+    .readmore
+      padding: $polaroid
+      button
+        width: 100%
+      .b-event
+        +sassy-button("simple", 3px, $fz-m, $c-event, $c-event, #333, "inset")
+      .b-course
+        +sassy-button("simple", 3px, $fz-m, $c-course, $c-course, #333, "inset")
+    +breakpoint($b-mobile)
+      +span(6)
+      & + .unit
+        margin-top: 0
+  .event
+    border-top: 1em solid $c-event
+  .course
+    border-top: 1em solid $c-course
+
+
 
 // footer
 footer

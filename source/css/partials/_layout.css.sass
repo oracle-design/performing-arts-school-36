@@ -5,14 +5,6 @@
 //
 // *************************************
 
-// a row container
-.qrow
-  +break
-
-// a row container
-%span12
-  +span(12)
-
 %m0auto
   margin: 0 auto
 
@@ -21,7 +13,6 @@
   margin: $polaroid 0 0 0
 
 // slider
-
 %slider
   width: 100%
   .slider-wrapper
@@ -31,3 +22,9 @@
     margin-top: -20px
     +breakpoint($b-mobile)
       margin-top: -25px
+
+// course page
+%mainBlock
+  +clearfix
+  width: 100%
+  min-height: 300px
