@@ -2639,7 +2639,7 @@ button::-moz-focus-inner {
       float: left; } }
 
 .index_facebook {
-  padding: 0 0 10px 0;
+  padding: 0 0 5px 0;
   width: 100%;
   float: left; }
   @media (min-width: 600px) {
@@ -2663,37 +2663,40 @@ button::-moz-focus-inner {
   min-height: 400px;
   padding: 10px 10px 6px 10px; }
 
-.index_banners .index_banner-unit {
-  width: 50%;
-  float: left;
-  padding: 0 5px; }
-  @media (min-width: 600px) {
-    .index_banners .index_banner-unit {
-      width: 20%;
-      float: left; }
-      .index_banners .index_banner-unit:nth-child(5n + 1) {
-        margin-left: 0;
-        margin-right: -100%;
-        clear: both; }
-      .index_banners .index_banner-unit:nth-child(5n + 2) {
-        margin-left: 20%;
-        margin-right: -100%;
-        clear: none; }
-      .index_banners .index_banner-unit:nth-child(5n + 3) {
-        margin-left: 40%;
-        margin-right: -100%;
-        clear: none; }
-      .index_banners .index_banner-unit:nth-child(5n + 4) {
-        margin-left: 60%;
-        margin-right: -100%;
-        clear: none; }
-      .index_banners .index_banner-unit:nth-child(5n + 5) {
-        margin-left: 80%;
-        margin-right: -100%;
-        clear: none; } }
-.index_banners .index_banner-inner {
-  background-color: white;
-  padding: 5px; }
+.index_banners {
+  margin-bottom: 10px; }
+  .index_banners .index_banner-unit {
+    width: 50%;
+    float: left;
+    padding: 0 5px;
+    margin-top: 5px; }
+    @media (min-width: 600px) {
+      .index_banners .index_banner-unit {
+        width: 20%;
+        float: left; }
+        .index_banners .index_banner-unit:nth-child(5n + 1) {
+          margin-left: 0;
+          margin-right: -100%;
+          clear: both; }
+        .index_banners .index_banner-unit:nth-child(5n + 2) {
+          margin-left: 20%;
+          margin-right: -100%;
+          clear: none; }
+        .index_banners .index_banner-unit:nth-child(5n + 3) {
+          margin-left: 40%;
+          margin-right: -100%;
+          clear: none; }
+        .index_banners .index_banner-unit:nth-child(5n + 4) {
+          margin-left: 60%;
+          margin-right: -100%;
+          clear: none; }
+        .index_banners .index_banner-unit:nth-child(5n + 5) {
+          margin-left: 80%;
+          margin-right: -100%;
+          clear: none; } }
+  .index_banners .index_banner-inner {
+    background-color: white;
+    padding: 5px; }
 
 .page_title {
   margin: 10px 0; }

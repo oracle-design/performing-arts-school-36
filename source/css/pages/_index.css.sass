@@ -103,7 +103,7 @@ button::-moz-focus-inner
     +span(7.5)
 .index_facebook
   @extend %polaroid
-  padding: 0 0 $polaroid 0
+  padding: 0 0 $polaroid/2 0
   +span(12)
   +breakpoint($b-mobile)
     padding: $polaroid 0 $polaroid 0
@@ -123,9 +123,11 @@ button::-moz-focus-inner
 
 
 .index_banners
+  margin-bottom: $polaroid
   .index_banner-unit
     +span(6)
     padding: 0 $polaroid/2
+    margin-top: $polaroid/2
     +breakpoint($b-mobile)
       +gallery(2.4)
 
