@@ -1,0 +1,25 @@
+tabs:
+  -
+    title: 緣起
+    en: Why named PAS36
+    anchor: "#name"
+  -
+    title: 幽人文化基金會
+    en: U Theatre Art and Culture
+    anchor: "#utac"
+  -
+    title: 優表演藝術劇團
+    en: U Theatre
+    anchor: "#utheatre"
+  -
+    title: 自主學習促進會
+    en: IAAL
+    anchor: "#iaal"
+  -
+    title: 交通資訊
+    en: How to Get Here
+    anchor: "#transport"
+  -
+    title: 使命及目標
+    en: Missions and Goals
+    anchor: "#goals"
