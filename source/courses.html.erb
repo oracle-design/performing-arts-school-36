@@ -15,33 +15,10 @@ title: 表演 36 房 || 活動課程
     <div class="container">
       <div class="course_list-wrapper">
 
-        <!-- 活動 -->
-        <div class="event_block">
-
-          <% data.courses.courses.each do |f| %>
-          <!-- 活動單元 -->
-          <div class="unit">
-            <div class="unit-inner event">
-              <h3><%= f.title %></h3>
-              <div class="mobile-photo">
-                <img class="img-responsive" src="<%= f.img %>" alt="">
-              </div>
-              <div class="description">
-                <p><%= f.content %></p>
-              </div>
-              <div class="readmore">
-                <button class="b-event">了解更多</button>
-              </div>
-            </div>
-          </div><!-- e/o 活動單元 -->
-          <% end %>
-
-        </div>
-
         <!-- 課程 -->
         <div class="course_block">
 
-          <% data.courses.events.each do |f| %>
+          <% data.courses.courses.each do |f| %>
           <!-- 課程單元 -->
           <div class="unit">
             <div class="unit-inner course">
@@ -54,6 +31,29 @@ title: 表演 36 房 || 活動課程
               </div>
               <div class="readmore">
                 <button class="b-course">了解更多</button>
+              </div>
+            </div>
+          </div><!-- e/o 課程單元 -->
+          <% end %>
+
+        </div>
+
+        <!-- 活動 -->
+        <div class="event_block">
+
+          <% data.courses.events.each do |f| %>
+          <!-- 活動單元 -->
+          <div class="unit">
+            <div class="unit-inner event">
+              <h3><%= f.title %></h3>
+              <div class="mobile-photo">
+                <img class="img-responsive" src="<%= f.img %>" alt="">
+              </div>
+              <div class="description">
+                <p><%= f.content %></p>
+              </div>
+              <div class="readmore">
+                <button class="b-event">了解更多</button>
               </div>
             </div>
           </div><!-- e/o 活動單元 -->
