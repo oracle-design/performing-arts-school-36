@@ -4,7 +4,7 @@ title: 表演 36 房 || 活動花絮
 <!-- activities.html -->
 
   <!-- slider -->
-  <div class="course_slider">
+  <div class="activities_slider">
     <div class="container">
       <%= partial "partials/activities_slider" %>
     </div>
@@ -13,6 +13,22 @@ title: 表演 36 房 || 活動花絮
   <!-- activities list -->
   <div class="activities_list">
     <div class="container">
+      <div class="activities_wrapper">
+        <% data.activities.each do |f| %>
+        <!-- activities unit -->
+        <div class="unit">
+          <div class="activity_inner">
+            <div class="activity_cover">
+              <img class="img-responsive" src="<%= f.cover %>" alt="">
+            </div>
+            <h3><%= f.title %></h3>
+            <div class="description">
+              <p><%= f.discription %></p>
+            </div>
 
+          </div>
+        </div>
+        <% end %>
+      </div>
     </div>
   </div>
