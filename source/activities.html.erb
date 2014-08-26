@@ -14,21 +14,39 @@ title: 表演 36 房 || 活動花絮
   <div class="activities_list">
     <div class="container">
       <div class="activities_wrapper">
+
         <% data.activities.each do |f| %>
         <!-- activities unit -->
         <div class="unit">
           <div class="activity_inner">
+            <!-- 封面照片 -->
             <div class="activity_cover">
               <img class="img-responsive" src="<%= f.cover %>" alt="">
             </div>
+            <!-- 活動標題 -->
             <h3><%= f.title %></h3>
+            <!-- 活動描述 -->
             <div class="description">
               <p><%= f.discription %></p>
             </div>
+            <!-- 打開 Gallery（href 指向第一張照片）, data-lightbox 的值可設定為活動 id -->
+            <div class="button">
+              <a class="gallery_trigger" href="<%= f.gallery.first %>" data-lightbox="<%= f.title %>">觀賞照片</a>
+            </div>
+          </div>
 
+          <!-- 放置其他照片給 lightbox 用 -->
+          <div class="gallery_container">
+            <!-- 列出第二張之後的照片 -->
+            <% f.gallery.each_with_index do |g, index| %>
+              <% if index > 0 %>
+            <a href="<%= g %>" data-lightbox="<%= f.title %>"></a>
+              <% end %>
+            <% end %>
           </div>
         </div>
         <% end %>
+
       </div>
     </div>
   </div>

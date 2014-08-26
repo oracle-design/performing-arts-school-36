@@ -266,11 +266,18 @@ button::-moz-focus-inner
         margin: 0
     .gallery_container
       display: none
+    .button
+      padding: $polaroid
+    .gallery_trigger
+      width: 100%
+      text-align: center
+      +sassy-button("simple", 3px, $fz-m, $c-activity, $c-activity, #333, "inset")
 
     +breakpoint($b-mobile)
       +span(6)
       & + .unit
         margin: 0
+
 
 // zen
 .zen_main_content
@@ -296,6 +303,8 @@ button::-moz-focus-inner
     button
       width: 100%
       +sassy-button("flat", 3px, $fz-s, $c-grey, $c-grey, #eee, "inset")
+
+
 // footer
 footer
   margin-top: $polaroid
