@@ -7,15 +7,25 @@ banner: 關於 36 房
   <%= partial "partials/title_with_bg_section" %>
 
   <!-- content title tabs -->
-  <div class="about_content_title">
+  <div class="about_tabs">
 
     <div class="container">
-      <div class="about_tabs-wraper">
-
+      <div class="about_tabs-wrapper">
+        <div class="about_tabs-unit">
+          <ul>
+            <% data.about.tabs.each do |f| %>
+            <li><a href="<%= f.anchor %>"><%= f.title %></a></li>
+            <% end %>
+          </ul>
+        </div>
       </div>
     </div>
 
   </div>
 
+  <!-- content area -->
+  <div class="about_content">
+
+  </div>
 
 

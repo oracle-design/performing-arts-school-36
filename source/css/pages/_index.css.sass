@@ -159,7 +159,30 @@ button::-moz-focus-inner
         margin-top: 3em
       +breakpoint($b-desktop)
         margin-top: 4.2em
+.about_tabs
 
+.about_tabs-wrapper
+  +clearfix
+  background-color: $c-background
+  padding: $polaroid/2
+
+.about_tabs-unit
+  +span(12)
+  ul
+    padding: 0
+    margin: 0
+  li
+    display: block
+    text-align: center
+    padding: $polaroid/2
+  a
+    padding: $polaroid
+    display: block
+    color: $c-atext
+    background-color: rgba(#000, 0.1)
+  +breakpoint($b-mobile)
+    li
+      +span(4)
 
 // course
 .course_slider
