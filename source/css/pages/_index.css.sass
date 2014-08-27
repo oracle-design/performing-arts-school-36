@@ -293,13 +293,44 @@ button::-moz-focus-inner
   background-image: image-url("asset/paper_fibers.png")
   +image-2x("asset/paper_fibers_@2X.png", 410px, 410px)
   margin-bottom: $polaroid
+  padding-bottom: $polaroid/2
   h3
-    margin: 0 0 $polaroid 0
+    margin: $polaroid
     font-size: $fz-l
 
   .files_list
+    margin: $polaroid
+    font-size: $fz-s
+  .file_unit
+    padding: $polaroid/2
+    .file_wrapper
+      +clearfix
+      background-color: rgba(#000, 0.1)
+      padding: $polaroid
+
+    .file_info
+      +span(9)
+      padding-right: $polaroid
+      h4
+        margin: 0
+        font-size: $fz-l
+    .file_type
+      +span(3)
+    .button
+      margin-top: $polaroid
+      button
+        +span(12)
+        margin-top: $polaroid
+        +sassy-button("simple", 3px, $fz-m, $c-download, $c-download, #333, "inset")
+
+    +breakpoint($b-mobile)
+      +gallery(6)
+    +breakpoint($b-desktop)
+      +gallery(4)
 
 
+.category_block:last-child
+  margin-bottom: 0
 
 
 // zen

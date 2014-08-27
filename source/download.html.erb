@@ -16,10 +16,24 @@ banner: 下載專區
           <h3><%= f.category %></h3>
           <div class="files_list">
 
+            <% f.files.each do |file| %>
             <!-- 檔案 unit -->
-            <div class="files_unit">
+            <div class="file_unit">
+              <div class="file_wrapper">
+                <h4><%= file.title %></h4>
+                <div class="file_info">
+                  <p><%= file.description %></p>
+                </div>
+                <div class="file_type">
+                  <img class="img-responsive" src="./img/asset/file_type/<%= file.type %>.png" alt="">
+                </div>
+                <div class="button">
+                  <button>下載</button>
+                </div>
 
+              </div>
             </div>
+            <% end %>
           </div>
         </div>
         <% end %>
