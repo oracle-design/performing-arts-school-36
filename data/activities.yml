@@ -5,11 +5,11 @@
   link: "#"
   cover: "http://placehold.it/1280x400&text=cover1"
   gallery:
-    - "http://placehold.it/1024x768&text=pic1"
-    - "http://placehold.it/1024x768&text=pic2"
-    - "http://placehold.it/1024x768&text=pic3"
-    - "http://placehold.it/1024x768&text=pic4"
-    - "http://placehold.it/1024x768&text=pic5"
+    - "http://placehold.it/1024x768&text=act1+pic1"
+    - "http://placehold.it/1024x768&text=act1+pic2"
+    - "http://placehold.it/1024x768&text=act1+pic3"
+    - "http://placehold.it/1024x768&text=act1+pic4"
+    - "http://placehold.it/1024x768&text=act1+pic5"
 
 -
   title: 活動標題2
@@ -18,11 +18,11 @@
   link: "#"
   cover: "http://placehold.it/1280x400&text=cover2"
   gallery:
-    - "http://placehold.it/1024x768&text=pic1"
-    - "http://placehold.it/1024x768&text=pic2"
-    - "http://placehold.it/1024x768&text=pic3"
-    - "http://placehold.it/1024x768&text=pic4"
-    - "http://placehold.it/1024x768&text=pic5"
+    - "http://placehold.it/1024x768&text=act2+pic1"
+    - "http://placehold.it/1024x768&text=act2+pic2"
+    - "http://placehold.it/1024x768&text=act2+pic3"
+    - "http://placehold.it/1024x768&text=act2+pic4"
+    - "http://placehold.it/1024x768&text=act2+pic5"
 
 -
   title: 活動標題3
@@ -31,11 +31,11 @@
   link: "#"
   cover: "http://placehold.it/1280x400&text=cover3"
   gallery:
-    - "http://placehold.it/1024x768&text=pic1"
-    - "http://placehold.it/1024x768&text=pic2"
-    - "http://placehold.it/1024x768&text=pic3"
-    - "http://placehold.it/1024x768&text=pic4"
-    - "http://placehold.it/1024x768&text=pic5"
+    - "http://placehold.it/1024x768&text=act3+pic1"
+    - "http://placehold.it/1024x768&text=act3+pic2"
+    - "http://placehold.it/1024x768&text=act3+pic3"
+    - "http://placehold.it/1024x768&text=act3+pic4"
+    - "http://placehold.it/1024x768&text=act3+pic5"
 
 -
   title: 活動標題4
@@ -44,11 +44,11 @@
   link: "#"
   cover: "http://placehold.it/1280x400&text=cover4"
   gallery:
-    - "http://placehold.it/1024x768&text=pic1"
-    - "http://placehold.it/1024x768&text=pic2"
-    - "http://placehold.it/1024x768&text=pic3"
-    - "http://placehold.it/1024x768&text=pic4"
-    - "http://placehold.it/1024x768&text=pic5"
+    - "http://placehold.it/1024x768&text=act4+pic1"
+    - "http://placehold.it/1024x768&text=act4+pic2"
+    - "http://placehold.it/1024x768&text=act4+pic3"
+    - "http://placehold.it/1024x768&text=act4+pic4"
+    - "http://placehold.it/1024x768&text=act4+pic5"
 
 -
   title: 活動標題5
@@ -57,11 +57,11 @@
   link: "#"
   cover: "http://placehold.it/1280x400&text=cover5"
   gallery:
-    - "http://placehold.it/1024x768&text=pic1"
-    - "http://placehold.it/1024x768&text=pic2"
-    - "http://placehold.it/1024x768&text=pic3"
-    - "http://placehold.it/1024x768&text=pic4"
-    - "http://placehold.it/1024x768&text=pic5"
+    - "http://placehold.it/1024x768&text=act5+pic1"
+    - "http://placehold.it/1024x768&text=act5+pic2"
+    - "http://placehold.it/1024x768&text=act5+pic3"
+    - "http://placehold.it/1024x768&text=act5+pic4"
+    - "http://placehold.it/1024x768&text=act5+pic5"
 
 -
   title: 活動標題6
@@ -70,8 +70,8 @@
   link: "#"
   cover: "http://placehold.it/1280x400&text=cover6"
   gallery:
-    - "http://placehold.it/1024x768&text=pic1"
-    - "http://placehold.it/1024x768&text=pic2"
-    - "http://placehold.it/1024x768&text=pic3"
-    - "http://placehold.it/1024x768&text=pic4"
-    - "http://placehold.it/1024x768&text=pic5"
+    - "http://placehold.it/1024x768&text=act6+pic1"
+    - "http://placehold.it/1024x768&text=act6+pic2"
+    - "http://placehold.it/1024x768&text=act6+pic3"
+    - "http://placehold.it/1024x768&text=act6+pic4"
+    - "http://placehold.it/1024x768&text=act6+pic5"
