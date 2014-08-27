@@ -138,7 +138,7 @@ button::-moz-focus-inner
     padding: $polaroid/2
 
 // contact
-.contact_map
+.contact_map, .contact_info
   margin-top: $polaroid
 .contact_map-wrapper
   padding: $polaroid
@@ -148,6 +148,12 @@ button::-moz-focus-inner
     width: 100%
     height: 200px
     border: 1px solid #ccc
+.contact_info-wrapper
+  padding: $polaroid
+  background-color: $c-background
+  h3
+    margin: 0 0 1em 0
+    font-size: $fz-l
 
 // about
 .page_title
@@ -366,8 +372,11 @@ button::-moz-focus-inner
     padding: $polaroid/2
     .file_wrapper
       +clearfix
+      +transition(all 0.5s)
       background-color: rgba(#000, 0.1)
       padding: $polaroid
+      &:hover
+        background-color: rgba(#000, 0.05)
 
     .file_info
       +span(9)
