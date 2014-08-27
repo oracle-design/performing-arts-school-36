@@ -279,6 +279,26 @@ button::-moz-focus-inner
       & + .unit
         margin: 0
 
+// space
+.spaces_content
+  margin-top: $polaroid
+  h3
+    font-size: $fz-l
+    text-align: center
+  #templatemo_timeline .container-fluid
+    margin-bottom: 0
+    background-image: none
+  #templatemo_timeline .right_timer span
+    display: none
+  +breakpoint($b-mobile)
+    h3
+      font-size: $fz-xl
+    #templatemo_timeline .container-fluid
+      background: url("../img/time_line_bg.jpg") repeat-y center top
+    #templatemo_timeline .right_timer span
+      display: block
+
+
 // download
 .download_list
   margin-top: $polaroid
