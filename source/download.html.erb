@@ -4,18 +4,26 @@ banner: 下載專區
 ---
 <!-- download.html -->
 
+  <%= partial "partials/title_with_bg_section" %>
+
   <div class="download_list">
+    <div class="container">
+      <div class="download_wraper">
 
-    <!-- 分類 unit -->
-    <div class="category_block">
-      <h3></h3>
-      <div class="files_list">
+        <% data.download.each do |f| %>
+        <!-- 分類 unit -->
+        <div class="category_block">
+          <h3><%= f.category %></h3>
+          <div class="files_list">
 
-        <!-- 檔案 unit -->
-        <div class="files_unit">
+            <!-- 檔案 unit -->
+            <div class="files_unit">
 
+            </div>
+          </div>
         </div>
+        <% end %>
+
       </div>
     </div>
-
   </div>

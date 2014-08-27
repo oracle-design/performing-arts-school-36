@@ -244,6 +244,7 @@ button::-moz-focus-inner
 .activities_wrapper
   +clearfix
   background-color: $c-background
+  color: $c-ptext
   .unit
     padding: $polaroid
     & + .unit
@@ -279,6 +280,25 @@ button::-moz-focus-inner
         margin: 0
 
 // download
+.download_list
+  margin-top: $polaroid
+.download_wraper
+  padding: $polaroid
+  background-color: $c-background
+  color: $c-ptext
+
+.category_block
+  +clearfix
+  border-top: 0.5em solid $c-download
+  background-image: image-url("asset/paper_fibers.png")
+  +image-2x("asset/paper_fibers_@2X.png", 410px, 410px)
+  margin-bottom: $polaroid
+  h3
+    margin: 0 0 $polaroid 0
+    font-size: $fz-l
+
+  .files_list
+
 
 
 
