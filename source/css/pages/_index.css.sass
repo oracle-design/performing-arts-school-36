@@ -159,7 +159,6 @@ button::-moz-focus-inner
         margin-top: 3em
       +breakpoint($b-desktop)
         margin-top: 4.2em
-.about_tabs
 
 .about_tabs-wrapper
   +clearfix
@@ -184,6 +183,11 @@ button::-moz-focus-inner
     li
       +span(4)
 
+.about_content
+  margin-top: $polaroid
+.about_content_wrapper
+  padding: $polaroid
+  background-color: $c-background
 // course
 .course_slider
   @extend %slider
