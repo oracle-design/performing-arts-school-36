@@ -34,21 +34,21 @@ slider:
 banner:
   -
     title: banner1
-    img:
+    img: http://placehold.it/300x100
     link: "#"
   -
-    title: banner1
-    img:
+    title: banner2
+    img: http://placehold.it/300x100
     link: "#"
   -
-    title: banner1
-    img:
+    title: banner3
+    img: http://placehold.it/300x100
     link: "#"
   -
-    title: banner1
-    img:
+    title: banner4
+    img: http://placehold.it/300x100
     link: "#"
   -
-    title: banner1
-    img:
+    title: banner5
+    img: http://placehold.it/300x100
     link: "#"
