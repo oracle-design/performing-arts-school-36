@@ -27,4 +27,13 @@
   +breakpoint($b-mobile)
     display: block
 
+.only-mobile
+  display: block
+  +breakpoint($b-mobile)
+    display: none
+
+.only-desktop-up
+  display: none
+  +breakpoint($b-pad)
+    display: block
 

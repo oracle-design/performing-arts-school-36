@@ -17,7 +17,31 @@ title: 表演 36 房
       <!-- 最新消息 -->
       <div class="index_news">
         <h2>最新消息</h2>
-        <div class="index_main-inner">
+        <div class="index_news-inner">
+
+          <% data.index.news.each do |f| %>
+          <!-- news unit -->
+          <a href="<%= f.link %>" class="unit trans-05s">
+
+            <!-- left for feature pic -->
+            <div class="left">
+              <img class="img-responsive" src="<%= f.img %>" alt="">
+            </div>
+
+            <!-- right for detail info -->
+            <div class="right">
+              <div class="date">
+                <span><%= f.date %></span>
+              </div>
+              <div class="title">
+                <h3><%= f.title %></h3>
+              </div>
+              <div class="summary only-desktop-up">
+                <p><%= f.summary %></p>
+              </div>
+            </div>
+          </a>
+          <% end %>
 
         </div>
       </div><!-- e/o 最新消息 -->
@@ -45,6 +69,13 @@ title: 表演 36 房
         </div>
       </div>
       <% end %>
+      <div class="index_banner-unit only-mobile">
+        <div class="index_banner-inner">
+          <a href="#">
+            <img class="img-responsive" src="http://placehold.it/300x130" alt="placeholder" title="placeholder">
+          </a>
+        </div>
+      </div>
 
     </div>
   </div>

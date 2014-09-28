@@ -108,12 +108,51 @@ button::-moz-focus-inner
     color: white
     font-size: $fz-l
     text-align: center
+  .unit
+    +clearfix
+    display: block
+    width: 100%
+    padding: $polaroid
+    border-bottom: 1px solid $c-index-news-divider
+    .left
+      +span(4)
+      +breakpoint($b-mobile)
+        +span(3)
+      // +breakpoint($b-pad)
+      //   +span(2)
+    .right
+      +span(8)
+      +breakpoint($b-mobile)
+        +span(9)
+      // +breakpoint($b-pad)
+      //   +span(10)
+    .date
+      padding-left: 1em
+      font-size: $fz-s
+      color: $c-index-news-date
+    h3
+      margin: 8px 0 0 0
+      padding: 0 0 0 1em
+      font-size: $fz-m
+      color: $c-index-news-title
+      +breakpoint($b-desktop)
+        font-size: $fz-l
+    .summary
+      color: $c-index-news-summary
+      font-size: $fz-s
+      margin: 1em 0 0 2em
+      p
+        margin: 0
+
   +breakpoint($b-mobile)
     padding: $polaroid $polaroid $polaroid 0
     margin-top: 0
     +span(7.5)
     h2
       text-align: left
+  .unit:hover
+    background-color: #eee
+
 .index_facebook
   @extend %polaroid
   padding: 0 0 $polaroid/2 0
@@ -131,8 +170,11 @@ button::-moz-focus-inner
 
 .index_main-inner
   background-color: $c-background
-  min-height: 400px
+  // min-height: 400px
   padding: $polaroid $polaroid 6px $polaroid
+.index_news-inner
+  @extend .index_main-inner
+  padding: 0
 
 
 .index_banners
