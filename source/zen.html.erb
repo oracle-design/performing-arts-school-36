@@ -1,19 +1,35 @@
 ---
 title: 表演 36 房 || 禪鼓體驗
-banner: 禪鼓體驗
+banner: ""
+feature_img: "/img/zen/001.jpg"
 ---
-<!-- zen.html -->
+<!-- show/news.html -->
 
   <%= partial "partials/title_with_bg_section" %>
 
   <!-- content area -->
-  <div class="zen_main_content">
+  <div class="show_main_content">
     <div class="container">
       <div class="zen_main-wrapper">
-        <h3>Article title</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi veritatis, porro. Delectus natus architecto nostrum, rem quia voluptates, ipsum animi? Esse facilis veniam sunt provident vero deserunt totam repellat explicabo.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi veritatis, porro. Delectus natus architecto nostrum, rem quia voluptates, ipsum animi? Esse facilis veniam sunt provident vero deserunt totam repellat explicabo.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi veritatis, porro. Delectus natus architecto nostrum, rem quia voluptates, ipsum animi? Esse facilis veniam sunt provident vero deserunt totam repellat explicabo.</p>
+
+        <!-- title -->
+        <h3><%= data.zen.title %></h3>
+
+        <!-- content -->
+        <div class="show_image">
+          <img class="img-responsive" src="<%= data.zen.img %>" alt="">
+        </div>
+
+        <div class="show_text">
+          <% data.zen.content.each do |f| %>
+          <p><%= f %></p>
+          <% end %>
+        </div>
+
+        <div class="show_info">
+
+        </div>
+
         <div class="navi-buttons">
           <div class="back">
             <button>回上一頁</button>
