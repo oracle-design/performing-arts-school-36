@@ -37,7 +37,7 @@ button::-moz-focus-inner
     +span(12)
     background-color: $c-background
     padding: 1em 0
-    border-top: 1em solid $c-red
+    border-top: 1em solid $c-banner-top
     +breakpoint($b-mobile)
       margin-top: 1em
 
@@ -54,6 +54,8 @@ button::-moz-focus-inner
       margin-left: 1em
   .header_banner-logo
     +span(12)
+    background: image-url("asset/nav-houses.png") top no-repeat
+    +background-size(cover)
     .logo-wrapper
       width: 200px
       @extend %m0auto
@@ -63,7 +65,7 @@ button::-moz-focus-inner
     +span(3)
     padding-top: 1em
     .subscribe-button
-      +sassy-button("flat", 5px, $fz-s, darken($c-red, 1%))
+      +sassy-button("flat", 5px, $fz-s, darken($c-banner-subscribe, 1%))
 
   nav
     height: 44px
@@ -99,10 +101,19 @@ button::-moz-focus-inner
   @extend %polaroid
   +span(12)
   padding: 0
+  h2
+    background-color: $c-index-news-title-bg
+    padding: $polaroid
+    margin: 0 0 $polaroid 0
+    color: white
+    font-size: $fz-l
+    text-align: center
   +breakpoint($b-mobile)
     padding: $polaroid $polaroid $polaroid 0
     margin-top: 0
     +span(7.5)
+    h2
+      text-align: left
 .index_facebook
   @extend %polaroid
   padding: 0 0 $polaroid/2 0
