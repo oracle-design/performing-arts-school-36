@@ -23,7 +23,7 @@
         <div class="header_banner-logo">
           <div class="logo-wrapper">
 <a href="/">
-              <img class="img-responsive" src="img/asset/header_logo.png" />
+              <img class="img-responsive" src="/img/asset/header_logo.png" />
 </a>
           </div>
         </div>

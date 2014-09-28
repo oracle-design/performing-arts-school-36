@@ -25,7 +25,7 @@
   <?php include "partials/_header.php" ?>
 
 
-  <div class="spaces_content">
+<div class="spaces_content">
   <div class="container">
       <div id="templatemo_timeline" class="container_wapper">
           <h3>場館介紹</h3>
@@ -40,7 +40,7 @@
               <div class="time_line_wap">
                   <div class="time_line_caption" >1樓</div>
                   <div class="time_line_paragraph">
-              <h1><img class="img-responsive" src="img/1F.png"></h1>
+              <h1><img class="img-responsive" src="img/1F.jpg"></h1>
               <p>
                 <span class="glyphicon glyphicon-bookmark"></span><a href="#">服務台 Reception</a>
               </p>
@@ -58,7 +58,7 @@
             <a name="f2"></a>
                   <div class="time_line_caption" >2樓</div>
                   <div class="time_line_paragraph">
-                      <h1><img class="img-responsive" src="img/2F.png"></h1>
+                      <h1><img class="img-responsive" src="img/2F.jpg"></h1>
                       <p>
                 <span class="glyphicon glyphicon-bookmark"></span><a href="#">行政管理中心 Administration Center</a>
               </p>
@@ -75,7 +75,7 @@
               <BR>容納：80人
               </p>
               <p>
-              <img class="img-responsive" src="img/2fp1.png">
+              <img class="img-responsive" src="img/2fp1.jpg">
               </p>
                   </div>
               </div>
@@ -84,7 +84,7 @@
             <a name="f3"></a>
                   <div class="time_line_caption">3樓</div>
                   <div class="time_line_paragraph">
-                      <h1><img class="img-responsive" src="img/3F.png"></h1>
+                      <h1><img class="img-responsive" src="img/3F.jpg"></h1>
               <p>
                 <span class="glyphicon glyphicon-bookmark"></span><a href="#">業務推廣部 The Department of Business Developmente</a>
               </p>
@@ -100,7 +100,7 @@
               <BR>容納：約10人
               </p>
               <p>
-              <img class="img-responsive" src="img/3fp2.png">
+              <img class="img-responsive" src="img/3fp2.jpg">
               </p>
               <p>
                              <span class="glyphicon glyphicon-bookmark"></span> <a href="#">藝文大教室 Classroom 2</a>
@@ -110,7 +110,7 @@
               <BR>面積：16坪
               <BR>容納：約20人</p>
               <p>
-              <img class="img-responsive" src="img/3fp3.png">
+              <img class="img-responsive" src="img/3fp3.jpg">
               </p>
               <p>
                              <span class="glyphicon glyphicon-bookmark"></span> <a href="#">舞蹈教室 Dance Studio</a>
@@ -121,7 +121,7 @@
               <BR>容納：約30人
               </p>
               <p>
-              <img class="img-responsive" src="img/3fp4.png">
+              <img class="img-responsive" src="img/3fp4.jpg">
               </p>
                   </div>
               </div>
@@ -129,7 +129,7 @@
             <a name="f4"></a>
                   <div class="time_line_caption">4樓</div>
                   <div class="time_line_paragraph">
-                      <h1><img class="img-responsive" src="img/4F.png"></h1>
+                      <h1><img class="img-responsive" src="img/4F.jpg"></h1>
                       <p>
                              <span class="glyphicon glyphicon-bookmark"></span> <a href="#">基礎練功房  Martial Arts Roomo</a>
                       </p>
@@ -139,7 +139,7 @@
               <BR>容納：約80人
               </p>
               <p>
-              <img class="img-responsive" src="img/4fp1.png">
+              <img class="img-responsive" src="img/4fp1.jpg">
               </p>
               <p>
                              <span class="glyphicon glyphicon-bookmark"></span> <a href="#">音樂能量房 Music Studio</a>
@@ -150,7 +150,7 @@
               <BR>容納：約30人
               </p>
               <p>
-              <img class="img-responsive" src="img/4fp2.png">
+              <img class="img-responsive" src="img/4fp2.jpg">
               </p>
               <p>
                              <span class="glyphicon glyphicon-bookmark"></span> <a href="#">音樂練習室 Mini Music Studio</a>
@@ -161,7 +161,7 @@
               <BR>容納：約10人
               </p>
               <p>
-              <img class="img-responsive" src="img/4fp3.png">
+              <img class="img-responsive" src="img/4fp3.jpg">
               </p>
                   </div>
               </div>
@@ -169,7 +169,7 @@
             <a name="f5"></a>
                   <div class="time_line_caption" >5樓</div>
                   <div class="time_line_paragraph">
-                      <h1><img class="img-responsive" src="img/5F.png"></h1>
+                      <h1><img class="img-responsive" src="img/5F.jpg"></h1>
                       <p>
                              <span class="glyphicon glyphicon-bookmark"></span> <a href="#">36房頂小劇場 Experimental Theater</a>
                       </p>
@@ -183,7 +183,7 @@
               <BR>容納：約100人
               </p>
               <p>
-              <img class="img-responsive" src="img/5fp1.png">
+              <img class="img-responsive" src="img/5fp1.jpg">
               </p>
 
                   </div>

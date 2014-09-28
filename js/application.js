@@ -1,12 +1,22 @@
 (function() {
   // Slider blocks;
-  var activitiesSlider, courseSlider, indexSlider;
+  var activitiesSlider, courseSlider, facebookBlock, indexNewsBlock, indexSlider, newsHeight;
 
   indexSlider = $('.index_slider .nivoSlider');
 
   courseSlider = $('.course_slider .nivoSlider');
 
   activitiesSlider = $('.activities_slider .nivoSlider');
+
+  // facebook block;
+
+  facebookBlock = $('.facebook_block');
+
+  // index_news;
+
+  indexNewsBlock = $('.index_news');
+
+  newsHeight = indexNewsBlock.height() - 23;
 
   $(window).load(function() {
     // using nivoSlider;

@@ -13,8 +13,8 @@
 
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
-    <link href="css/application.css" rel="stylesheet" type="text/css" />
-    <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js" type="text/javascript"></script>
+    <link href="../css/application.css" rel="stylesheet" type="text/css" />
+    <script src="../js/vendor/modernizr-2.6.2-respond-1.1.0.min.js" type="text/javascript"></script>
   </head>
   <body>
       <!--[if lt IE 7]>
@@ -22,10 +22,10 @@
       <![endif]-->
 
   <!-- header -->
-  <?php include "partials/_header.php" ?>
+  <?php include "../partials/_header.php" ?>
 
 
-  <!-- zen.html -->
+  <!-- show/news.html -->
 
   <!-- page main title + background pic -->
   <div class="page_title">
@@ -34,65 +34,62 @@
         <div class="page_title-content">
           <!-- background pic -->
           <h2></h2>
-          <img class="img-responsive" src="/img/zen/001.jpg" alt="placeholder">
+          <img class="img-responsive" src="/img/news/detail-001.jpg" alt="placeholder">
         </div>
       </div>
     </div>
   </div>
 
+
   <!-- content area -->
-  <div class="zen_main_content">
+  <div class="show_main_content">
     <div class="container">
       <div class="zen_main-wrapper">
 
-
         <!--
-        <h3><%= data.zen.title %></h3>
+        <h3><%= data.news.title %></h3>
 
         <div class="show_image">
-          <img class="img-responsive" src="<%= data.zen.img %>" alt="">
+          <img class="img-responsive" src="<%= data.news.img %>" alt="">
         </div>
 
         <div class="show_text">
-          <% data.zen.content.each do |f| %>
+          <% data.news.content.each do |f| %>
           <p><%= f %></p>
           <% end %>
-        </div>
-
-        <div class="show_info">
-
         </div>
          -->
 
         <!-- title -->
-        <h3>禪鼓體驗</h3>
+        <h3>秋日好養生，太極導引、菩提功夫禪系列課程健康招生中！</h3>
 
         <!-- content -->
         <div class="show_image">
-          <img class="img-responsive" src="/img/zen/detail-001.jpg" alt="">
+          <img class="img-responsive" src="/img/news/detail-002.jpg" alt="">
         </div>
 
         <div class="show_text">
-          <p>量身打造課程內容，提供最優質的體驗，適合公司、學校、機關團體規劃校外教學、教育訓練等活動設計</p>
-          <p>運用優人神鼓二十多年藝術訓練精華，針對不同族群的需求，特別企劃推出一系列強調＜身‧心＞訓練的客製化多元專屬課程，包括半天、一天的體驗活動，如：演出培訓課程、企業教育訓練課程、動態靜心課程、擊鼓課程…等方向，除了可培養開發表演藝術能力，亦能達到舒壓、靜心、提升專注力及團隊凝聚力等，運用於日常生活中，更能達到身心靈平衡，擁有健康且優質的生活品質。</p>
-          <p><br /></p>
-          <p>體驗詳情請洽永安藝文館-表演36房02-2939-3088  Email： <a href='mailto:pas36.ut@msa.hinet.net'>pas36.ut@msa.hinet.net</a></p>
-          <p><br /></p>
-          <p>《申請辦法》</p>
-          <p><a href='#'>下載報名表</a>，填寫後回傳至 pas36.ut@msa.hinet.net，我們將盡速與你聯絡。</p>
+          <p>時過秋分，天氣漸涼，正是調節身體養氣生息的好時機。特別推薦太極導引班，以及最新推出的菩提功夫禪常態班，都是適合各年齡層的優質健康課程，歡迎您前來體驗，感受身心平衡的寧靜。</p>
+          <p>課程詳情請見：</p>
+          <p><a href='#'>太極引導班</a></p>
+          <p><a href='#'>菩提功夫禪常態班</a></p>
         </div>
 
-        <div class="show_info">
-
+        <div class="navi-buttons">
+          <div class="back">
+            <button>回上一頁</button>
+          </div>
+          <div class="next">
+            <button>下一則</button>
+          </div>
         </div>
-
       </div>
     </div>
   </div>
 
 
   <!-- footer -->
-  <?php include "partials/_footer.php" ?>
+  <?php include "../partials/_footer.php" ?>
 
 
 

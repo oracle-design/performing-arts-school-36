@@ -13,8 +13,8 @@
 
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
-    <link href="css/application.css" rel="stylesheet" type="text/css" />
-    <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js" type="text/javascript"></script>
+    <link href="../css/application.css" rel="stylesheet" type="text/css" />
+    <script src="../js/vendor/modernizr-2.6.2-respond-1.1.0.min.js" type="text/javascript"></script>
   </head>
   <body>
       <!--[if lt IE 7]>
@@ -22,10 +22,12 @@
       <![endif]-->
 
   <!-- header -->
-  <?php include "partials/_header.php" ?>
+  <?php include "../partials/_header.php" ?>
 
 
-  <!-- zen.html -->
+
+
+  <!-- show/course.html -->
 
   <!-- page main title + background pic -->
   <div class="page_title">
@@ -34,27 +36,27 @@
         <div class="page_title-content">
           <!-- background pic -->
           <h2></h2>
-          <img class="img-responsive" src="/img/zen/001.jpg" alt="placeholder">
+          <img class="img-responsive" src="/img/courses/detail-001.jpg" alt="placeholder">
         </div>
       </div>
     </div>
   </div>
 
+
   <!-- content area -->
-  <div class="zen_main_content">
+  <div class="show_main_content">
     <div class="container">
       <div class="zen_main-wrapper">
 
-
         <!--
-        <h3><%= data.zen.title %></h3>
+        <h3><%= data.course.title %></h3>
 
         <div class="show_image">
-          <img class="img-responsive" src="<%= data.zen.img %>" alt="">
+          <img class="img-responsive" src="<%= data.course.img %>" alt="">
         </div>
 
         <div class="show_text">
-          <% data.zen.content.each do |f| %>
+          <% data.course.content.each do |f| %>
           <p><%= f %></p>
           <% end %>
         </div>
@@ -62,37 +64,48 @@
         <div class="show_info">
 
         </div>
+
          -->
 
         <!-- title -->
-        <h3>禪鼓體驗</h3>
+        <h3>優人禪鼓班</h3>
 
         <!-- content -->
         <div class="show_image">
-          <img class="img-responsive" src="/img/zen/detail-001.jpg" alt="">
+          <img class="img-responsive" src="/img/courses/001.jpg" alt="">
         </div>
 
         <div class="show_text">
-          <p>量身打造課程內容，提供最優質的體驗，適合公司、學校、機關團體規劃校外教學、教育訓練等活動設計</p>
-          <p>運用優人神鼓二十多年藝術訓練精華，針對不同族群的需求，特別企劃推出一系列強調＜身‧心＞訓練的客製化多元專屬課程，包括半天、一天的體驗活動，如：演出培訓課程、企業教育訓練課程、動態靜心課程、擊鼓課程…等方向，除了可培養開發表演藝術能力，亦能達到舒壓、靜心、提升專注力及團隊凝聚力等，運用於日常生活中，更能達到身心靈平衡，擁有健康且優質的生活品質。</p>
+          <p>對　　象│15歲以上，不限男女</p>
+          <p>費　　用│4,500元 / 12堂課</p>
+          <p>授課教師│優人神鼓師資群</p>
           <p><br /></p>
-          <p>體驗詳情請洽永安藝文館-表演36房02-2939-3088  Email： <a href='mailto:pas36.ut@msa.hinet.net'>pas36.ut@msa.hinet.net</a></p>
+          <p>初 階 班│<br />週二班 19：30~21：00<br />週三班 19：30~21：00</p>
+          <p>進 階 班│<br />週四班 19：30~21：00<br />週五班 19：30~21：00<br />週六班 10：00~11：30</p>
           <p><br /></p>
-          <p>《申請辦法》</p>
-          <p><a href='#'>下載報名表</a>，填寫後回傳至 pas36.ut@msa.hinet.net，我們將盡速與你聯絡。</p>
+          <p>優人神鼓擊鼓課程 在自我寧靜中擊鼓</p>
+          <p>「優人擊鼓系統訓練課程」是「優人神鼓」歷經十年實際訓練後的成果，強調「全面性」培育表演者，將藝術所具備的「技術」與內在精神的「素質」同時開發與發展，在自己的寧靜中體會生命中最撼動的聲音。</p>
         </div>
 
         <div class="show_info">
 
         </div>
 
+        <div class="navi-buttons">
+          <div class="back">
+            <button>回上一頁</button>
+          </div>
+          <div class="next">
+            <button>下一則</button>
+          </div>
+        </div>
       </div>
     </div>
   </div>
 
 
   <!-- footer -->
-  <?php include "partials/_footer.php" ?>
+  <?php include "../partials/_footer.php" ?>
 
 
 
@@ -113,4 +126,6 @@
 
 
   </body>
+</html>
+
 </html>
