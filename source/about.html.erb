@@ -29,13 +29,26 @@ banner: 關於 36 房
 
       <div class="about_content_wrapper">
 
-        <div class="content_title">
-          <h3>Content Title</h3>
+        <% data.about.content.each do |f| %>
+
+        <div class="unit">
+          <div class="content_title">
+            <h3 id="<%= f.anchor %>"><%= f.title %></h3>
+          </div>
+          <div class="img">
+            <img class="img-responsive" src="<%= f.pic %>" alt="">
+          </div>
+          <div class="content">
+            <% f.content.each do |c| %>
+            <p><%= c %></p>
+            <% end %>
+          </div>
         </div>
 
-        <div class="content">
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt, cumque. Magnam harum cumque asperiores dolorem id, tempore laborum eveniet cum earum soluta, quis ratione. Placeat rerum est blanditiis, accusantium ut.</p>
-        </div>
+        <% end %>
+
+
+
 
       </div>
 

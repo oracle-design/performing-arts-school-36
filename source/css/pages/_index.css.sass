@@ -261,6 +261,25 @@ button::-moz-focus-inner
 .about_content_wrapper
   padding: $polaroid
   background-color: $c-background
+  .unit + .unit
+    margin-top: 3em
+  h3
+    padding: 0.5em 0
+    text-align: center
+    font-size: $fz-l
+    border-bottom: 1px solid $c-about-title-border
+    border-top: 1px solid $c-about-title-border
+  img
+    margin: 0 auto
+    margin-bottom: 0.5em
+  .content
+    color: $c-grey
+    +container(600px)
+  .content_title
+    +container(600px)
+
+
+
 // course
 .course_slider
   @extend %slider
