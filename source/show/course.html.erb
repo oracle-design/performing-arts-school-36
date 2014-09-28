@@ -1,0 +1,43 @@
+---
+title: 表演 36 房 || NEWS || 秋日好養生，太極導引、菩提功夫禪系列課程健康招生中！
+banner: ""
+feature_img: "/img/courses/detail-001.jpg"
+---
+<!-- show/news.html -->
+
+  <%= partial "partials/title_with_bg_section" %>
+
+  <!-- content area -->
+  <div class="show_main_content">
+    <div class="container">
+      <div class="zen_main-wrapper">
+
+        <!-- title -->
+        <h3><%= data.course.title %></h3>
+
+        <!-- content -->
+        <div class="show_image">
+          <img class="img-responsive" src="<%= data.course.img %>" alt="">
+        </div>
+
+        <div class="show_text">
+          <% data.course.content.each do |f| %>
+          <p><%= f %></p>
+          <% end %>
+        </div>
+
+        <div class="show_info">
+
+        </div>
+
+        <div class="navi-buttons">
+          <div class="back">
+            <button>回上一頁</button>
+          </div>
+          <div class="next">
+            <button>下一則</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
