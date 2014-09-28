@@ -308,6 +308,8 @@ button::-moz-focus-inner
       padding: $polaroid
       +breakpoint($b-pad)
         +span(5)
+      +breakpoint($b-desktop)
+        +span(3)
     .description
       padding: $polaroid
       font-size: $fz-s
@@ -315,6 +317,8 @@ button::-moz-focus-inner
         margin: 0
       +breakpoint($b-pad)
         +span(7)
+      +breakpoint($b-desktop)
+        +span(9)
     .readmore
       padding: $polaroid
       button
@@ -325,7 +329,7 @@ button::-moz-focus-inner
         +sassy-button("simple", 3px, $fz-m, $c-course, $c-course, #333, "inset")
 
     +breakpoint($b-mobile)
-      +span(6)
+      +gallery(6)
       & + .unit
         margin-top: 0
 
