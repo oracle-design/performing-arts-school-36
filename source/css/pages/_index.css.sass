@@ -309,16 +309,19 @@ button::-moz-focus-inner
       +breakpoint($b-pad)
         +span(5)
       +breakpoint($b-desktop)
-        +span(3)
+        +span(4)
     .description
       padding: $polaroid
       font-size: $fz-s
+      +breakpoint($b-mobile)
+        height: 180px
+        overflow: scroll
       p:last-child
         margin: 0
       +breakpoint($b-pad)
         +span(7)
       +breakpoint($b-desktop)
-        +span(9)
+        +span(8)
     .readmore
       padding: $polaroid
       button
@@ -369,6 +372,9 @@ button::-moz-focus-inner
       margin-top: 1em
       p:last-child
         margin: 0
+      +breakpoint($b-mobile)
+        height: 120px
+        overflow: scroll
     .gallery_container
       display: none
     .button
