@@ -20,3 +20,4 @@
 #= require "vendor/_slider"
 #= require "vendor/_timeline"
 #= require "vendor/_smoothScroll"
+#= require "vendor/_pushy"

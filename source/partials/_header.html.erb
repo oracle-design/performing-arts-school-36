@@ -1,8 +1,10 @@
 <!-- header -->
   <div class="header">
-
     <!-- banner -->
     <div class="container">
+
+      <div class="menu-btn only-mobile">&#9776; Menu</div>
+
       <div class="header_banner">
         <!-- facebook and back2home link icon -->
         <div class="header_banner-icons hidden-mobile">
@@ -53,3 +55,15 @@
     </div><!-- e/o navi bar -->
 
   </div>
+
+  <!-- mobile menu -->
+  <nav class="pushy pushy-left">
+    <ul>
+      <li><a href="/">回到首頁 <i class="fa fa-home"></i></a></li>
+      <% data.navi.each do |f| %>
+      <li><%= nav_link f.title, f.link %></li>
+      <% end %>
+    </ul>
+  </nav>
+  <!-- Site Overlay -->
+  <div class="site-overlay"></div>

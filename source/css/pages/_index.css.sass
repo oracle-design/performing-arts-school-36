@@ -37,9 +37,20 @@ button::-moz-focus-inner
     +span(12)
     background-color: $c-background
     padding: 1em 0
-    border-top: 1em solid $c-banner-top
+    margin-top: 44px
+    // border-top: 1em solid $c-banner-top
     +breakpoint($b-mobile)
       margin-top: 1em
+      border-top: 1em solid $c-banner-top
+  .menu-btn
+    position: fixed
+    width: $w-mobile
+    top: 0
+    background-color: $c-banner-top
+    color: #fff
+    font-size: $fz-l
+    padding-top: 8px
+    height: 44px
 
   .header_banner-icons
     +span(3)
