@@ -52,15 +52,15 @@
             <div class="description">
               <p><%= f.description %></p>
             </div>
-            <div class="button">
-              <a class="gallery_trigger" href="<%= f.gallery.first %>" data-lightbox="<%= f.title %>">觀賞照片</a>
+            <div class="gallery-trigger">
+              <a class="lightview" href="<%= f.gallery.first %>" data-lightview-group="<%= f.title %>" data-lightview-group-options="controls: 'thumbnails'">觀賞照片</a>
             </div>
           </div>
 
           <div class="gallery_container">
             <% f.gallery.each_with_index do |g, index| %>
               <% if index > 0 %>
-            <a href="<%= g %>" data-lightbox="<%= f.title %>"></a>
+            <a class="lightview" href="<%= g %>" data-lightview-group="<%= f.title %>"></a>
               <% end %>
             <% end %>
           </div>
@@ -83,15 +83,15 @@
               <p>結合禪鼓、武術與表演藝術課程，發現身體的節奏、肢體潛能，激發想像力與手腦協調性，輕鬆培養孩子的生活美學觀。</p>
             </div>
             <!-- 打開 Gallery（href 指向第一張照片）, data-lightbox 的值可設定為活動 id -->
-            <div class="button">
-              <a class="gallery_trigger" href="./img/activities/001/002.jpg" data-lightbox="2014兒童禪鼓冬令營">觀賞照片</a>
+            <div class="gallery-trigger">
+              <a class="lightview" href="./img/activities/001/002.jpg" data-lightview-group="2014兒童禪鼓冬令營" data-lightview-group-options="controls: 'thumbnails'">觀賞照片</a>
             </div>
           </div>
 
           <!-- 放置其他照片給 lightbox 用 -->
           <div class="gallery_container">
             <!-- 列出第二張之後的照片 -->
-            <a href="./img/activities/001/003.JPG" data-lightbox="2014兒童禪鼓冬令營"></a>
+            <a class="lightview" href="./img/activities/001/003.JPG" data-lightview-group="2014兒童禪鼓冬令營"></a>
           </div>
         </div>
         <!-- activities unit -->
@@ -108,41 +108,41 @@
               <p>直護往寶春笑之傳看得輕適接其，公類食甚重放安點主並達而來金舉子飯一是的形都初兒同形同那美實離得小行市計人。一是學此二一我即基的求上行參到會因：不門之道風竟下成度實道下間知需三名邊，文高意系們以。兒學取，年離行後意成是反性獎平前價不家著家大於。</p>
             </div>
             <!-- 打開 Gallery（href 指向第一張照片）, data-lightbox 的值可設定為活動 id -->
-            <div class="button">
-              <a class="gallery_trigger" href="./img/activities/002/002.JPG" data-lightbox="2014景優雲腳臺北">觀賞照片</a>
+            <div class="gallery-trigger">
+              <a class="lightview" href="./img/activities/002/002.JPG" data-lightview-group="2014景優雲腳臺北" data-lightview-group-options="controls: 'thumbnails'">觀賞照片</a>
             </div>
           </div>
 
           <!-- 放置其他照片給 lightbox 用 -->
           <div class="gallery_container">
             <!-- 列出第二張之後的照片 -->
-            <a href="./img/activities/002/003.JPG" data-lightbox="2014景優雲腳臺北"></a>
-            <a href="./img/activities/002/004.JPG" data-lightbox="2014景優雲腳臺北"></a>
-            <a href="./img/activities/002/005.JPG" data-lightbox="2014景優雲腳臺北"></a>
-            <a href="./img/activities/002/006.JPG" data-lightbox="2014景優雲腳臺北"></a>
-            <a href="./img/activities/002/007.JPG" data-lightbox="2014景優雲腳臺北"></a>
-            <a href="./img/activities/002/008.JPG" data-lightbox="2014景優雲腳臺北"></a>
-            <a href="./img/activities/002/009.JPG" data-lightbox="2014景優雲腳臺北"></a>
-            <a href="./img/activities/002/010.JPG" data-lightbox="2014景優雲腳臺北"></a>
-            <a href="./img/activities/002/011.JPG" data-lightbox="2014景優雲腳臺北"></a>
-            <a href="./img/activities/002/012.JPG" data-lightbox="2014景優雲腳臺北"></a>
-            <a href="./img/activities/002/013.JPG" data-lightbox="2014景優雲腳臺北"></a>
-            <a href="./img/activities/002/014.JPG" data-lightbox="2014景優雲腳臺北"></a>
-            <a href="./img/activities/002/015.JPG" data-lightbox="2014景優雲腳臺北"></a>
-            <a href="./img/activities/002/016.JPG" data-lightbox="2014景優雲腳臺北"></a>
-            <a href="./img/activities/002/017.JPG" data-lightbox="2014景優雲腳臺北"></a>
-            <a href="./img/activities/002/018.JPG" data-lightbox="2014景優雲腳臺北"></a>
-            <a href="./img/activities/002/019.JPG" data-lightbox="2014景優雲腳臺北"></a>
-            <a href="./img/activities/002/020.JPG" data-lightbox="2014景優雲腳臺北"></a>
-            <a href="./img/activities/002/021.JPG" data-lightbox="2014景優雲腳臺北"></a>
-            <a href="./img/activities/002/022.JPG" data-lightbox="2014景優雲腳臺北"></a>
-            <a href="./img/activities/002/023.JPG" data-lightbox="2014景優雲腳臺北"></a>
-            <a href="./img/activities/002/024.JPG" data-lightbox="2014景優雲腳臺北"></a>
-            <a href="./img/activities/002/025.JPG" data-lightbox="2014景優雲腳臺北"></a>
-            <a href="./img/activities/002/026.JPG" data-lightbox="2014景優雲腳臺北"></a>
-            <a href="./img/activities/002/027.JPG" data-lightbox="2014景優雲腳臺北"></a>
-            <a href="./img/activities/002/028.JPG" data-lightbox="2014景優雲腳臺北"></a>
-            <a href="./img/activities/002/029.JPG" data-lightbox="2014景優雲腳臺北"></a>
+            <a class="lightview" href="./img/activities/002/003.JPG" data-lightview-group="2014景優雲腳臺北"></a>
+            <a class="lightview" href="./img/activities/002/004.JPG" data-lightview-group="2014景優雲腳臺北"></a>
+            <a class="lightview" href="./img/activities/002/005.JPG" data-lightview-group="2014景優雲腳臺北"></a>
+            <a class="lightview" href="./img/activities/002/006.JPG" data-lightview-group="2014景優雲腳臺北"></a>
+            <a class="lightview" href="./img/activities/002/007.JPG" data-lightview-group="2014景優雲腳臺北"></a>
+            <a class="lightview" href="./img/activities/002/008.JPG" data-lightview-group="2014景優雲腳臺北"></a>
+            <a class="lightview" href="./img/activities/002/009.JPG" data-lightview-group="2014景優雲腳臺北"></a>
+            <a class="lightview" href="./img/activities/002/010.JPG" data-lightview-group="2014景優雲腳臺北"></a>
+            <a class="lightview" href="./img/activities/002/011.JPG" data-lightview-group="2014景優雲腳臺北"></a>
+            <a class="lightview" href="./img/activities/002/012.JPG" data-lightview-group="2014景優雲腳臺北"></a>
+            <a class="lightview" href="./img/activities/002/013.JPG" data-lightview-group="2014景優雲腳臺北"></a>
+            <a class="lightview" href="./img/activities/002/014.JPG" data-lightview-group="2014景優雲腳臺北"></a>
+            <a class="lightview" href="./img/activities/002/015.JPG" data-lightview-group="2014景優雲腳臺北"></a>
+            <a class="lightview" href="./img/activities/002/016.JPG" data-lightview-group="2014景優雲腳臺北"></a>
+            <a class="lightview" href="./img/activities/002/017.JPG" data-lightview-group="2014景優雲腳臺北"></a>
+            <a class="lightview" href="./img/activities/002/018.JPG" data-lightview-group="2014景優雲腳臺北"></a>
+            <a class="lightview" href="./img/activities/002/019.JPG" data-lightview-group="2014景優雲腳臺北"></a>
+            <a class="lightview" href="./img/activities/002/020.JPG" data-lightview-group="2014景優雲腳臺北"></a>
+            <a class="lightview" href="./img/activities/002/021.JPG" data-lightview-group="2014景優雲腳臺北"></a>
+            <a class="lightview" href="./img/activities/002/022.JPG" data-lightview-group="2014景優雲腳臺北"></a>
+            <a class="lightview" href="./img/activities/002/023.JPG" data-lightview-group="2014景優雲腳臺北"></a>
+            <a class="lightview" href="./img/activities/002/024.JPG" data-lightview-group="2014景優雲腳臺北"></a>
+            <a class="lightview" href="./img/activities/002/025.JPG" data-lightview-group="2014景優雲腳臺北"></a>
+            <a class="lightview" href="./img/activities/002/026.JPG" data-lightview-group="2014景優雲腳臺北"></a>
+            <a class="lightview" href="./img/activities/002/027.JPG" data-lightview-group="2014景優雲腳臺北"></a>
+            <a class="lightview" href="./img/activities/002/028.JPG" data-lightview-group="2014景優雲腳臺北"></a>
+            <a class="lightview" href="./img/activities/002/029.JPG" data-lightview-group="2014景優雲腳臺北"></a>
           </div>
         </div>
 
