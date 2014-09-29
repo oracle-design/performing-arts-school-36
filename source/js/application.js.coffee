@@ -13,6 +13,7 @@ activitiesSlider = $('.activities_slider .nivoSlider')
 facebookBlock = $('.facebook_block')
 `// index_news`
 indexNewsBlock = $('.index_news')
+indexNewsLastHeight = indexNewsBlock.height()
 
 $(window).load ->
   `// using nivoSlider`
@@ -24,7 +25,7 @@ $(window).load ->
     nextText: "下一張"
   return
 
-$(document).ready ->
+$(window).load ->
   if window.innerWidth >= 600
     newsHeight= indexNewsBlock.height()-23
     facebookBlock.height(newsHeight)
