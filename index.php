@@ -47,7 +47,7 @@
 
           <!--
           <% data.index.news.each do |f| %>
-          <a href="<%= f.link %>" class="unit trans-05s">
+          <a href="<%= f.link %>" class="unit curl-top-right trans-05s">
 
             <div class="left">
               <img class="img-responsive" src="<%= f.img %>" alt="">
@@ -69,7 +69,7 @@
            -->
 
           <!-- news unit -->
-          <a href="/show/news.php" class="unit trans-05s">
+          <a href="/show/news.php" class="unit curl-top-right  trans-05s">
 
             <!-- left for feature pic -->
             <div class="left">
@@ -90,7 +90,7 @@
             </div>
           </a>
           <!-- news unit -->
-          <a href="#" class="unit trans-05s">
+          <a href="#" class="unit curl-top-right trans-05s">
 
             <!-- left for feature pic -->
             <div class="left">
@@ -111,7 +111,7 @@
             </div>
           </a>
           <!-- news unit -->
-          <a href="#" class="unit trans-05s">
+          <a href="#" class="unit curl-top-right trans-05s">
 
             <!-- left for feature pic -->
             <div class="left">

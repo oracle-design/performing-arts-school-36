@@ -2,6 +2,10 @@
 
     <!-- banner -->
     <div class="container">
+
+      <!-- mobile menu button -->
+      <div class="menu-btn only-mobile">&#9776; Menu</div>
+
       <div class="header_banner">
         <!-- facebook and back2home link icon -->
         <div class="header_banner-icons hidden-mobile">
@@ -60,3 +64,27 @@
     </div><!-- e/o navi bar -->
 
   </div>
+
+  <!-- mobile menu -->
+  <nav class="pushy pushy-left">
+    <ul>
+
+      <!--
+      <li><a href="/">回到首頁 <i class="fa fa-home"></i></a></li>
+      <% data.navi.each do |f| %>
+      <li><%= nav_link f.title, f.link %></li>
+      <% end %>
+       -->
+
+      <li><a href="/">回到首頁 <i class="fa fa-home"></i></a></li>
+      <li><a class=" active" href="/about.html">關於 36 房</a></li>
+      <li><a class="" href="/courses.html">活動課程</a></li>
+      <li><a class="" href="/spaces.html">場館介紹</a></li>
+      <li><a class="" href="/activities.html">活動花絮</a></li>
+      <li><a class="" href="/zen.html">禪鼓體驗</a></li>
+      <li><a class="" href="/download.html">下載專區</a></li>
+
+    </ul>
+  </nav>
+  <!-- Site Overlay -->
+  <div class="site-overlay"></div>
