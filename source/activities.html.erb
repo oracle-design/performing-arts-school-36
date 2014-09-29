@@ -30,8 +30,8 @@ title: 表演 36 房 || 活動花絮
               <p><%= f.description %></p>
             </div>
             <!-- 打開 Gallery（href 指向第一張照片）, data-lightbox 的值可設定為活動 id -->
-            <div class="button">
-              <a class="gallery_trigger" href="<%= f.gallery.first %>" data-lightbox="<%= f.title %>">觀賞照片</a>
+            <div class="gallery-trigger">
+              <a class="lightview" href="<%= f.gallery.first %>" data-lightview-group="<%= f.title %>" data-lightview-group-options="controls: 'thumbnails'">觀賞照片</a>
             </div>
           </div>
 
@@ -40,7 +40,7 @@ title: 表演 36 房 || 活動花絮
             <!-- 列出第二張之後的照片 -->
             <% f.gallery.each_with_index do |g, index| %>
               <% if index > 0 %>
-            <a href="<%= g %>" data-lightbox="<%= f.title %>"></a>
+            <a class="lightview" href="<%= g %>" data-lightview-group="<%= f.title %>"></a>
               <% end %>
             <% end %>
           </div>

@@ -51,6 +51,7 @@ button::-moz-focus-inner
     font-size: $fz-l
     padding-top: 8px
     height: 44px
+    z-index: 999
 
   .header_banner-icons
     +span(3)
@@ -411,9 +412,11 @@ button::-moz-focus-inner
         overflow: scroll
     .gallery_container
       display: none
-    .button
+    .buttonactivities_list
       padding: $polaroid
-    .gallery_trigger
+    .gallery-trigger
+      padding: $polaroid
+    .lightview
       width: 100%
       text-align: center
       +sassy-button("simple", 3px, $fz-m, $c-activity, $c-activity, #333, "inset")
