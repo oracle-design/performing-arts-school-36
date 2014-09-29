@@ -34,7 +34,7 @@
   <div class="activities_slider">
     <div class="container">
     <?php include "partials/_zen_slider.php" ?>
-      
+
     </div>
   </div>
 
@@ -51,17 +51,59 @@
         $result1 = exe_sql(DATABASE, $sql1);
       ?>
       <div class="zen_main-wrapper">
-        <h3><?echo $result[$index]['title'];?></h3>
-        <p><?echo cut_content(html_entity_decode($result1[0]['text']),224);?></p>
-        <div class="navi-buttons">
-          <div class="back">
-            <!--button src="?aid=<?if($_GET['aid']>0){echo $_GET['aid']-1;}?>">回上一則</button-->
-            <button  onclick="location.href='?aid=<?if($_GET['aid']>0){echo $_GET['aid']-1;}else{echo "0";}?>'">回上一則</button>
-          </div>
-          <div class="next">
-            <button onclick="location.href='?aid=<?if($_GET['aid']+1<count($result)){echo $_GET['aid']+1;}else{echo $_GET['aid'];}?>'">下一則</button>
-          </div>
+
+            <!-- HERE -->
+            <!-- HERE -->
+            <!-- HERE -->
+            <!-- HERE -->
+            <!-- HERE -->
+            <!-- HERE -->
+
+        <!-- 改成下面這個樣式 -->
+
+        <!--
+        <h3><%= data.zen.title %></h3>
+
+        <div class="show_image">
+          <img class="img-responsive" src="<%= data.zen.img %>" alt="">
         </div>
+
+        <div class="show_text">
+          <% data.zen.content.each do |f| %>
+          <p><%= f %></p>
+          <% end %>
+        </div>
+
+        <div class="show_info">
+
+        </div>
+         -->
+
+
+
+        <!-- title -->
+        <h3>禪鼓體驗</h3>
+
+        <!-- content -->
+        <div class="show_image">
+          <img class="img-responsive" src="/img/zen/detail-001.jpg" alt="">
+        </div>
+
+        <div class="show_text">
+          <p>量身打造課程內容，提供最優質的體驗，適合公司、學校、機關團體規劃校外教學、教育訓練等活動設計</p>
+          <p>運用優人神鼓二十多年藝術訓練精華，針對不同族群的需求，特別企劃推出一系列強調＜身‧心＞訓練的客製化多元專屬課程，包括半天、一天的體驗活動，如：演出培訓課程、企業教育訓練課程、動態靜心課程、擊鼓課程…等方向，除了可培養開發表演藝術能力，亦能達到舒壓、靜心、提升專注力及團隊凝聚力等，運用於日常生活中，更能達到身心靈平衡，擁有健康且優質的生活品質。</p>
+          <p><br /></p>
+          <p>體驗詳情請洽永安藝文館-表演36房02-2939-3088  Email： <a href='mailto:pas36.ut@msa.hinet.net'>pas36.ut@msa.hinet.net</a></p>
+          <p><br /></p>
+          <p>《申請辦法》</p>
+          <p><a href='#'>下載報名表</a>，填寫後回傳至 pas36.ut@msa.hinet.net，我們將盡速與你聯絡。</p>
+        </div>
+
+        <div class="show_info">
+
+        </div>
+
+
       </div>
     </div>
   </div>

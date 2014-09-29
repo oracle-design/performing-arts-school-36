@@ -74,7 +74,7 @@
         -->
 
         <!-- activities unit -->
-        
+
           <?
               $sql = "SELECT * FROM topic WHERE category  = 9 ORDER BY id ASC ";
               $result = exe_sql(DATABASE, $sql);
@@ -103,8 +103,8 @@
                   <p><?echo cut_content(html_entity_decode($result2[0]['text']),121);?></p>
                 </div>
                 <!-- 打開 Gallery（href 指向第一張照片）, data-lightbox 的值可設定為活動 id -->
-                <div class="button">
-                  <a class="gallery_trigger" href="system/img/<?echo $result1[0]['filename'];?>" data-lightbox="<?echo $result[$index]['id'];?>">觀賞照片</a>
+                <div class="gallery-trigger">
+                  <a class="lightview" href="system/img/<?echo $result1[0]['filename'];?>" data-lightview-group="<?echo $result[$index]['id'];?>" data-lightview-group-options="controls: 'thumbnails'">觀賞照片</a>
                 </div>
                 </div>
                 <!-- 放置其他照片給 lightbox 用 -->
@@ -114,12 +114,12 @@
                     for($i=1;$i<count($result1);$i++)
                     {
                   ?>
-                      <a href="system/img/<?echo $result1[$i]['filename'];?>" data-lightbox="<?echo $result[$index]['id'];?>"></a>
+                      <a class="lightview" href="system/img/<?echo $result1[$i]['filename'];?>" data-lightview-group="<?echo $result[$index]['id'];?>"></a>
                   <?}?>
                 </div>
                 </div>
             <?}?>
-        
+
         <!-- activities unit -->
         </div>
     </div>

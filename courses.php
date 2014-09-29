@@ -1,4 +1,4 @@
-<?php 
+<?php
 	include "lib/mysql.php";
 ?>
 <!DOCTYPE html>
@@ -76,7 +76,7 @@
 			for($index=0;$index<count($result);$index++)
 			{
 		?>
-		  
+
           <div class="unit">
             <div class="unit-inner course">
               <h3><?echo $result[$index]['title'];?></h3>
@@ -84,7 +84,7 @@
 				<?
 					$sql1 = "SELECT *  FROM `title` WHERE  `topicid` = ".$result[$index]['id'];
 					$result1 = exe_sql(DATABASE, $sql1);
-					
+
 				?>
 						<img class="img-responsive" src="system/img/<?echo $result1[0]['filename'];?>" alt="">
 			  </div>
@@ -93,12 +93,21 @@
             <?echo html_entity_decode($result1[0]['text']);?>
 						</div>
 						<div class="readmore">
+
+            <!-- HERE -->
+            <!-- HERE -->
+            <!-- HERE -->
+            <!-- HERE -->
+            <!-- HERE -->
+            <!-- HERE -->
+
+              <!-- <button>...</button> 改成 <a href="<%= f.link %>" class="b-course">了解更多</a> -->
 							<button class="b-course">了解更多</button>
 						</div>
 				</div>
 			</div><!-- e/o 課程單元 -->
-			<?}?>	
-					
+			<?}?>
+
 		<!-- 課程單元 -->
           <!--div class="unit">
             <div class="unit-inner course">
@@ -165,12 +174,20 @@
                 <?echo html_entity_decode($result1[0]['text']);?>
               </div>
               <div class="readmore">
-                
+
+            <!-- HERE -->
+            <!-- HERE -->
+            <!-- HERE -->
+            <!-- HERE -->
+            <!-- HERE -->
+            <!-- HERE -->
+
+                <!-- <button>...</button> 改成 <a href="<%= f.link %>" class="b-course">了解更多</a> -->
                 <button class="b-event">了解更多</button>
               </div>
             </div>
           </div><!-- e/o 活動單元 -->
-		  	<?}?>	
+		  	<?}?>
           <!-- 活動單元 -->
           <!--div class="unit">
             <div class="unit-inner event">

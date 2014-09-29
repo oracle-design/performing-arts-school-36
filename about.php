@@ -1,4 +1,4 @@
-<?php 
+<?php
 	include "system/lib/mysql.php";
 	include "system/php/indexupdata.php";
 ?>
@@ -43,7 +43,7 @@
 				$result = exe_sql(DATABASE, $sql);
 				for($index=0;$index<count($result);$index++)
 				{
-			?>		
+			?>
 					<img class="img-responsive" src="img/index_slider/<?echo $result[$index]['filename'];?>" alt="">
 			<?}?>
         </div>
@@ -88,8 +88,42 @@
     <div class="container">
 
       <div class="about_content_wrapper">
-        <img src="system/img/<?echo $result[0]['filename'];?>" style="width:300px;height:300px;FLOAT: LEFT; margin:15px;">
-        
+
+
+
+            <!-- HERE -->
+            <!-- HERE -->
+            <!-- HERE -->
+            <!-- HERE -->
+            <!-- HERE -->
+
+
+      <!--
+        <% data.about.content.each do |f| %>
+
+        <div class="unit">
+          <div class="content_title">
+            <h3 id="<%= f.anchor %>"><%= f.title %></h3>
+          </div>
+          <div class="img">
+            <img class="img-responsive" src="<%= f.pic %>" alt="">
+          </div>
+          <div class="content">
+            <% f.content.each do |c| %>
+            <p><%= c %></p>
+            <% end %>
+          </div>
+        </div>
+
+        <% end %>
+      -->
+
+
+            <!-- 下面是舊版 -->
+
+
+        <!-- <img src="system/img/<?echo $result[0]['filename'];?>" style="width:300px;height:300px;FLOAT: LEFT; margin:15px;">
+
         <div class="content_title">
           <h3><?echo $result[0]['subtitle'];?></h3>
         </div>
@@ -97,7 +131,12 @@
         <div class="content">
           <p><?echo html_entity_decode($result[0]['text']);?></p>
         </div>
-        <div style="clear:left; "></div>
+        <div style="clear:left; "></div> -->
+
+
+
+
+
       </div>
 
     </div>
@@ -124,7 +163,7 @@
     e.src='//www.google-analytics.com/analytics.js';
     r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
     ga('create','UA-XXXXX-X','auto');ga('send','pageview');
-    
+
   </script>
 
 

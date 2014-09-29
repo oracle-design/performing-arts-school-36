@@ -1,4 +1,4 @@
-<?php 
+<?php
 	include "system/lib/mysql.php";
 	include "system/php/indexupdata.php";
 ?>
@@ -47,7 +47,16 @@
       <!-- 最新消息 -->
       <div class="index_news">
         <div class="index_main-inner">
-            
+
+
+            <!-- HERE -->
+            <!-- HERE -->
+            <!-- HERE -->
+            <!-- HERE -->
+            <!-- HERE -->
+
+
+
         </div>
       </div><!-- e/o 最新消息 -->
 
@@ -96,7 +105,7 @@
         <div class="index_banner-inner">
           <a href="#">
             <img class="img-responsive" src="http://placehold.it/300x100" alt="banner1" title="banner1">
-            
+
           </a>
         </div>
       </div>
