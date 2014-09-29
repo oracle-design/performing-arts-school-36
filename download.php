@@ -1,3 +1,7 @@
+<?php 
+  include "lib/mysql.php";
+  include "system/php/functions.php";
+?>
 <!DOCTYPE html>
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
@@ -83,147 +87,62 @@
 
 
         <!-- 分類 unit -->
+        <?
+        $sql = "SELECT * FROM download_category ORDER BY id ASC ";
+        $result = exe_sql(DATABASE, $sql);
+        for($index=0;$index<count($result);$index++)
+        {
+       ?>
         <div class="category_block">
-          <h3>分類標題 1</h3>
+          <h3><?echo $result[$index]['catename'];?></h3>
           <div class="files_list">
-
+          <?
+            $sql1 = "SELECT * FROM topic WHERE `size` = ".$result[$index]['id']." AND `category` = 7 AND `status` = 0 ORDER BY id ASC ";
+            $result1 = exe_sql(DATABASE, $sql1);
+            for($index1=0;$index1<count($result1);$index1++)
+            {
+          ?>
             <!-- 檔案 unit -->
             <div class="file_unit">
               <div class="file_wrapper">
-                <h4>檔案標題 1</h4>
+                <h4><?echo cut_content($result1[$index1]['title'],20);?></h4>
+                <?
+                  $sql2 = "SELECT * FROM title WHERE topicid = ".$result1[$index1]['id']." AND `category` = 7 ORDER BY id ASC ";
+                  $result2 = exe_sql(DATABASE, $sql2);
+                ?>
                 <div class="file_info">
-                  <p>和此醫有我性葉那了那古並房的期醫懷我受連管際的了小！得處親，務市態天片花以親！因的加才想灣一時爭者異賣增行實的好傷極。灣起還式各：內低和；連安優示大近何了不見放物太員。</p>
+                  <p><?echo cut_content($result2[0]['text'],84);?></p>
                 </div>
                 <div class="file_type">
-                  <img class="img-responsive" src="./img/asset/file_type/docx.png" alt="">
+                  <?
+                    $cate = explode(".",$result2[0]['filename']);
+                    if($cate[1] == 'docx'){echo '<img class="img-responsive" src="./img/asset/file_type/docx.png" alt="">';}else
+                    if($cate[1] == 'pdf'){echo '<img class="img-responsive" src="./img/asset/file_type/pdf.png" alt="">';}else
+                    if($cate[1] == 'rar'){echo '<img class="img-responsive" src="./img/asset/file_type/rar.png" alt="">';}else
+                    if($cate[1] == 'zip'){echo '<img class="img-responsive" src="./img/asset/file_type/zip.png" alt="">';}else
+                    if($cate[1] == 'xlsx'){echo '<img class="img-responsive" src="./img/asset/file_type/xlsx.png" alt="">';}else
+                    {echo '<img class="img-responsive" src="./img/asset/file_type/other.png" alt="">'; }
+                    
+                  ?>
+                  <!--img class="img-responsive" src="./img/asset/file_type/docx.png" alt=""-->
                 </div>
                 <div class="button">
-                  <a href="#">下載</a>
+                  <a href="system/file/<?echo $result2[0]['filename'];?>">下載</a>
                 </div>
 
               </div>
             </div>
+            <?}?>
             <!-- 檔案 unit -->
-            <div class="file_unit">
-              <div class="file_wrapper">
-                <h4>檔案標題 2</h4>
-                <div class="file_info">
-                  <p>和此醫有我性葉那具工死的運人經的期醫懷我受連管親，務市態天片花以親！因的加才想灣一時爭者異賣增行實的好傷極。灣起還式各：內低和；連安優示大近何了不見放物太員。</p>
-                </div>
-                <div class="file_type">
-                  <img class="img-responsive" src="./img/asset/file_type/docx.png" alt="">
-                </div>
-                <div class="button">
-                  <a href="#">下載</a>
-                </div>
-
-              </div>
-            </div>
+           
             <!-- 檔案 unit -->
-            <div class="file_unit">
-              <div class="file_wrapper">
-                <h4>檔案標題 3</h4>
-                <div class="file_info">
-                  <p>和此醫有我性葉那了那古並房那樂為以連要！路要具工死務市態天片花以親！因的加才想灣一時爭者異賣增行實的好傷極。灣起還式各：內低和；連安優示大近何了不見放物太員。</p>
-                </div>
-                <div class="file_type">
-                  <img class="img-responsive" src="./img/asset/file_type/pdf.png" alt="">
-                </div>
-                <div class="button">
-                  <a href="#">下載</a>
-                </div>
-
-              </div>
-            </div>
+          
             <!-- 檔案 unit -->
-            <div class="file_unit">
-              <div class="file_wrapper">
-                <h4>檔案標題 4</h4>
-                <div class="file_info">
-                  <p>和此醫有我性葉那了那古並房那樂為以連要！路要具工死的運人經的期醫懷我受連管際的了小！得處親，務市態天極。灣起還式各：內低和；連安優示大近何了不見放物太員。</p>
-                </div>
-                <div class="file_type">
-                  <img class="img-responsive" src="./img/asset/file_type/rar.png" alt="">
-                </div>
-                <div class="button">
-                  <a href="#">下載</a>
-                </div>
-
-              </div>
-            </div>
+            
           </div>
         </div>
+        <?}?>
         <!-- 分類 unit -->
-        <div class="category_block">
-          <h3>分類標題 2</h3>
-          <div class="files_list">
-
-            <!-- 檔案 unit -->
-            <div class="file_unit">
-              <div class="file_wrapper">
-                <h4>檔案標題 1</h4>
-                <div class="file_info">
-                  <p>和此醫有我性葉那了那古異賣增行實的好傷極。灣起還式各：內低和；連安優示大近何了不見放物太員。</p>
-                </div>
-                <div class="file_type">
-                  <img class="img-responsive" src="./img/asset/file_type/zip.png" alt="">
-                </div>
-                <div class="button">
-                  <a href="#">下載</a>
-                </div>
-
-              </div>
-            </div>
-            <!-- 檔案 unit -->
-            <div class="file_unit">
-              <div class="file_wrapper">
-                <h4>檔案標題 2</h4>
-                <div class="file_info">
-                  <p>和此醫有我性葉那了那古並房那樂為以連要！路要具工死的運人經的期醫懷我受連管際的了小！得處親，務市態天片花以親！因的優示大近何了不見放物太員。</p>
-                </div>
-                <div class="file_type">
-                  <img class="img-responsive" src="./img/asset/file_type/docx.png" alt="">
-                </div>
-                <div class="button">
-                  <a href="#">下載</a>
-                </div>
-
-              </div>
-            </div>
-            <!-- 檔案 unit -->
-            <div class="file_unit">
-              <div class="file_wrapper">
-                <h4>檔案標題 3</h4>
-                <div class="file_info">
-                  <p>和此醫有我性葉那了那古並房那樂為以連式各：內低和；連安優示大近何了不見放物太員。</p>
-                </div>
-                <div class="file_type">
-                  <img class="img-responsive" src="./img/asset/file_type/pdf.png" alt="">
-                </div>
-                <div class="button">
-                  <a href="#">下載</a>
-                </div>
-
-              </div>
-            </div>
-            <!-- 檔案 unit -->
-            <div class="file_unit">
-              <div class="file_wrapper">
-                <h4>檔案標題 4</h4>
-                <div class="file_info">
-                  <p>和此醫有我性葉那了那古並房那樂為以連要！路要具工死的運人經務市態天片花以親！因的加才想灣一時爭者異賣增行實的好傷極。灣起還式各：內低和；連安優示大近何了不見放物太員。</p>
-                </div>
-                <div class="file_type">
-                  <img class="img-responsive" src="./img/asset/file_type/pdf.png" alt="">
-                </div>
-                <div class="button">
-                  <a href="#">下載</a>
-                </div>
-
-              </div>
-            </div>
-          </div>
-        </div>
 
       </div>
     </div>
@@ -231,7 +150,7 @@
 
 
   <!-- footer -->
-  <?php include "partials/_header.php" ?>
+  <?php include "partials/_footer.php" ?>
 
 
 

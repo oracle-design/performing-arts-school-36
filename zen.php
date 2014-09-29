@@ -1,3 +1,6 @@
+<?php include "lib/mysql.php" ;
+      include "system/php/functions.php" ;
+?>
 <!DOCTYPE html>
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
@@ -28,15 +31,10 @@
   <!-- zen.html -->
 
   <!-- page main title + background pic -->
-  <div class="page_title">
+  <div class="activities_slider">
     <div class="container">
-      <div class="page_title-inner">
-        <div class="page_title-content">
-          <!-- background pic -->
-          <h2>禪鼓體驗</h2>
-          <img class="img-responsive" src="http://placehold.it/1280x300" alt="placeholder">
-        </div>
-      </div>
+    <?php include "partials/_zen_slider.php" ?>
+      
     </div>
   </div>
 
@@ -44,17 +42,24 @@
   <!-- content area -->
   <div class="zen_main_content">
     <div class="container">
+      <?
+        if(!$_GET['aid'])$_GET['aid'] = 0 ;
+        $index = $_GET['aid'];
+        $sql = "SELECT * FROM topic WHERE category  = 8 ORDER BY id ASC ";
+        $result = exe_sql(DATABASE, $sql);
+        $sql1 = "SELECT * FROM title WHERE topicid = ".$result[$index]['id']." ORDER BY id ASC ";
+        $result1 = exe_sql(DATABASE, $sql1);
+      ?>
       <div class="zen_main-wrapper">
-        <h3>Article title</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi veritatis, porro. Delectus natus architecto nostrum, rem quia voluptates, ipsum animi? Esse facilis veniam sunt provident vero deserunt totam repellat explicabo.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi veritatis, porro. Delectus natus architecto nostrum, rem quia voluptates, ipsum animi? Esse facilis veniam sunt provident vero deserunt totam repellat explicabo.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi veritatis, porro. Delectus natus architecto nostrum, rem quia voluptates, ipsum animi? Esse facilis veniam sunt provident vero deserunt totam repellat explicabo.</p>
+        <h3><?echo $result[$index]['title'];?></h3>
+        <p><?echo cut_content(html_entity_decode($result1[0]['text']),224);?></p>
         <div class="navi-buttons">
           <div class="back">
-            <button>回上一頁</button>
+            <!--button src="?aid=<?if($_GET['aid']>0){echo $_GET['aid']-1;}?>">回上一則</button-->
+            <button  onclick="location.href='?aid=<?if($_GET['aid']>0){echo $_GET['aid']-1;}else{echo "0";}?>'">回上一則</button>
           </div>
           <div class="next">
-            <button>下一則</button>
+            <button onclick="location.href='?aid=<?if($_GET['aid']+1<count($result)){echo $_GET['aid']+1;}else{echo $_GET['aid'];}?>'">下一則</button>
           </div>
         </div>
       </div>

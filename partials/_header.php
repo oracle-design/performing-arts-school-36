@@ -22,7 +22,7 @@
         </div>
         <div class="header_banner-logo">
           <div class="logo-wrapper">
-<a href="/">
+<a href="index.php">
               <img class="img-responsive" src="img/asset/header_logo.png" />
 </a>
           </div>
@@ -49,12 +49,12 @@
           <% end %>
 
           -->
-          <li><a class="" href="/about.php">關於 36 房</a></li>
-          <li><a class="" href="/courses.php">活動課程</a></li>
-          <li><a class="" href="/spaces.php">場館介紹</a></li>
-          <li><a class="" href="/activities.php">活動花絮</a></li>
-          <li><a class="" href="/zen.php">禪鼓體驗</a></li>
-          <li><a class="" href="/download.php">下載專區</a></li>
+          <li><a class="" href="about.php">關於 36 房</a></li>
+          <li><a class="" href="courses.php">活動課程</a></li>
+          <li><a class="" href="spaces.php">場館介紹</a></li>
+          <li><a class="" href="activities.php">活動花絮</a></li>
+          <li><a class="" href="zen.php">禪鼓體驗</a></li>
+          <li><a class="" href="download.php">下載專區</a></li>
         </ul>
       </nav>
     </div><!-- e/o navi bar -->

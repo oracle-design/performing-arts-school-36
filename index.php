@@ -1,3 +1,7 @@
+<?php 
+	include "system/lib/mysql.php";
+	include "system/php/indexupdata.php";
+?>
 <!DOCTYPE html>
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
@@ -43,7 +47,7 @@
       <!-- 最新消息 -->
       <div class="index_news">
         <div class="index_main-inner">
-
+            
         </div>
       </div><!-- e/o 最新消息 -->
 
@@ -74,11 +78,25 @@
       <% end %>
 
        -->
-
-      <div class="index_banner-unit">
+      <?
+      $sql = "SELECT * FROM banner WHERE category = 2 ORDER BY  id ASC ";
+      $result = exe_sql(DATABASE, $sql);
+      for($index=0;$index<count($result);$index++)
+      {
+      ?>
+        <div class="index_banner-unit">
+          <div class="index_banner-inner">
+            <a href="#">
+              <img class="img-responsive" src="system/img/index_slider/<?echo $result[$index]['filename'];?>" alt="banner<?echo $index+1;?>" title="banner<?echo $index+1;?>">
+            </a>
+          </div>
+        </div>
+      <?}?>
+      <!--div class="index_banner-unit">
         <div class="index_banner-inner">
           <a href="#">
             <img class="img-responsive" src="http://placehold.it/300x100" alt="banner1" title="banner1">
+            
           </a>
         </div>
       </div>
@@ -109,7 +127,7 @@
             <img class="img-responsive" src="http://placehold.it/300x100" alt="banner5" title="banner5">
           </a>
         </div>
-      </div>
+      </div-->
 
     </div>
   </div>

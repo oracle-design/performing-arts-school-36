@@ -1,3 +1,7 @@
+<?php 
+	include "system/lib/mysql.php";
+	include "system/php/indexupdata.php";
+?>
 <!DOCTYPE html>
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
@@ -16,7 +20,7 @@
     <link href="css/application.css" rel="stylesheet" type="text/css" />
     <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js" type="text/javascript"></script>
   </head>
-  <body>
+  <body onload="">
       <!--[if lt IE 7]>
           <p class="chromeframe">You are using an outdated browser. <a href="http://browsehappy.com/">Upgrade your browser today</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to better experience this site.</p>
       <![endif]-->
@@ -29,13 +33,19 @@
   <!-- about.html -->
 
   <!-- page main title + background pic -->
-  <div class="page_title">
+  <div class="index_slider">
     <div class="container">
-      <div class="page_title-inner">
-        <div class="page_title-content">
-          <!-- background pic -->
-          <h2>關於 36 房</h2>
-          <img class="img-responsive" src="http://placehold.it/1280x300" alt="placeholder">
+      <!-- slider block -->
+      <div class="slider-wrapper theme-default">
+        <div id="slider" class="nivoSlider">
+			<?
+				$sql = "SELECT * FROM banner WHERE category = 3 ORDER BY id ASC ";
+				$result = exe_sql(DATABASE, $sql);
+				for($index=0;$index<count($result);$index++)
+				{
+			?>		
+					<img class="img-responsive" src="img/index_slider/<?echo $result[$index]['filename'];?>" alt="">
+			<?}?>
         </div>
       </div>
     </div>
@@ -56,33 +66,38 @@
             <% end %>
 
             -->
-            <li><a href="#name">表演36房緣起</a></li>
-            <li><a href="#goals">使命與目標</a></li>
-            <li><a href="#utheatre">財團法人優人文化藝術基金會</a></li>
-            <li><a href="#hire">志工招募</a></li>
-            <li><a href="#comm">社區專案</a></li>
-            <li><a href="#tour">參觀導覽</a></li>
+            <li><a href="?aid=1#content">表演36房緣起</a></li>
+            <li><a href="?aid=2#content">使命與目標</a></li>
+            <li><a href="?aid=3#content">財團法人優人文化藝術基金會</a></li>
+            <li><a href="?aid=4#content">志工招募</a></li>
+            <li><a href="?aid=5#content">社區專案</a></li>
+            <li><a href="?aid=6#content">參觀導覽</a></li>
           </ul>
         </div>
       </div>
 
     </div>
   </div>
-
+  <?
+  if($_GET['aid']=='')$_GET['aid']=1;
+  $sql = "SELECT * FROM title WHERE id = ".$_GET['aid'];
+	$result = exe_sql(DATABASE, $sql);
+  ?>
   <!-- content area -->
-  <div class="about_content">
+  <div class="about_content" name="content">
     <div class="container">
 
       <div class="about_content_wrapper">
-
+        <img src="system/img/<?echo $result[0]['filename'];?>" style="width:300px;height:300px;FLOAT: LEFT; margin:15px;">
+        
         <div class="content_title">
-          <h3>Content Title</h3>
+          <h3><?echo $result[0]['subtitle'];?></h3>
         </div>
 
         <div class="content">
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt, cumque. Magnam harum cumque asperiores dolorem id, tempore laborum eveniet cum earum soluta, quis ratione. Placeat rerum est blanditiis, accusantium ut.</p>
+          <p><?echo html_entity_decode($result[0]['text']);?></p>
         </div>
-
+        <div style="clear:left; "></div>
       </div>
 
     </div>
@@ -109,6 +124,7 @@
     e.src='//www.google-analytics.com/analytics.js';
     r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
     ga('create','UA-XXXXX-X','auto');ga('send','pageview');
+    
   </script>
 
 

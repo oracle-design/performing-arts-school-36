@@ -1,3 +1,7 @@
+<?php include "lib/mysql.php" ;
+      include "system/php/functions.php" ;
+?>
+
 <!DOCTYPE html>
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
@@ -70,175 +74,54 @@
         -->
 
         <!-- activities unit -->
-        <div class="unit">
-          <div class="activity_inner">
-            <!-- 封面照片 -->
-            <div class="activity_cover">
-              <img class="img-responsive" src="http://placehold.it/1280x400&text=cover1" alt="">
-            </div>
-            <!-- 活動標題 -->
-            <h3>活動標題1</h3>
-            <!-- 活動描述 -->
-            <div class="description">
-              <p>直護往寶春笑之傳看得輕適接其，公類食甚重放安點主並達而來金舉子飯一是的形都初兒同形同那美實離得小行市計人。一是學此二一我即基的求上行參到會因：不門之道風竟下成度實道下間知需三名邊，文高意系們以。兒學取，年離行後意成是反性獎平前價不家著家大於。</p>
-            </div>
-            <!-- 打開 Gallery（href 指向第一張照片）, data-lightbox 的值可設定為活動 id -->
-            <div class="button">
-              <a class="gallery_trigger" href="http://placehold.it/1024x768&text=act1+pic1" data-lightbox="活動標題1">觀賞照片</a>
-            </div>
-          </div>
-
-          <!-- 放置其他照片給 lightbox 用 -->
-          <div class="gallery_container">
-            <!-- 列出第二張之後的照片 -->
-            <a href="http://placehold.it/1024x768&text=act1+pic2" data-lightbox="活動標題1"></a>
-            <a href="http://placehold.it/1024x768&text=act1+pic3" data-lightbox="活動標題1"></a>
-            <a href="http://placehold.it/1024x768&text=act1+pic4" data-lightbox="活動標題1"></a>
-            <a href="http://placehold.it/1024x768&text=act1+pic5" data-lightbox="活動標題1"></a>
-          </div>
-        </div>
+        
+          <?
+              $sql = "SELECT * FROM topic WHERE category  = 9 ORDER BY id ASC ";
+              $result = exe_sql(DATABASE, $sql);
+              for($index=0;$index<count($result);$index++)
+              {
+                $sql1 = "SELECT * FROM useruppic WHERE topicid = ".$result[$index]['id']." ORDER BY id ASC ";
+                $result1 = exe_sql(DATABASE, $sql1);
+                $sql2 = "SELECT * FROM title WHERE topicid = ".$result[$index]['id']." ORDER BY id ASC ";
+                $result2 = exe_sql(DATABASE, $sql2);
+                ?>
+                <div class="unit">
+                <div class="activity_inner">
+                <!-- 封面照片 -->
+                <div class="activity_cover">
+                <?
+                  if ($result2[0]['filename'] != '')
+                  {
+                ?>
+                    <img class="img-responsive" src="system/img/<?echo $result2[0]['filename'];?>" alt="">
+                <?}?>
+                </div>
+                <!-- 活動標題 -->
+                <h3><?echo $result[$index]['title'];?></h3>
+                <!-- 活動描述 121字-->
+                <div class="description">
+                  <p><?echo cut_content(html_entity_decode($result2[0]['text']),121);?></p>
+                </div>
+                <!-- 打開 Gallery（href 指向第一張照片）, data-lightbox 的值可設定為活動 id -->
+                <div class="button">
+                  <a class="gallery_trigger" href="system/img/<?echo $result1[0]['filename'];?>" data-lightbox="<?echo $result[$index]['id'];?>">觀賞照片</a>
+                </div>
+                </div>
+                <!-- 放置其他照片給 lightbox 用 -->
+                <div class="gallery_container">
+                  <!-- 列出第二張之後的照片 -->
+                  <?
+                    for($i=1;$i<count($result1);$i++)
+                    {
+                  ?>
+                      <a href="system/img/<?echo $result1[$i]['filename'];?>" data-lightbox="<?echo $result[$index]['id'];?>"></a>
+                  <?}?>
+                </div>
+                </div>
+            <?}?>
+        
         <!-- activities unit -->
-        <div class="unit">
-          <div class="activity_inner">
-            <!-- 封面照片 -->
-            <div class="activity_cover">
-              <img class="img-responsive" src="http://placehold.it/1280x400&text=cover2" alt="">
-            </div>
-            <!-- 活動標題 -->
-            <h3>活動標題2</h3>
-            <!-- 活動描述 -->
-            <div class="description">
-              <p>直護往寶春笑之傳看得輕適接其，公類食甚重放安點主並達而來金舉子飯一是的形都初兒同形同那美實離得小行市計人。一是學此二一我即基的求上行參到會因：不門之道風竟下成度實道下間知需三名邊，文高意系們以。兒學取，年離行後意成是反性獎平前價不家著家大於。</p>
-            </div>
-            <!-- 打開 Gallery（href 指向第一張照片）, data-lightbox 的值可設定為活動 id -->
-            <div class="button">
-              <a class="gallery_trigger" href="http://placehold.it/1024x768&text=act2+pic1" data-lightbox="活動標題2">觀賞照片</a>
-            </div>
-          </div>
-
-          <!-- 放置其他照片給 lightbox 用 -->
-          <div class="gallery_container">
-            <!-- 列出第二張之後的照片 -->
-            <a href="http://placehold.it/1024x768&text=act2+pic2" data-lightbox="活動標題2"></a>
-            <a href="http://placehold.it/1024x768&text=act2+pic3" data-lightbox="活動標題2"></a>
-            <a href="http://placehold.it/1024x768&text=act2+pic4" data-lightbox="活動標題2"></a>
-            <a href="http://placehold.it/1024x768&text=act2+pic5" data-lightbox="活動標題2"></a>
-          </div>
         </div>
-        <!-- activities unit -->
-        <div class="unit">
-          <div class="activity_inner">
-            <!-- 封面照片 -->
-            <div class="activity_cover">
-              <img class="img-responsive" src="http://placehold.it/1280x400&text=cover3" alt="">
-            </div>
-            <!-- 活動標題 -->
-            <h3>活動標題3</h3>
-            <!-- 活動描述 -->
-            <div class="description">
-              <p>直護往寶春笑之傳看得輕適接其，公類食甚重放安點主並達而來金舉子飯一是的形都初兒同形同那美實離得小行市計人。一是學此二一我即基的求上行參到會因：不門之道風竟下成度實道下間知需三名邊，文高意系們以。兒學取，年離行後意成是反性獎平前價不家著家大於。</p>
-            </div>
-            <!-- 打開 Gallery（href 指向第一張照片）, data-lightbox 的值可設定為活動 id -->
-            <div class="button">
-              <a class="gallery_trigger" href="http://placehold.it/1024x768&text=act3+pic1" data-lightbox="活動標題3">觀賞照片</a>
-            </div>
-          </div>
-
-          <!-- 放置其他照片給 lightbox 用 -->
-          <div class="gallery_container">
-            <!-- 列出第二張之後的照片 -->
-            <a href="http://placehold.it/1024x768&text=act3+pic2" data-lightbox="活動標題3"></a>
-            <a href="http://placehold.it/1024x768&text=act3+pic3" data-lightbox="活動標題3"></a>
-            <a href="http://placehold.it/1024x768&text=act3+pic4" data-lightbox="活動標題3"></a>
-            <a href="http://placehold.it/1024x768&text=act3+pic5" data-lightbox="活動標題3"></a>
-          </div>
-        </div>
-        <!-- activities unit -->
-        <div class="unit">
-          <div class="activity_inner">
-            <!-- 封面照片 -->
-            <div class="activity_cover">
-              <img class="img-responsive" src="http://placehold.it/1280x400&text=cover4" alt="">
-            </div>
-            <!-- 活動標題 -->
-            <h3>活動標題4</h3>
-            <!-- 活動描述 -->
-            <div class="description">
-              <p>直護往寶春笑之傳看得輕適接其，公類食甚重放安點主並達而來金舉子飯一是的形都初兒同形同那美實離得小行市計人。一是學此二一我即基的求上行參到會因：不門之道風竟下成度實道下間知需三名邊，文高意系們以。兒學取，年離行後意成是反性獎平前價不家著家大於。</p>
-            </div>
-            <!-- 打開 Gallery（href 指向第一張照片）, data-lightbox 的值可設定為活動 id -->
-            <div class="button">
-              <a class="gallery_trigger" href="http://placehold.it/1024x768&text=act4+pic1" data-lightbox="活動標題4">觀賞照片</a>
-            </div>
-          </div>
-
-          <!-- 放置其他照片給 lightbox 用 -->
-          <div class="gallery_container">
-            <!-- 列出第二張之後的照片 -->
-            <a href="http://placehold.it/1024x768&text=act4+pic2" data-lightbox="活動標題4"></a>
-            <a href="http://placehold.it/1024x768&text=act4+pic3" data-lightbox="活動標題4"></a>
-            <a href="http://placehold.it/1024x768&text=act4+pic4" data-lightbox="活動標題4"></a>
-            <a href="http://placehold.it/1024x768&text=act4+pic5" data-lightbox="活動標題4"></a>
-          </div>
-        </div>
-        <!-- activities unit -->
-        <div class="unit">
-          <div class="activity_inner">
-            <!-- 封面照片 -->
-            <div class="activity_cover">
-              <img class="img-responsive" src="http://placehold.it/1280x400&text=cover5" alt="">
-            </div>
-            <!-- 活動標題 -->
-            <h3>活動標題5</h3>
-            <!-- 活動描述 -->
-            <div class="description">
-              <p>直護往寶春笑之傳看得輕適接其，公類食甚重放安點主並達而來金舉子飯一是的形都初兒同形同那美實離得小行市計人。一是學此二一我即基的求上行參到會因：不門之道風竟下成度實道下間知需三名邊，文高意系們以。兒學取，年離行後意成是反性獎平前價不家著家大於。</p>
-            </div>
-            <!-- 打開 Gallery（href 指向第一張照片）, data-lightbox 的值可設定為活動 id -->
-            <div class="button">
-              <a class="gallery_trigger" href="http://placehold.it/1024x768&text=act5+pic1" data-lightbox="活動標題5">觀賞照片</a>
-            </div>
-          </div>
-
-          <!-- 放置其他照片給 lightbox 用 -->
-          <div class="gallery_container">
-            <!-- 列出第二張之後的照片 -->
-            <a href="http://placehold.it/1024x768&text=act5+pic2" data-lightbox="活動標題5"></a>
-            <a href="http://placehold.it/1024x768&text=act5+pic3" data-lightbox="活動標題5"></a>
-            <a href="http://placehold.it/1024x768&text=act5+pic4" data-lightbox="活動標題5"></a>
-            <a href="http://placehold.it/1024x768&text=act5+pic5" data-lightbox="活動標題5"></a>
-          </div>
-        </div>
-        <!-- activities unit -->
-        <div class="unit">
-          <div class="activity_inner">
-            <!-- 封面照片 -->
-            <div class="activity_cover">
-              <img class="img-responsive" src="http://placehold.it/1280x400&text=cover6" alt="">
-            </div>
-            <!-- 活動標題 -->
-            <h3>活動標題6</h3>
-            <!-- 活動描述 -->
-            <div class="description">
-              <p>直護往寶春笑之傳看得輕適接其，公類食甚重放安點主並達而來金舉子飯一是的形都初兒同形同那美實離得小行市計人。一是學此二一我即基的求上行參到會因：不門之道風竟下成度實道下間知需三名邊，文高意系們以。兒學取，年離行後意成是反性獎平前價不家著家大於。</p>
-            </div>
-            <!-- 打開 Gallery（href 指向第一張照片）, data-lightbox 的值可設定為活動 id -->
-            <div class="button">
-              <a class="gallery_trigger" href="http://placehold.it/1024x768&text=act6+pic1" data-lightbox="活動標題6">觀賞照片</a>
-            </div>
-          </div>
-
-          <!-- 放置其他照片給 lightbox 用 -->
-          <div class="gallery_container">
-            <!-- 列出第二張之後的照片 -->
-            <a href="http://placehold.it/1024x768&text=act6+pic2" data-lightbox="活動標題6"></a>
-            <a href="http://placehold.it/1024x768&text=act6+pic3" data-lightbox="活動標題6"></a>
-            <a href="http://placehold.it/1024x768&text=act6+pic4" data-lightbox="活動標題6"></a>
-            <a href="http://placehold.it/1024x768&text=act6+pic5" data-lightbox="活動標題6"></a>
-          </div>
-        </div>
-
-      </div>
     </div>
   </div>
 

@@ -1,3 +1,6 @@
+<?php 
+	include "lib/mysql.php";
+?>
 <!DOCTYPE html>
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
@@ -67,22 +70,37 @@
           -->
 
           <!-- 課程單元 -->
+		  <?
+			$sql = "SELECT * FROM  `topic` WHERE  `category` = 6";
+			$result = exe_sql(DATABASE, $sql);
+			for($index=0;$index<count($result);$index++)
+			{
+		?>
+		  
           <div class="unit">
             <div class="unit-inner course">
-              <h3>成人擊鼓班</h3>
+              <h3><?echo $result[$index]['title'];?></h3>
               <div class="mobile-photo">
-                <img class="img-responsive" src="http://placehold.it/500x500" alt="">
-              </div>
-              <div class="description">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus incidunt suscipit eos voluptates dolor amet, vero magnam. Magni, repellat vero consequatur similique dolorem, magnam soluta asperiores, aliquam incidunt ad debitis?</p>
-              </div>
-              <div class="readmore">
-                <button class="b-course">了解更多</button>
-              </div>
-            </div>
-          </div><!-- e/o 課程單元 -->
-          <!-- 課程單元 -->
-          <div class="unit">
+				<?
+					$sql1 = "SELECT *  FROM `title` WHERE  `topicid` = ".$result[$index]['id'];
+					$result1 = exe_sql(DATABASE, $sql1);
+					
+				?>
+						<img class="img-responsive" src="system/img/<?echo $result1[0]['filename'];?>" alt="">
+			  </div>
+						<div class="description">
+						<p><?echo $result1[0]['subtitle'];?></p>
+            <?echo html_entity_decode($result1[0]['text']);?>
+						</div>
+						<div class="readmore">
+							<button class="b-course">了解更多</button>
+						</div>
+				</div>
+			</div><!-- e/o 課程單元 -->
+			<?}?>	
+					
+		<!-- 課程單元 -->
+          <!--div class="unit">
             <div class="unit-inner course">
               <h3>兒童擊鼓班</h3>
               <div class="mobile-photo">
@@ -126,22 +144,35 @@
           -->
 
           <!-- 活動單元 -->
+		  <?
+			$sql = "SELECT *FROM  `topic` WHERE  `category` = 5";
+			$result = exe_sql(DATABASE, $sql);
+			for($index=0;$index<count($result);$index++)
+			{
+		?>
           <div class="unit">
             <div class="unit-inner event">
-              <h3>何必遠方</h3>
+              <h3><?echo $result[$index]['title'];?></h3>
               <div class="mobile-photo">
-                <img class="img-responsive" src="http://placehold.it/500x500" alt="">
+                <?
+					$sql1 = "SELECT * FROM `title` WHERE  `topicid` = ".$result[$index]['id'];
+					$result1 = exe_sql(DATABASE, $sql1);
+				?>
+						<img class="img-responsive" src="system/img/<?echo $result1[0]['filename'];?>" alt="">
               </div>
               <div class="description">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam vel reprehenderit cumque incidunt! Beatae cupiditate ea repellendus, vel alias, dolor ut commodi neque eius rem, optio illo dolore nisi!</p>
+                <p><?echo $result1[0]['subtitle'];?></p>
+                <?echo html_entity_decode($result1[0]['text']);?>
               </div>
               <div class="readmore">
+                
                 <button class="b-event">了解更多</button>
               </div>
             </div>
           </div><!-- e/o 活動單元 -->
+		  	<?}?>	
           <!-- 活動單元 -->
-          <div class="unit">
+          <!--div class="unit">
             <div class="unit-inner event">
               <h3>太極引導</h3>
               <div class="mobile-photo">
