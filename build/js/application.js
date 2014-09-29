@@ -1,6 +1,6 @@
 (function() {
   // Slider blocks;
-  var activitiesSlider, courseSlider, facebookBlock, indexNewsBlock, indexSlider, newsHeight;
+  var activitiesSlider, courseSlider, facebookBlock, indexNewsBlock, indexSlider;
 
   indexSlider = $('.index_slider .nivoSlider');
 
@@ -16,8 +16,6 @@
 
   indexNewsBlock = $('.index_news');
 
-  newsHeight = indexNewsBlock.height() - 23;
-
   $(window).load(function() {
     // using nivoSlider;
     indexSlider.add(courseSlider).add(activitiesSlider).nivoSlider({
@@ -27,6 +25,15 @@
       prevText: '上一張',
       nextText: "下一張"
     });
+  });
+
+  $(document).ready(function() {
+    var newsHeight;
+    if (window.innerWidth >= 600) {
+      newsHeight = indexNewsBlock.height() - 23;
+      facebookBlock.height(newsHeight);
+      return null;
+    }
   });
 
 }).call(this);
