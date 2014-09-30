@@ -32,7 +32,7 @@ news:
 
 slider:
   -
-    content: "<img src='./img/index_slider/01.jpg' alt=''>"
+    content: '<iframe width="560" height="315" src="//www.youtube.com/embed/qc1A3_NeUPI" frameborder="0" allowfullscreen></iframe>'
   -
     content: "<img src='./img/index_slider/02.jpg' alt=''>"
   -
@@ -42,7 +42,7 @@ slider:
   -
     content: "<img src='./img/index_slider/05.jpg' alt=''>"
   -
-    content: '<iframe width="560" height="315" src="//www.youtube.com/embed/TUHgGK-tImY" frameborder="0" allowfullscreen></iframe>'
+    content: "<img src='./img/index_slider/01.jpg' alt=''>"
 
 
 

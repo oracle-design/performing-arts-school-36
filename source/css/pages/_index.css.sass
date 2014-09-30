@@ -6,7 +6,8 @@
 // *************************************
 
 body
-  background-image: image-url("asset/bg-paper.png")
+  background: image-url("asset/site-bg.jpg") fixed center 50px no-repeat
+  +background-size(cover)
 
 button:focus
   outline: 0
@@ -32,19 +33,40 @@ button::-moz-focus-inner
   width: 100%
   height: auto
   text-align: center
+  .header_top
+    text-align: left
+    background-color: $c-header-top
+    font-size: $fz-s
+    color: #fff
+    padding: $polaroid/2
+    margin-top: 44px
+    a
+      color: #fff
+    .fa-inverse
+      color: $c-header-top
+    +breakpoint($b-mobile)
+      margin-top: 0
+  .header_top-icons
+    +span(6)
+  .header_top-subscribe
+    +span(6)
+    text-align: right
+    padding-top: 3px
+  .subscribe-button
+    +sassy-button("flat", 5px, $fz-s, darken($c-banner-subscribe, 1%))
 
   .header_banner
     +span(12)
     background-color: $c-background
     padding: 1em 0
-    margin-top: 44px
+    // margin-top: 44px
     // border-top: 1em solid $c-banner-top
     +breakpoint($b-mobile)
-      margin-top: 1em
-      border-top: 1em solid $c-banner-top
+      // margin-top: 1em
+      // border-top: 1em solid $c-banner-top
   .menu-btn
     position: fixed
-    width: $w-mobile
+    width: 100%
     top: 0
     background-color: $c-banner-top
     color: #fff
@@ -76,8 +98,6 @@ button::-moz-focus-inner
   .header_banner-subscribe
     +span(3)
     padding-top: 1em
-    .subscribe-button
-      +sassy-button("flat", 5px, $fz-s, darken($c-banner-subscribe, 1%))
 
   nav
     height: 44px
@@ -113,13 +133,20 @@ button::-moz-focus-inner
   @extend %polaroid
   +span(12)
   padding: 0
-  h2
+  .index_news-title
+    display: block
     background-color: $c-index-news-title-bg
-    padding: $polaroid
-    margin: 0 0 $polaroid 0
+    padding: $polaroid/2 $polaroid
+    margin: 0
     color: white
     font-size: $fz-l
     text-align: center
+    .more
+      float: right
+      text-align: right
+    &:hover
+      text-decoration: none
+      background-color: lighten($c-index-news-title-bg, 5%)
   .unit
     +clearfix
     display: block
@@ -181,7 +208,13 @@ button::-moz-focus-inner
       text-align: left
   .unit:hover
     background-color: #eee
-
+.index_facebook-title
+  margin: 0
+  padding: $polaroid/2
+  background-color: $c-index-fb-title-bg
+  color: #fff
+  font-size: $fz-l
+  text-align: center
 .index_facebook
   @extend %polaroid
   padding: 0 0 $polaroid/2 0
@@ -214,6 +247,19 @@ button::-moz-focus-inner
     margin-top: $polaroid/2
     +breakpoint($b-mobile)
       +gallery(2.4)
+  .index_banner-unit:first-child
+    +breakpoint($b-mobile)
+      padding-left: 0
+  .index_banner-unit:nth-child(5n +5)
+    +breakpoint($b-mobile)
+      padding-right: 0
+
+  .divider
+    height: 1px
+    width: 100%
+    background-color: #000
+    +breakpoint($b-mobile)
+      margin-bottom: 3px
 
   .index_banner-inner
     background-color: #FFF

@@ -15,7 +15,7 @@ title: 表演 36 房
     <div class="container">
       <!-- 最新消息 -->
       <div class="index_news">
-        <h2>最新消息</h2>
+        <a href="#" class="index_news-title trans-05s">■ Hot News <span class="more">more</span></a>
         <div class="index_news-inner">
 
           <% data.index.news.each do |f| %>
@@ -51,6 +51,7 @@ title: 表演 36 房
 
       <!-- facebook -->
       <div class="index_facebook">
+        <h2 class="index_facebook-title">facebook</h2>
         <div class="index_main-inner">
           <iframe class="facebook_block" src="//www.facebook.com/plugins/likebox.php?href=https%3A%2F%2Fwww.facebook.com%2Fpas36&amp;colorscheme=light&amp;show_faces=true&amp;header=false&amp;stream=true&amp;show_border=false&amp;appId=266049590099572" scrolling="no" frameborder="0" style="border:none; overflow:hidden;" allowTransparency="true"></iframe>
         </div>
@@ -62,7 +63,9 @@ title: 表演 36 房
   <!-- little banners -->
   <div class="index_banners">
     <div class="container">
-
+      <div class="divider"></div>
+    </div>
+    <div class="container">
       <% data.index.banner.each do |f| %>
       <div class="index_banner-unit">
         <div class="index_banner-inner">

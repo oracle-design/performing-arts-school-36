@@ -34,7 +34,7 @@ $(document).ready ->
 
 $(window).load ->
   if window.innerWidth >= 600
-    newsHeight= indexNewsBlock.height()-23
+    newsHeight= indexNewsBlock.height()-54
     facebookBlock.height(newsHeight)
     null
 

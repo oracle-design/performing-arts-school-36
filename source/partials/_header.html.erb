@@ -1,15 +1,12 @@
 <!-- header -->
   <div class="header">
-    <!-- banner -->
-    <div class="container">
 
-      <div class="menu-btn only-mobile">&#9776; Menu</div>
+    <div class="menu-btn only-mobile">&#9776; Menu</div>
 
-      <div class="header_banner">
-        <!-- facebook and back2home link icon -->
-        <div class="header_banner-icons hidden-mobile">
+    <div class="header_top">
+      <div class="container">
+        <div class="header_top-icons">
           <% link_to 'https://www.facebook.com/pas36', :target => '_blank', :class => "trans-05s" do %>
-
             <span class="fa-stack fa-lg">
               <i class="fa fa-circle fa-stack-2x"></i>
               <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
@@ -23,8 +20,21 @@
               <i class="fa fa-home fa-stack-1x fa-inverse"></i>
             </span>
           <% end %>
-
+          <span> | </span>
           <%= link_to '聯絡我們', '/contact.html', :class => "contact_us" %>
+        </div>
+        <div class="header_top-subscribe">
+          <button class="subscribe-button" type="button">Subscribe | 訂閱</button>
+        </div>
+
+      </div>
+    </div>
+    <!-- banner -->
+    <div class="container">
+
+      <div class="header_banner">
+        <!-- facebook and back2home link icon -->
+        <div class="header_banner-icons hidden-mobile">
 
         </div>
         <div class="header_banner-logo">
@@ -37,7 +47,7 @@
           </div>
         </div>
         <div class="header_banner-subscribe hidden-mobile">
-          <button class="subscribe-button" type="button">Subscribe | 訂閱</button>
+
         </div>
       </div>
     </div><!-- e/o banner -->
