@@ -100,8 +100,17 @@ button::-moz-focus-inner
       // min-height: 80px
       width: 200px
       @extend %m0auto
+      img
+        background-color: rgba(#fff, 0.8)
+        padding: $polaroid/2
+        +border-radius(5px)
+        border: 1px solid #eee
       +breakpoint($b-mobile)
         +span(12)
+        img
+          background: none
+          padding: 0
+          border: none
   .header_banner-subscribe
     +span(1)
     padding-top: 1em
@@ -521,7 +530,8 @@ button::-moz-focus-inner
       background: url("../img/time_line_bg.jpg") repeat-y center top
     #templatemo_timeline .right_timer span
       display: block
-
+#templatemo_timeline
+  opacity: 0
 
 // download
 .download_list
