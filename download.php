@@ -1,4 +1,4 @@
-<?php 
+<?php
   include "lib/mysql.php";
   include "system/php/functions.php";
 ?>
@@ -20,7 +20,7 @@
     <link href="css/application.css" rel="stylesheet" type="text/css" />
     <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js" type="text/javascript"></script>
   </head>
-  <body>
+  <body class="opacity0">
       <!--[if lt IE 7]>
           <p class="chromeframe">You are using an outdated browser. <a href="http://browsehappy.com/">Upgrade your browser today</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to better experience this site.</p>
       <![endif]-->
@@ -31,20 +31,6 @@
 
 
   <!-- download.html -->
-
-  <!-- page main title + background pic -->
-  <div class="page_title">
-    <div class="container">
-      <div class="page_title-inner">
-        <div class="page_title-content">
-          <!-- background pic -->
-          <h2>下載專區</h2>
-          <img class="img-responsive" src="http://placehold.it/1280x300" alt="placeholder">
-        </div>
-      </div>
-    </div>
-  </div>
-
 
   <div class="download_list">
     <div class="container">
@@ -122,7 +108,7 @@
                     if($cate[1] == 'zip'){echo '<img class="img-responsive" src="./img/asset/file_type/zip.png" alt="">';}else
                     if($cate[1] == 'xlsx'){echo '<img class="img-responsive" src="./img/asset/file_type/xlsx.png" alt="">';}else
                     {echo '<img class="img-responsive" src="./img/asset/file_type/other.png" alt="">'; }
-                    
+
                   ?>
                   <!--img class="img-responsive" src="./img/asset/file_type/docx.png" alt=""-->
                 </div>
@@ -134,11 +120,11 @@
             </div>
             <?}?>
             <!-- 檔案 unit -->
-           
+
             <!-- 檔案 unit -->
-          
+
             <!-- 檔案 unit -->
-            
+
           </div>
         </div>
         <?}?>

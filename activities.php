@@ -20,7 +20,7 @@
     <link href="css/application.css" rel="stylesheet" type="text/css" />
     <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js" type="text/javascript"></script>
   </head>
-  <body>
+  <body class="opacity0">
       <!--[if lt IE 7]>
           <p class="chromeframe">You are using an outdated browser. <a href="http://browsehappy.com/">Upgrade your browser today</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to better experience this site.</p>
       <![endif]-->
@@ -34,7 +34,18 @@
   <!-- slider -->
   <div class="activities_slider">
     <div class="container">
+
+      <!-- 分隔墨線 -->
+      <div class="banner-divider">
+        <img src="/img/asset/banner-divider.png" alt="" class="img-responsive">
+      </div>
+
       <?php include "partials/_activities_slider.php" ?>
+
+      <!-- 分隔墨線 -->
+      <div class="banner-divider">
+        <img src="/img/asset/banner-divider.png" alt="" class="img-responsive">
+      </div>
 
     </div>
   </div><!-- e/o slider -->

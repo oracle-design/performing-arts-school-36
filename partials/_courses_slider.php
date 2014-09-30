@@ -5,14 +5,16 @@
           <!--
 
           <% data.courses.slider.each do |f| %>
-            <img class="img-responsive" src="<%= f.img %>" alt="" title="<%= f.title %>">
+            <img class="img-responsive" src="<%= f.img %>" alt="" title="">
           <% end %>
 
+          title attr. 拿掉不要了
+
           -->
-            <img class="img-responsive" src="./img/index_slider/01.jpg" alt="" title="Title 標題一">
-            <img class="img-responsive" src="./img/index_slider/02.jpg" alt="" title="Title 標題二">
-            <img class="img-responsive" src="./img/index_slider/03.jpg" alt="" title="Title 標題三">
-            <img class="img-responsive" src="http://placehold.it/1280x400" alt="" title="Title 標題四">
+            <img class="img-responsive" src="./img/index_slider/01.jpg" alt="" title="">
+            <img class="img-responsive" src="./img/index_slider/02.jpg" alt="" title="">
+            <img class="img-responsive" src="./img/index_slider/03.jpg" alt="" title="">
+            <img class="img-responsive" src="./img/index_slider/04.jpg" alt="" title="">
         </div>
       </div>
 

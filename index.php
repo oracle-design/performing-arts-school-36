@@ -20,7 +20,7 @@
     <link href="css/application.css" rel="stylesheet" type="text/css" />
     <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js" type="text/javascript"></script>
   </head>
-  <body>
+  <body class="opacity0">
       <!--[if lt IE 7]>
           <p class="chromeframe">You are using an outdated browser. <a href="http://browsehappy.com/">Upgrade your browser today</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to better experience this site.</p>
       <![endif]-->
@@ -35,7 +35,17 @@
   <div class="index_slider">
     <div class="container">
 
+      <!-- 分隔墨線 -->
+      <div class="banner-divider">
+        <img src="/img/asset/banner-divider.png" alt="" class="img-responsive">
+      </div>
+
       <?php include "partials/_index_slider.php" ?>
+
+      <!-- 分隔墨線 -->
+      <div class="banner-divider">
+        <img src="/img/asset/banner-divider.png" alt="" class="img-responsive">
+      </div>
 
     </div>
   </div><!-- e/o slider -->
@@ -46,17 +56,25 @@
 
       <!-- 最新消息 -->
       <div class="index_news">
-        <div class="index_main-inner">
-            <!-- HERE -->
-            <!-- HERE -->
+        <a href="#" class="index_news-title trans-05s">最新消息</a>
+        <div class="index_news-inner">
+
             <?
-            $sql = "SELECT *,title.filename AS TTN FROM topic LEFT JOIN title 
+            $sql = "SELECT *,title.filename AS TTN FROM topic LEFT JOIN title
 ON topic.id=title.topicId WHERE topic.category  = 10 ORDER BY topic.id ASC LIMIT 0,5";
             $result = exe_sql(DATABASE, $sql);
             for($index=0;$index<count($result);$index++)
             {
             ?>
+
+
+          <!-- news unit -->
+
+            <!--
+              這邊要連結到正確的單則新聞頁面
+            -->
             <a href="show/news.php" class="unit curl-top-right  trans-05s">
+
             <!-- left for feature pic -->
             <div class="left">
               <img class="img-responsive" src="system/img/<? echo $result[$index]['TTN'];?>" alt="">
@@ -79,10 +97,6 @@ ON topic.id=title.topicId WHERE topic.category  = 10 ORDER BY topic.id ASC LIMIT
             </div>
             </a>
             <?}?>
-            <!-- HERE -->
-            <!-- HERE -->
-
-
 
         </div>
       </div><!-- e/o 最新消息 -->
@@ -122,48 +136,17 @@ ON topic.id=title.topicId WHERE topic.category  = 10 ORDER BY topic.id ASC LIMIT
       ?>
         <div class="index_banner-unit">
           <div class="index_banner-inner">
+
+            <!--
+              可能要確認一下這個 banner 的用途是不是要連結到別的頁面，是的話這邊應該要有個 link 欄位
+            -->
             <a href="#">
               <img class="img-responsive" src="system/img/index_slider/<?echo $result[$index]['filename'];?>" alt="banner<?echo $index+1;?>" title="banner<?echo $index+1;?>">
             </a>
+
           </div>
         </div>
       <?}?>
-      <!--div class="index_banner-unit">
-        <div class="index_banner-inner">
-          <a href="#">
-            <img class="img-responsive" src="http://placehold.it/300x100" alt="banner1" title="banner1">
-
-          </a>
-        </div>
-      </div>
-      <div class="index_banner-unit">
-        <div class="index_banner-inner">
-          <a href="#">
-            <img class="img-responsive" src="http://placehold.it/300x100" alt="banner2" title="banner2">
-          </a>
-        </div>
-      </div>
-      <div class="index_banner-unit">
-        <div class="index_banner-inner">
-          <a href="#">
-            <img class="img-responsive" src="http://placehold.it/300x100" alt="banner3" title="banner3">
-          </a>
-        </div>
-      </div>
-      <div class="index_banner-unit">
-        <div class="index_banner-inner">
-          <a href="#">
-            <img class="img-responsive" src="http://placehold.it/300x100" alt="banner4" title="banner4">
-          </a>
-        </div>
-      </div>
-      <div class="index_banner-unit">
-        <div class="index_banner-inner">
-          <a href="#">
-            <img class="img-responsive" src="http://placehold.it/300x100" alt="banner5" title="banner5">
-          </a>
-        </div>
-      </div-->
 
     </div>
   </div>

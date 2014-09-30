@@ -20,7 +20,7 @@
     <link href="css/application.css" rel="stylesheet" type="text/css" />
     <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js" type="text/javascript"></script>
   </head>
-  <body onload="">
+  <body class="opacity0" onload="">
       <!--[if lt IE 7]>
           <p class="chromeframe">You are using an outdated browser. <a href="http://browsehappy.com/">Upgrade your browser today</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to better experience this site.</p>
       <![endif]-->
@@ -33,20 +33,33 @@
   <!-- about.html -->
 
   <!-- page main title + background pic -->
-  <div class="index_slider">
+
+  <!--
+    這邊不是 slider，是單張底圖
+  -->
+  <div class="page_title">
     <div class="container">
-      <!-- slider block -->
-      <div class="slider-wrapper theme-default">
-        <div id="slider" class="nivoSlider">
-			<?
-				$sql = "SELECT * FROM banner WHERE category = 3 ORDER BY id ASC ";
-				$result = exe_sql(DATABASE, $sql);
-				for($index=0;$index<count($result);$index++)
-				{
-			?>
-					<img class="img-responsive" src="img/index_slider/<?echo $result[$index]['filename'];?>" alt="">
-			<?}?>
+
+      <!-- 分隔墨線 -->
+      <div class="banner-divider">
+        <img src="/img/asset/banner-divider.png" alt="" class="img-responsive">
+      </div>
+
+      <div class="page_title-inner">
+        <div class="page_title-content">
+
+          <!--
+            下面這張圖可能需要讓客戶自己更換
+          -->
+
+          <!-- background pic -->
+          <img class="img-responsive" src="./img/index_slider/02.jpg" alt="">
         </div>
+      </div>
+
+      <!-- 分隔墨線 -->
+      <div class="banner-divider">
+        <img src="/img/asset/banner-divider.png" alt="" class="img-responsive">
       </div>
     </div>
   </div>
@@ -78,21 +91,26 @@
 
     </div>
   </div>
-  
+
   <div class="about_content" name="content">
     <div class="container">
       <div class="about_content_wrapper">
 
+        <!--
+          這邊可以用 loop 讓六個一次出現嗎？上面 link 連到 anchor，這樣 navi menu 才能運作
+          不然就是 navi menu 的 link 要對應到正確的 aid params
+          麻煩你了 T-T
+        -->
 
-            <!-- HERE -->
-            <!-- HERE -->
-             <?
-              if($_GET['aid']=='')$_GET['aid']=1;
-              $sql = "SELECT * FROM title WHERE id = ".$_GET['aid'];
-              $result = exe_sql(DATABASE, $sql);
-              ?>
-            <div class="unit">
+       <?
+        if($_GET['aid']=='')$_GET['aid']=1;
+        $sql = "SELECT * FROM title WHERE id = ".$_GET['aid'];
+        $result = exe_sql(DATABASE, $sql);
+        ?>
+
+        <div class="unit">
           <div class="content_title">
+            <!-- id 可以的話設個 anchor -->
             <h3 id="name"><?echo $result[0]['subtitle'];?></h3>
           </div>
           <div class="img">
@@ -100,10 +118,12 @@
           </div>
           <div class="content">
             <p><?echo html_entity_decode($result[0]['text']);?></p>
+
+            <!-- 新增回到頁首 link -->
+            <div class="back2top"><a href="#top">▲回到頁首▲</a></div>
           </div>
         </div>
-            <!-- HERE -->
-            <!-- HERE -->
+
 
 
       <!--
@@ -126,27 +146,7 @@
         <% end %>
       -->
 
-
-            <!-- 下面是舊版 -->
-
-
-        <!-- <img src="system/img/<?echo $result[0]['filename'];?>" style="width:300px;height:300px;FLOAT: LEFT; margin:15px;">
-
-        <div class="content_title">
-          <h3><?echo $result[0]['subtitle'];?></h3>
-        </div>
-
-        <div class="content">
-          <p><?echo html_entity_decode($result[0]['text']);?></p>
-        </div>
-        <div style="clear:left; "></div> -->
-
-
-
-
-
       </div>
-
     </div>
   </div>
 

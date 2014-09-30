@@ -19,7 +19,7 @@
     <link href="css/application.css" rel="stylesheet" type="text/css" />
     <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js" type="text/javascript"></script>
   </head>
-  <body>
+  <body class="opacity0">
       <!--[if lt IE 7]>
           <p class="chromeframe">You are using an outdated browser. <a href="http://browsehappy.com/">Upgrade your browser today</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to better experience this site.</p>
       <![endif]-->
@@ -33,7 +33,19 @@
   <!-- slider -->
   <div class="course_slider">
     <div class="container">
+
+      <!-- 分隔墨線 -->
+      <div class="banner-divider">
+        <img src="/img/asset/banner-divider.png" alt="" class="img-responsive">
+      </div>
+
       <?php include "partials/_courses_slider.php" ?>
+
+      <!-- 分隔墨線 -->
+      <div class="banner-divider">
+        <img src="/img/asset/banner-divider.png" alt="" class="img-responsive">
+      </div>
+
     </div>
   </div><!-- e/o slider -->
 
@@ -87,19 +99,12 @@
 
 				?>
 						<img class="img-responsive" src="system/img/<?echo $result1[0]['filename'];?>" alt="">
-			  </div>
+			         </div>
 						<div class="description">
 						<p><?echo $result1[0]['subtitle'];?></p>
             <?echo html_entity_decode($result1[0]['text']);?>
 						</div>
 						<div class="readmore">
-
-            <!-- HERE -->
-            <!-- HERE -->
-            <!-- HERE -->
-            <!-- HERE -->
-            <!-- HERE -->
-            <!-- HERE -->
 
               <!-- <button>...</button> 改成 <a href="<%= f.link %>" class="b-course">了解更多</a> -->
 							<button class="b-course">了解更多</button>
@@ -174,13 +179,6 @@
                 <?echo html_entity_decode($result1[0]['text']);?>
               </div>
               <div class="readmore">
-
-            <!-- HERE -->
-            <!-- HERE -->
-            <!-- HERE -->
-            <!-- HERE -->
-            <!-- HERE -->
-            <!-- HERE -->
 
                 <!-- <button>...</button> 改成 <a href="<%= f.link %>" class="b-course">了解更多</a> -->
                 <button class="b-event">了解更多</button>
