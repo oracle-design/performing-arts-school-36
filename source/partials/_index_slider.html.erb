@@ -1,9 +1,8 @@
 <!-- slider block -->
-      <div class="slider-wrapper theme-default">
-        <div id="slider" class="nivoSlider">
-          <!-- slider img place here -->
-          <% data.index.slider.each do |f| %>
-            <img class="img-responsive" src="<%= f.img %>" alt="">
-          <% end %>
-        </div>
-      </div>
+      <ul class="bxslider">
+        <% data.index.slider.each do |f| %>
+        <li>
+          <%= f.content %>
+        </li>
+        <% end %>
+      </ul>

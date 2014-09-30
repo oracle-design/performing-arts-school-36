@@ -25,6 +25,13 @@ $(window).load ->
     nextText: "下一張"
   return
 
+$(document).ready ->
+  $(".bxslider").bxSlider
+    video: true
+    adaptiveHeight: true
+    captions: true
+  null
+
 $(window).load ->
   if window.innerWidth >= 600
     newsHeight= indexNewsBlock.height()-23

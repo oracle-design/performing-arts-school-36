@@ -29,6 +29,15 @@
     });
   });
 
+  $(document).ready(function() {
+    $(".bxslider").bxSlider({
+      video: true,
+      adaptiveHeight: true,
+      captions: true
+    });
+    return null;
+  });
+
   $(window).load(function() {
     var newsHeight;
     if (window.innerWidth >= 600) {

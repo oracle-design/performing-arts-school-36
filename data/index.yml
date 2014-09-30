@@ -32,17 +32,18 @@ news:
 
 slider:
   -
-    img: "./img/index_slider/01.jpg"
+    content: "<img src='./img/index_slider/01.jpg' alt=''>"
   -
-    img: "./img/index_slider/02.jpg"
+    content: "<img src='./img/index_slider/02.jpg' alt=''>"
   -
-    img: "./img/index_slider/03.jpg"
+    content: "<img src='./img/index_slider/03.jpg' alt=''>"
   -
-    img: "./img/index_slider/04.jpg"
+    content: "<img src='./img/index_slider/04.jpg' alt=''>"
   -
-    img: "./img/index_slider/05.jpg"
+    content: "<img src='./img/index_slider/05.jpg' alt=''>"
   -
-    img: "http://placehold.it/1280x400"
+    content: '<iframe width="560" height="315" src="//www.youtube.com/embed/TUHgGK-tImY" frameborder="0" allowfullscreen></iframe>'
+
 
 
 banner:
