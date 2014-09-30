@@ -3,20 +3,28 @@
   link: "/about.html"
 
 -
+  title: 場地租借
+  link: "/spaces.html"
+
+-
   title: 活動課程
   link: "/courses.html"
 
 -
-  title: 場館介紹
-  link: "/spaces.html"
+  title: 參訪體驗
+  link: "/zen.html"
 
 -
   title: 活動花絮
   link: "/activities.html"
 
 -
-  title: 禪鼓體驗
-  link: "/zen.html"
+  title: 志工招募
+  link: "/about.html#hire"
+
+-
+  title: 社區專案
+  link: "/about.html#comm"
 
 -
   title: 下載專區
