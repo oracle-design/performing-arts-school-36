@@ -38,9 +38,19 @@ courses:
     img: "./img/courses/005.jpg"
     content: "禪鼓 習武 靜心 創意戲劇<br /><br />專注力X協調力X創造力X觀察力<br /><br />結合禪鼓、武術與表演藝術課程，發現身體的節奏、肢體潛能，激發想像力與手腦協調性，輕鬆培養孩子的生活美學觀。"
     link: "#"
+  -
+    title: 2015 表演36房兒童禪鼓冬令營
+    img: "./img/courses/005.jpg"
+    content: "禪鼓 習武 靜心 創意戲劇<br /><br />專注力X協調力X創造力X觀察力<br /><br />結合禪鼓、武術與表演藝術課程，發現身體的節奏、肢體潛能，激發想像力與手腦協調性，輕鬆培養孩子的生活美學觀。"
+    link: "#"
 
 
 events:
+  -
+    title: 何必遠方
+    img: http://placehold.it/500x500
+    content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam vel reprehenderit cumque incidunt! Beatae cupiditate ea repellendus, vel alias, dolor ut commodi neque eius rem, optio illo dolore nisi!"
+    link: "#"
   -
     title: 何必遠方
     img: http://placehold.it/500x500

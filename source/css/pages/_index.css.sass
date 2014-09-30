@@ -35,7 +35,8 @@ button::-moz-focus-inner
   text-align: center
   .header_top
     text-align: left
-    background-color: $c-header-top
+    // background-color: $c-header-top
+    background: url(../img/asset/header-top-bg.jpg) center 0 repeat-x
     font-size: 10px
     color: #fff
     padding: $polaroid/2
@@ -77,7 +78,7 @@ button::-moz-focus-inner
     z-index: 999
 
   .header_banner-icons
-    +span(3)
+    +span(1)
     font-size: $fz-s
     padding-top: 1.2em
     a
@@ -89,15 +90,20 @@ button::-moz-focus-inner
       margin-left: 1em
   .header_banner-logo
     +span(12)
-    background: image-url("asset/nav-houses.png") bottom no-repeat
+    background: image-url("asset/nav-houses.png") bottom right no-repeat
     +background-size(contain)
+    +breakpoint($b-mobile)
+      background: none
+
+
     .logo-wrapper
+      // min-height: 80px
       width: 200px
       @extend %m0auto
-    +breakpoint($b-mobile)
-      +span(6)
+      +breakpoint($b-mobile)
+        +span(12)
   .header_banner-subscribe
-    +span(3)
+    +span(1)
     padding-top: 1em
 
   nav
@@ -429,11 +435,11 @@ button::-moz-focus-inner
       button
         width: 100%
       .b-event
-        +sassy-button("simple", 3px, $fz-m, $c-event, $c-event, #333, "inset")
+        +sassy-button("simple", 3px, $fz-m, $c-event, $c-event, #fff, "inset")
         width: 100%
         text-align: center
       .b-course
-        +sassy-button("simple", 3px, $fz-m, $c-course, $c-course, #333, "inset")
+        +sassy-button("simple", 3px, $fz-m, $c-course, $c-course, #fff, "inset")
         width: 100%
         text-align: center
 

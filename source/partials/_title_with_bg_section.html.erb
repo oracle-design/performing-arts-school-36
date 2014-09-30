@@ -1,12 +1,18 @@
 <!-- page main title + background pic -->
   <div class="page_title">
     <div class="container">
+      <div class="banner-divider">
+        <img src="./img/asset/banner-divider.png" alt="" class="img-responsive">
+      </div>
       <div class="page_title-inner">
         <div class="page_title-content">
           <!-- background pic -->
           <h2><%= current_page.data.banner || "" %></h2>
           <img class="img-responsive" src="<%= current_page.data.feature_img || "http://placehold.it/1280x300" %>" alt="placeholder">
         </div>
+      </div>
+      <div class="banner-divider">
+        <img src="./img/asset/banner-divider.png" alt="" class="img-responsive">
       </div>
     </div>
   </div>
