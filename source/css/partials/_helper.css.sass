@@ -42,3 +42,20 @@
   +breakpoint($b-pad)
     display: block
 
+.only-desktop
+  display: none
+  +breakpoint($b-pad)
+    display: block
+  +breakpoint($b-desktop)
+    display: none
+.only-large
+  display: none
+  +breakpoint($b-desktop)
+    display: block
+.only-pad
+  display: none
+  +breakpoint($b-mobile)
+    display: block
+  +breakpoint($b-pad)
+    display: none
+
