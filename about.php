@@ -66,34 +66,42 @@
             <% end %>
 
             -->
-            <li><a href="?aid=1#content">表演36房緣起</a></li>
-            <li><a href="?aid=2#content">使命與目標</a></li>
-            <li><a href="?aid=3#content">財團法人優人文化藝術基金會</a></li>
-            <li><a href="?aid=4#content">志工招募</a></li>
-            <li><a href="?aid=5#content">社區專案</a></li>
-            <li><a href="?aid=6#content">參觀導覽</a></li>
+            <li><a href="?aid=1">表演36房緣起</a></li>
+            <li><a href="?aid=2">使命與目標</a></li>
+            <li><a href="?aid=3">財團法人優人文化藝術基金會</a></li>
+            <li><a href="?aid=4">志工招募</a></li>
+            <li><a href="?aid=5">社區專案</a></li>
+            <li><a href="?aid=6">參觀導覽</a></li>
           </ul>
         </div>
       </div>
 
     </div>
   </div>
-  <?
-  if($_GET['aid']=='')$_GET['aid']=1;
-  $sql = "SELECT * FROM title WHERE id = ".$_GET['aid'];
-	$result = exe_sql(DATABASE, $sql);
-  ?>
-  <!-- content area -->
+  
   <div class="about_content" name="content">
     <div class="container">
-
       <div class="about_content_wrapper">
 
 
-
             <!-- HERE -->
             <!-- HERE -->
-            <!-- HERE -->
+             <?
+              if($_GET['aid']=='')$_GET['aid']=1;
+              $sql = "SELECT * FROM title WHERE id = ".$_GET['aid'];
+              $result = exe_sql(DATABASE, $sql);
+              ?>
+            <div class="unit">
+          <div class="content_title">
+            <h3 id="name"><?echo $result[0]['subtitle'];?></h3>
+          </div>
+          <div class="img">
+            <img class="img-responsive" src="system/img/<?echo $result[0]['filename'];?>" alt="">
+          </div>
+          <div class="content">
+            <p><?echo html_entity_decode($result[0]['text']);?></p>
+          </div>
+        </div>
             <!-- HERE -->
             <!-- HERE -->
 

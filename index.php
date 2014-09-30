@@ -47,11 +47,38 @@
       <!-- 最新消息 -->
       <div class="index_news">
         <div class="index_main-inner">
+            <!-- HERE -->
+            <!-- HERE -->
+            <?
+            $sql = "SELECT *,title.filename AS TTN FROM topic LEFT JOIN title 
+ON topic.id=title.topicId WHERE topic.category  = 10 ORDER BY topic.id ASC LIMIT 0,5";
+            $result = exe_sql(DATABASE, $sql);
+            for($index=0;$index<count($result);$index++)
+            {
+            ?>
+            <a href="show/news.php" class="unit curl-top-right  trans-05s">
+            <!-- left for feature pic -->
+            <div class="left">
+              <img class="img-responsive" src="system/img/<? echo $result[$index]['TTN'];?>" alt="">
+            </div>
 
-
-            <!-- HERE -->
-            <!-- HERE -->
-            <!-- HERE -->
+            <!-- right for detail info -->
+            <div class="right">
+              <div class="date">
+                <span><? echo $result[$index]['post_time'];?></span>
+              </div>
+              <div class="title">
+                <h3><? echo $result[$index]['title'];?></h3>
+              </div>
+              <div class="summary only-desktop-up">
+                <p>
+                <?echo html_entity_decode($result[$index]['text']);?>
+                <?//echo $result[$index]['text'];?>
+                </p>
+              </div>
+            </div>
+            </a>
+            <?}?>
             <!-- HERE -->
             <!-- HERE -->
 
