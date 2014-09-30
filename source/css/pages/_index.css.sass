@@ -129,15 +129,19 @@ button::-moz-focus-inner
     .left
       +span(4)
       +breakpoint($b-mobile)
-        +span(3)
-      // +breakpoint($b-pad)
-      //   +span(2)
+        +span(2)
+      +breakpoint($b-pad)
+        +span(1.5)
+      +breakpoint($b-desktop)
+        +span(1)
     .right
       +span(8)
       +breakpoint($b-mobile)
-        +span(9)
-      // +breakpoint($b-pad)
-      //   +span(10)
+        +span(10)
+      +breakpoint($b-pad)
+        +span(10.5)
+      +breakpoint($b-desktop)
+        +span(11)
     .date
       padding-left: 1em
       font-size: $fz-s
@@ -153,6 +157,7 @@ button::-moz-focus-inner
       color: $c-index-news-summary
       font-size: $fz-s
       margin: 1em 0 0 2em
+      display: none
       p
         margin: 0
 
