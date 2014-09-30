@@ -1,6 +1,6 @@
 (function() {
   // Slider blocks;
-  var activitiesSlider, courseSlider, facebookBlock, indexNewsBlock, indexSlider;
+  var activitiesSlider, courseSlider, facebookBlock, indexNewsBlock, indexNewsLastHeight, indexSlider;
 
   indexSlider = $('.index_slider .nivoSlider');
 
@@ -16,6 +16,8 @@
 
   indexNewsBlock = $('.index_news');
 
+  indexNewsLastHeight = indexNewsBlock.height();
+
   $(window).load(function() {
     // using nivoSlider;
     indexSlider.add(courseSlider).add(activitiesSlider).nivoSlider({
@@ -27,7 +29,7 @@
     });
   });
 
-  $(document).ready(function() {
+  $(window).load(function() {
     var newsHeight;
     if (window.innerWidth >= 600) {
       newsHeight = indexNewsBlock.height() - 23;

@@ -114,6 +114,8 @@
             echo "新增禪鼓文章";
           }elseif($_SESSION['cate'] == 9){
             echo "新增活動花絮";
+          }elseif($_SESSION['cate'] == 10){
+            echo "新增最新消息";
           }
         ?>
         <input type="hidden" name="category" value="<?echo $_SESSION['cate'];?>"></input>
@@ -126,7 +128,7 @@
 				</select>
 				</h3>
         <div>
-        請選擇活動日期
+        請選擇日期
         <input type="text" id="date" name="date" readonly value="<?	date_default_timezone_set("Asia/Taipei");	echo date("Y-m-01 00:00",time());?>">
         <input type="button" value="..." id="BTN" name="BTN">
         <script type="text/javascript">
@@ -260,7 +262,7 @@
         <br>
         <div>
         <br>
-          請選擇活動日期
+          請選擇日期
           <input type="text" id="date" name="date" readonly value="<?if($result1[0]['post_time']!="0000-00-00 00:00:00"){echo $result1[0]['post_time'];}else{
           date_default_timezone_set("Asia/Taipei");	echo date("Y-m-01 00:00",time());}?>">
           <input type="button" value="..." id="BTN" name="BTN">

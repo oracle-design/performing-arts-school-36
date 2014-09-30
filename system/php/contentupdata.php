@@ -70,7 +70,7 @@
 						$upload_file = $upload_dir . basename($file_name);
 					}
 					$temploadfile = $_FILES['pic']['tmp_name'];
-					$result = move_uploaded_file($temploadfile , $upload_file);
+					@$result = move_uploaded_file($temploadfile , $upload_file);
 				}else{
 					$checkmsg = sprintf("1.檔案格式：%s<br>2.檔案大小：%s",$checkSubName,$checkSize);
 				}

@@ -67,6 +67,7 @@
       if($_GET['part']=='course'){$WHERE = " WHERE category = 5 OR category = 6 ORDER BY category ASC ";}
       if($_GET['part']=='zen'){$WHERE = " WHERE category = 8 ORDER BY id ASC ";}
       if($_GET['part']=='act'){$WHERE = " WHERE category = 9 ORDER BY id ASC ";}
+      if($_GET['part']=='news'){$WHERE = " WHERE category = 10 ORDER BY id ASC ";}
 			$sql = "SELECT * FROM topic ".$WHERE;
 			$result = exe_sql(DATABASE, $sql);
 			for($index=0;$index<count($result);$index++)
@@ -96,6 +97,10 @@
       <?}elseif($_GET['part']=="act"){?>
       <td>
         <a href="editor_content.php?cate=9" target="spage"><input type="button" style="width:100%;height:55px;" value="新增活動花絮"></a>
+      </td>
+      <?}elseif($_GET['part']=="news"){?>
+      <td>
+        <a href="editor_content.php?cate=10" target="spage"><input type="button" style="width:100%;height:55px;" value="新增最新消息"></a>
       </td>
       <?}?>
     </table>
