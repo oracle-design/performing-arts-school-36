@@ -128,7 +128,10 @@ button::-moz-focus-inner
 // index
 .index_slider
   @extend %slider
-
+.banner-divider
+  img
+    margin: 0 auto
+    margin-top: $polaroid
 .index_news
   @extend %polaroid
   +span(12)
@@ -257,7 +260,7 @@ button::-moz-focus-inner
   .divider
     height: 1px
     width: 100%
-    background-color: #000
+    background-color: #6c6c6c
     +breakpoint($b-mobile)
       margin-bottom: 3px
 
@@ -606,15 +609,36 @@ button::-moz-focus-inner
 footer
   margin-top: $polaroid
   margin-bottom: 1em
+  padding-bottom: 1em
+  background-color: $c-footer-bg
+.footer_inner
+  background-color: $c-footer-inner-bg
+  border-bottom: 1px solid #fff
 .footer_info
-  background-color: $c-background
-  min-height: 80px
-  text-align: center
-  color: $c-ptext
+  // background-color: $c-background
+  // text-align: center
+  color: $c-footer-text
   font-size: $fz-xs
   padding: 1em 0 1em 0
-  p
-    margin: 0
-    margin-bottom: 1em
-  p:last-child
-    margin-bottom: 0
+  .line1, .line2
+    +clearfix
+  .line2
+    margin-top: 1em
+    +breakpoint($b-desktop)
+      margin-top: 0
+  .left
+    +span(12)
+    text-align: center
+    +breakpoint($b-desktop)
+      +span(6)
+      text-align: left
+  .right
+    +span(12)
+    text-align: center
+    margin-top: 1em
+    +breakpoint($b-desktop)
+      +span(6)
+      text-align: right
+      margin-top: 0
+
+
