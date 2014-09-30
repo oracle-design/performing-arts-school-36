@@ -9,7 +9,7 @@ slider:
     img: "./img/index_slider/03.jpg"
     title: Title 標題三
   -
-    img: "http://placehold.it/1280x400"
+    img: "./img/index_slider/04.jpg"
     title: Title 標題四
 
 courses:

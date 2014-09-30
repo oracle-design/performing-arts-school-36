@@ -36,7 +36,7 @@ button::-moz-focus-inner
   .header_top
     text-align: left
     background-color: $c-header-top
-    font-size: $fz-s
+    font-size: 10px
     color: #fff
     padding: $polaroid/2
     margin-top: 44px
@@ -48,6 +48,7 @@ button::-moz-focus-inner
       margin-top: 0
   .header_top-icons
     +span(6)
+    margin-top: 3px
   .header_top-subscribe
     +span(6)
     text-align: right
@@ -58,7 +59,7 @@ button::-moz-focus-inner
   .header_banner
     +span(12)
     background-color: $c-background
-    padding: 1em 0
+    padding: 1em 0 0 0
     // margin-top: 44px
     // border-top: 1em solid $c-banner-top
     +breakpoint($b-mobile)
@@ -88,8 +89,8 @@ button::-moz-focus-inner
       margin-left: 1em
   .header_banner-logo
     +span(12)
-    background: image-url("asset/nav-houses.png") top no-repeat
-    +background-size(cover)
+    background: image-url("asset/nav-houses.png") bottom no-repeat
+    +background-size(contain)
     .logo-wrapper
       width: 200px
       @extend %m0auto
@@ -240,6 +241,7 @@ button::-moz-focus-inner
 .index_news-inner
   @extend .index_main-inner
   padding: 0
+  border: 1px solid $c-index-news-divider
 
 
 .index_banners
@@ -392,8 +394,8 @@ button::-moz-focus-inner
   .unit
     padding: $polaroid/2
     .unit-inner
-      background-image: image-url("asset/paper_fibers.png")
-      +image-2x("asset/paper_fibers_@2X.png", 410px, 410px)
+      background-image: image-url("asset/exclusive_paper.png")
+      +image-2x("asset/exclusive_paper_@2X.png", 410px, 410px)
     h3
       text-align: center
       font-size: $fz-l
@@ -407,6 +409,9 @@ button::-moz-focus-inner
         +span(5)
       +breakpoint($b-desktop)
         +span(4)
+      img
+        border: 5px solid #fff
+        +box-shadow(0 0 1px #000)
     .description
       padding: $polaroid
       font-size: $fz-s
