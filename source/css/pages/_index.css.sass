@@ -123,8 +123,9 @@ button::-moz-focus-inner
     display: block
     list-style: none
     margin: 0
-    +span(8)
-    +push(2)
+    +span(11)
+    +push(0.3)
+
   li
     float: left
     +span(1.5)
@@ -158,11 +159,8 @@ button::-moz-focus-inner
     padding: $polaroid/2 $polaroid
     margin: 0
     color: white
-    font-size: $fz-l
+    font-size: $fz-m
     text-align: center
-    .more
-      float: right
-      text-align: right
     &:hover
       text-decoration: none
       background-color: lighten($c-index-news-title-bg, 5%)
@@ -232,7 +230,7 @@ button::-moz-focus-inner
   padding: 8px
   background-color: $c-index-fb-title-bg
   color: #fff
-  font-size: $fz-l
+  font-size: $fz-m
   text-align: center
 .index_facebook
   @extend %polaroid
