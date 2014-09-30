@@ -35,6 +35,8 @@
     }
     $(".bxslider").bxSlider({
       video: true,
+      auto: true,
+      speed: 1500,
       adaptiveHeight: true,
       captions: true
     });
