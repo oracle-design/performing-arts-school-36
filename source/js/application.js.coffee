@@ -28,7 +28,7 @@ $(window).load ->
     facebookBlock.height(newsHeight)
     null
   $(".bxslider").bxSlider
-    video: true
+    # video: true
     auto: true
     speed: 1500
     adaptiveHeight: true
