@@ -37,7 +37,16 @@ title: 表演 36 房 || 活動花絮
             </div>
             <!-- 打開 Gallery（href 指向第一張照片）, data-lightbox 的值可設定為活動 id -->
             <div class="gallery-trigger">
-              <a class="lightview" href="<%= f.gallery.first %>" data-lightview-group="<%= f.title %>" data-lightview-group-options="controls: 'thumbnails'">觀賞照片</a>
+              <a
+                class="lightview"
+                href="<%= f.gallery.first %>"
+                data-lightview-group="<%= f.title %>"
+                data-lightview-group-options="
+                                              controls: 'thumbnails',
+                                              skin: 'mac',
+                                              mousewheel: true,
+                                              thumbnail: {mousewheel: true}
+                                              ">觀賞照片</a>
             </div>
           </div>
 
