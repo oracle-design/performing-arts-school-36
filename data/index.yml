@@ -32,17 +32,17 @@ news:
 
 slider:
   -
-    content: '<iframe style="height: 390px; width: 100%;" src="//www.youtube.com/embed/qc1A3_NeUPI" frameborder="0" allowfullscreen></iframe>'
+    content: "<img src='./img/index_slider/01.jpg' alt=''>"
   -
     content: "<img src='./img/index_slider/02.jpg' alt=''>"
-  -
-    content: "<img src='./img/index_slider/03.jpg' alt=''>"
-  -
-    content: "<img src='./img/index_slider/04.jpg' alt=''>"
-  -
-    content: "<img src='./img/index_slider/05.jpg' alt=''>"
-  -
-    content: "<img src='./img/index_slider/01.jpg' alt=''>"
+  # -
+  #   content: "<img src='./img/index_slider/03.jpg' alt=''>"
+  # -
+  #   content: "<img src='./img/index_slider/04.jpg' alt=''>"
+  # -
+  #   content: "<img src='./img/index_slider/05.jpg' alt=''>"
+  # -
+  #   content: "<img src='./img/index_slider/01.jpg' alt=''>"
 
 
 

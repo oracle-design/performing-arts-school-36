@@ -25,7 +25,7 @@ $(window).load ->
     nextText: "下一張"
     null
 
-  newsHeight= indexNewsBlock.height()-54
+  newsHeight= indexNewsBlock.height()-46
   facebookBlockWidth = facebookBlock.width()
   facebookBlock.height(newsHeight)
   facebookBlock.html('<div class="fb-like-box"' +
