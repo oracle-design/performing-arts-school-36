@@ -24,6 +24,7 @@ $(window).load ->
     prevText: '上一張'
     nextText: "下一張"
     null
+
   newsHeight= indexNewsBlock.height()-54
   facebookBlockWidth = facebookBlock.width()
   facebookBlock.height(newsHeight)
