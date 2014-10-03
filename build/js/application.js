@@ -28,7 +28,7 @@
       prevText: '上一張',
       nextText: "下一張"
     }, null);
-    newsHeight = indexNewsBlock.height() - 54;
+    newsHeight = indexNewsBlock.height() - 46;
     facebookBlockWidth = facebookBlock.width();
     facebookBlock.height(newsHeight);
     facebookBlock.html('<div class="fb-like-box"' + 'data-href="https://www.facebook.com/pas36"' + 'data-width="' + facebookBlockWidth + '" data-height="' + newsHeight + '" data-show-faces="false"' + 'data-stream="true" data-show-border="false" data-header="false"></div>');
