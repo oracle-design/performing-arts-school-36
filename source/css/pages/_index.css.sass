@@ -125,28 +125,37 @@ button::-moz-focus-inner
   nav
     height: 44px
     // background-color: $c-background
-    padding-top: 0.5em
+    padding-top: 1em
+    border-bottom: 5px solid $c-nav-border
   ul
     display: block
     list-style: none
-    margin: 0
+    margin: 1px 0 0 0
     +span(11)
     +push(0.3)
 
   li
     float: left
     +span(1.5)
+    +transition(border-bottom 0.5s)
+    &:hover
+      border-bottom: 5px solid $c-nav-border-hover
     a
+      display: block
+      padding-bottom: 4px
       color: $c-logo
       font-size: $fz-s
       +transition(color 0.5s)
       &:hover
         color: lighten($c-red, 5%)
         text-decoration: none
+
   li + li
     border-left: 1px solid lighten($c-logo, 30%)
   .active
-    color: lighten($c-red, 5%)
+    border-bottom: 5px solid $c-nav-border-hover
+    &:hover
+      border: none
 
 
 // index
@@ -156,9 +165,10 @@ button::-moz-focus-inner
     border: $polaroid solid #fff
     +box-shadow(0 0 1px darken($c-border,15%))
 .banner-divider
-  img
-    margin: 0 auto
-    margin-top: $polaroid
+  margin-top: $polaroid
+  width: 100%
+  height: 1px
+  background-color: $c-banner-divider
 .index_news
   @extend %polaroid
   +span(12)
@@ -168,8 +178,8 @@ button::-moz-focus-inner
     background-color: $c-index-news-title-bg
     padding: 0 $polaroid
     margin: 0
-    color: white
-    font-size: $fz-m
+    color: $c-index-news-title-text
+    font-size: 14px
     text-align: left
     &:hover
       text-decoration: none
@@ -192,8 +202,8 @@ button::-moz-focus-inner
       +breakpoint($b-desktop)
         +span(1.5)
       img
-        border: 5px solid #dedede
-        +box-shadow(0 0 1px #000)
+        border: 5px solid #fff
+        +box-shadow(0 0 2px darken($c-border, 20%))
     .right
       +span(8)
       +breakpoint($b-mobile)
@@ -237,13 +247,13 @@ button::-moz-focus-inner
     h2
       text-align: left
   .unit:hover
-    background-color: #eee
+    background-color: #f9f9f9
 .index_facebook-title
   margin: 0
-  padding: 3px
+  padding: 2px
   background-color: $c-index-fb-title-bg
   color: #fff
-  font-size: $fz-m
+  font-size: 14px
   text-align: center
 .index_facebook
   @extend %polaroid
@@ -292,13 +302,15 @@ button::-moz-focus-inner
   .divider
     height: 1px
     width: 100%
-    background-color: #6c6c6c
+    background-color: $c-banner-divider
     +breakpoint($b-mobile)
       margin-bottom: 3px
 
   .index_banner-inner
     background-color: #FFF
     padding: $polaroid/2
+    +box-shadow(0 0 2px darken($c-border,20%))
+
 
 // contact
 .contact_map, .contact_info
