@@ -294,7 +294,7 @@ button::-moz-focus-inner
     height: 700px
     margin: 0
     // background-image: image-url("asset/exclusive_paper.png")
-    background-color: #efefef
+    background-color: #fbfbfb
     +image-2x("../img/asset/exclusive_paper_@2X.png", 560px, 420px)
 
 .index_main-inner
@@ -678,18 +678,21 @@ button::-moz-focus-inner
   background-color: $c-background
   padding: $polaroid
   color: $c-ptext
+  border: 1px solid $c-border
   h3
     text-align: center
-    border-bottom: 5px solid #aaa
+    // border-bottom: 5px solid #aaa
     padding-bottom: 0.2em
-    margin-bottom: 1em
+    // margin-bottom: 1em
     font-size: $fz-l
     +breakpoint($b-pad)
       font-size: $fz-xl
+  img
+    margin: 0 auto
+    border: $polaroid/2 solid #fff
+    +box-shadow(0 0 1px darken($c-border, 40%))
   .show_image
-    margin-bottom: $polaroid
-    img
-      margin: 0 auto
+    margin: $polaroid 0
     +breakpoint($b-mobile)
       +container(600px)
   .show_text

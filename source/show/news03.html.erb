@@ -11,29 +11,29 @@ feature_img: "/img/news/detail-001.jpg"
       <div class="zen_main-wrapper">
 
         <!-- title -->
-        <h3><%= data.news.id01.title %></h3>
+        <h3><%= data.news.id03.title %></h3>
 
         <div class="banner-divider"></div>
 
         <!-- content -->
         <div class="show_image">
-          <img class="img-responsive" src="<%= data.news.id01.img %>" alt="">
+          <img class="img-responsive" src="<%= data.news.id03.img %>" alt="">
         </div>
 
         <div class="show_text">
-          <% data.news.id01.content.each do |f| %>
+          <% data.news.id03.content.each do |f| %>
           <p><%= f %></p>
           <% end %>
         </div>
 
-        <div class="navi-buttons">
+        <!-- <div class="navi-buttons">
           <div class="back">
             <button>回上一頁</button>
           </div>
           <div class="next">
             <button>下一則</button>
           </div>
-        </div>
+        </div> -->
       </div>
     </div>
   </div>
