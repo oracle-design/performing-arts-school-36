@@ -673,7 +673,9 @@ button::-moz-focus-inner
 
 // zen
 .zen_main_content, .show_main_content
-  margin-top: $polaroid
+  margin-top: 3*$polaroid
+  +breakpoint($b-mobile)
+  min-height: 750px
 .zen_main-wrapper, .show_main-wrapper
   background-color: $c-background
   padding: $polaroid
