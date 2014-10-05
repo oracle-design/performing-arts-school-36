@@ -49,21 +49,21 @@ slider:
 banner:
   -
     title: banner1
-    img: "./img/index_little_banner/1.jpg"
+    img: "./img/index_little_banner/5.jpg"
     link: "#"
   -
     title: banner2
-    img: "./img/index_little_banner/2.jpg"
+    img: "./img/index_little_banner/7.jpg"
     link: "#"
   -
     title: banner3
-    img: "./img/index_little_banner/3.jpg"
+    img: "./img/index_little_banner/8.jpg"
     link: "#"
   -
     title: banner4
-    img: "./img/index_little_banner/4.jpg"
+    img: "./img/index_little_banner/6.jpg"
     link: "#"
   -
     title: banner5
-    img: "./img/index_little_banner/5.jpg"
+    img: "./img/index_little_banner/4.jpg"
     link: "#"
