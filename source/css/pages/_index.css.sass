@@ -15,6 +15,8 @@ button:focus
 button::-moz-focus-inner
   border: 0
 
+.slider-wrapper
+  border: 1px solid $c-border
 
 // container setting
 .container
@@ -179,7 +181,7 @@ button::-moz-focus-inner
   @extend %slider
   .bx-wrapper .bx-viewport
     border: $polaroid solid #fff
-    +box-shadow(0 0 1px darken($c-border,15%))
+    +box-shadow(0 0 1px darken($c-border,25%))
 .banner-divider
   margin-top: $polaroid
   width: 100%
@@ -386,6 +388,7 @@ button::-moz-focus-inner
   +clearfix
   background-color: $c-background
   padding: $polaroid/2
+  border: 1px solid $c-border
 
 .about_tabs-unit
   +span(12)
@@ -410,6 +413,7 @@ button::-moz-focus-inner
 .about_content_wrapper
   padding: $polaroid
   background-color: $c-background
+  border: 1px solid $c-border
   .unit + .unit
     margin-top: 3em
   h3
@@ -454,6 +458,7 @@ button::-moz-focus-inner
   background-color: $c-background
   padding: $polaroid/2
   color: $c-ptext
+  border: 1px solid $c-border
   .event_block
     @extend %mainBlock
   .course_block
@@ -527,6 +532,7 @@ button::-moz-focus-inner
   +clearfix
   background-color: $c-background
   color: $c-ptext
+  border: 1px solid $c-border
   .unit
     padding: $polaroid
     & + .unit
@@ -596,6 +602,9 @@ button::-moz-focus-inner
       font-size: $fz-l
     i
       font-size: $fz-xs
+  img
+    border: $polaroid/2 solid #fff
+    +box-shadow(0 0 1px darken($c-border, 40%))
 
   a
     color: #428bca
@@ -608,6 +617,7 @@ button::-moz-focus-inner
   padding: $polaroid
   background-color: $c-background
   color: $c-ptext
+  border: 1px solid $c-border
 
 .category_block
   +clearfix
