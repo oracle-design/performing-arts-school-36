@@ -157,6 +157,22 @@ button::-moz-focus-inner
     &:hover
       border: none
 
+.globle-back2top
+  position: fixed
+  padding: 1em
+  bottom: 40px
+  left: 50%
+  display: none
+  background: image-url("asset/globle-back2top.png") center center no-repeat
+  height: image-height("../img/asset/globle-back2top.png")
+  width: image-width("../img/asset/globle-back2top.png")
+  +border-radius(50%)
+  +breakpoint($b-pad)
+    display: block
+    margin-left: 490px
+  +breakpoint($b-desktop)
+    margin-left: 650px
+
 
 // index
 .index_slider
@@ -173,6 +189,7 @@ button::-moz-focus-inner
   @extend %polaroid
   +span(12)
   padding: 0
+  margin-top: 5px
   .index_news-title
     display: block
     background-color: $c-index-news-title-bg
@@ -258,7 +275,7 @@ button::-moz-focus-inner
 .index_facebook
   @extend %polaroid
   padding: 0 0 $polaroid/2 0
-  border: 1px solid $c-border
+  // border: 1px solid $c-border
   +span(12)
   +breakpoint($b-mobile)
     padding: 0
@@ -275,12 +292,15 @@ button::-moz-focus-inner
 .index_main-inner
   background-color: $c-background
   // min-height: 400px
-  padding: $polaroid
+  // padding: $polaroid
+  margin-top: $polaroid/2
+  border: 5px solid lighten($c-index-fb-title-bg, 30%)
+
 .index_news-inner
   @extend .index_main-inner
   padding: 0
-  border: 1px solid $c-border
-  border-bottom: none
+  border: 5px solid lighten($c-index-news-title-bg, 40%)
+  margin-top: $polaroid/2
 
 
 .index_banners
