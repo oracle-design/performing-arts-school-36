@@ -1,3 +1,11 @@
+slider:
+  -
+    img: "../img/index_slider/01.jpg"
+    title: Title 標題一
+  -
+    img: "../img/index_slider/02.jpg"
+    title: Title 標題二
+
 id01:
   date: 2014-09-26
   title: 秋日好養生，太極導引、菩提功夫禪系列課程健康招生中！

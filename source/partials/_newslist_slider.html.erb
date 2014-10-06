@@ -1,0 +1,9 @@
+<!-- slider block -->
+      <div class="slider-wrapper theme-default">
+        <div id="slider" class="nivoSlider">
+          <!-- slider img place here -->
+          <% data.news.slider.each do |f| %>
+            <img class="img-responsive" src="<%= f.img %>" alt="" title="">
+          <% end %>
+        </div>
+      </div>

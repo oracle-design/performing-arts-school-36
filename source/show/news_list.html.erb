@@ -1,0 +1,45 @@
+---
+title: 表演 36 房 || NEWS List
+banner: ""
+feature_img: "/img/news/detail-001.jpg"
+---
+<!-- show/news.html -->
+
+  <!-- content area -->
+  <div class="show_main_content">
+    <div class="container">
+      <div class="news_list-wrapper">
+
+        <h2>最新消息</h2>
+
+        <% data.index.news.each do |f| %>
+          <!-- news unit -->
+
+          <!-- /system edit buttons -->
+          <!-- <a href="#" class="edit">編輯</a> <a href="#" class="delete">刪除</a> -->
+
+          <a href="<%= f.link %>" class="unit curl-top-right trans-05s">
+
+            <!-- left for feature pic -->
+            <div class="left">
+              <img class="img-responsive" src="../<%= f.img %>" alt="">
+            </div>
+
+            <!-- right for detail info -->
+            <div class="right">
+              <div class="date">
+                <span>◎ <%= f.date %></span>
+              </div>
+              <div class="title">
+                <h3><%= f.title %></h3>
+              </div>
+              <div class="summary only-desktop-up">
+                <p><%= f.summary %></p>
+              </div>
+            </div>
+          </a>
+          <% end %>
+
+      </div>
+    </div>
+  </div>

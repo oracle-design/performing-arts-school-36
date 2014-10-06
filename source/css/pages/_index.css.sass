@@ -99,7 +99,7 @@ button::-moz-focus-inner
       margin-left: 1em
   .header_banner-logo
     +span(12)
-    background: image-url("asset/nav-houses.png") bottom right no-repeat
+    // background: image-url("asset/nav-houses.png") bottom right no-repeat
     +background-size(contain)
     +breakpoint($b-mobile)
       background: none
@@ -715,6 +715,75 @@ button::-moz-focus-inner
     button
       width: 100%
       +sassy-button("flat", 3px, $fz-s, $c-grey, $c-grey, #eee, "inset")
+
+// news list
+.news_list-wrapper
+  +container(600px)
+  .edit
+    +sassy-button("flat", 0, $fz-xs, $btn-primary, $c-grey, #eee, "inset")
+  .delete
+    +sassy-button("flat", 0, $fz-xs, $btn-danger, $c-grey, #eee, "inset")
+  .edit, .delete
+    margin-top: $polaroid
+  h2
+    padding: 0.5em 0
+    text-align: center
+    font-size: $fz-l
+    border-bottom: 1px solid $c-about-title-border
+    border-top: 1px solid $c-about-title-border
+  .unit
+    +clearfix
+    display: block
+    width: 100%
+    padding: $polaroid
+    border-bottom: 1px solid $c-index-news-divider
+    .left
+      +span(4)
+      +breakpoint($b-mobile)
+        +span(2)
+      +breakpoint($b-pad)
+        +span(2)
+      +breakpoint($b-desktop)
+        +span(1.5)
+      img
+        border: 5px solid #fff
+        +box-shadow(0 0 2px darken($c-border, 20%))
+    .right
+      +span(8)
+      +breakpoint($b-mobile)
+        +span(10)
+      +breakpoint($b-pad)
+        +span(10)
+      +breakpoint($b-desktop)
+        +span(10.5)
+    .date
+      padding-left: $polaroid
+      font-size: $fz-s
+      color: $c-index-news-date
+    h3
+      margin: 8px 0 0 0
+      padding: 0 0 0 $polaroid
+      font-size: $fz-m
+      color: $c-index-news-title
+      +breakpoint($b-desktop)
+        font-size: $fz-l
+    .summary
+      color: $c-index-news-summary
+      font-size: $fz-s
+      margin: 1em 0 0 $polaroid
+      // display: none
+      p
+        margin: 0
+      .more
+        width: 5em
+        display: block
+        text-align: center
+        float: right
+        background-color: #d0d0d0
+        border-bottom: 1px solid #fff
+        +box-shadow(0 2px 0 #d0d0d0)
+        color: #fff
+
 
 
 // footer
