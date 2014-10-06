@@ -661,13 +661,11 @@ button::-moz-focus-inner
         font-size: $fz-l
     .file_type
       +span(3)
-    .button
+    a
+      text-align: center
+      +span(12)
       margin-top: $polaroid
-      a
-        text-align: center
-        +span(12)
-        margin-top: $polaroid
-        +sassy-button("simple", 3px, $fz-m, $c-download, $c-download, #333, "inset")
+      +sassy-button("simple", 3px, $fz-m, $c-download, $c-download, #333, "inset")
 
     +breakpoint($b-mobile)
       +gallery(6)
