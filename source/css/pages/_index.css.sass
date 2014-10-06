@@ -465,7 +465,6 @@ button::-moz-focus-inner
 .course_list-wrapper
   background-color: $c-background
   padding: $polaroid/2
-  color: $c-ptext
   border: 1px solid $c-border
   .event_block
     @extend %mainBlock
@@ -485,6 +484,8 @@ button::-moz-focus-inner
       margin: 0
     & + .unit
       margin-top: $polaroid
+    a
+      color: $c-ptext
     .mobile-photo
       padding: $polaroid
       +breakpoint($b-pad)
