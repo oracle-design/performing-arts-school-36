@@ -42,17 +42,17 @@ courses:
 events:
   -
     title: 2014文山藝術季
-    img: "./img/courses/006.jpg"
+    img: "./img/courses/015.jpg"
     content: "藝術×心靈×文山<br /><br />永安藝文館-表演36房主辦文山藝術季迄今已第8年，串聯景文高中優人表演藝術班、政大藝文中心、文山劇場等單位，以講座、展覽、表演、身心靈等不同面向的活動，妝點成為文山地區秋冬時節最繽紛的藝文風景。"
     link: "/show/course06.html"
   -
     title: 文山河岸音樂會
-    img: "http://placehold.it/500x500"
+    img: "./img/courses/016.jpg"
     content: "11/15 (六) 14：30 道南河濱公園右岸（恆光橋旁）<br /><br />充滿知性的景美溪河畔<br />在自然山、水景色環繞之下<br />邀您與家人朋友共享生活音樂會<br />在此體驗文山藝術帶來心靈的淨化和陶冶！"
     link: "/show/course07.html"
   -
     title: 文山漫遊-我的南村生活美學想像
-    img: "http://placehold.it/500x500"
+    img: "./img/courses/006.jpg"
     content: "位於臺北城南的文山區，好山好水好風景，人文薈萃，而喜愛自然、旅行的劉克襄熟稔木柵文山區的一草一木，是品味文山的最佳領路人。邀請您在秋日的閒適午後，跟著劉克襄老師的腳步，共同感受在木柵、貓空安靜漫遊的趣味。"
     link: "/show/course08.html"
   -
