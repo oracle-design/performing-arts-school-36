@@ -28,7 +28,7 @@ $(window).load ->
   newsHeight= indexNewsBlock.height()-34
   facebookBlockWidth = facebookBlock.width()
   facebookBlock.height(newsHeight)
-  setTimeout(500)
+  setTimeout(1000)
   facebookBlock.html('<div class="fb-like-box"' +
     'data-href="https://www.facebook.com/pas36"' +
     'data-width="' + facebookBlockWidth + '" data-height="' + newsHeight + '" data-show-faces="false"' +
