@@ -357,8 +357,14 @@ button::-moz-focus-inner
   background-color: $c-background
   border: 1px solid $c-border
   h3
-    margin: 0 0 1em 0
     font-size: $fz-l
+    text-align: center
+    +breakpoint($b-mobile)
+      +container(600px)
+  p
+    +breakpoint($b-mobile)
+      +container(600px)
+
 
 // about
 .page_title
@@ -505,11 +511,11 @@ button::-moz-focus-inner
       button
         width: 100%
       .b-event
-        +sassy-button("simple", 3px, $fz-m, $c-event, $c-event, #fff, "inset")
+        +sassy-button("simple", 3px, $fz-s, $c-event, $c-event, #fff, "inset")
         width: 100%
         text-align: center
       .b-course
-        +sassy-button("simple", 3px, $fz-m, $c-course, $c-course, #fff, "inset")
+        +sassy-button("simple", 3px, $fz-s, $c-course, $c-course, #fff, "inset")
         width: 100%
         text-align: center
 
@@ -519,9 +525,11 @@ button::-moz-focus-inner
         margin-top: 0
 
   .event
-    border-top: 1em solid $c-event
+    border-top: 0.3em solid $c-event
+    +box-shadow(2px 0 1px lighten($c-event, 30%), -2px 0 1px lighten($c-event, 30%), 0 2px 1px lighten($c-event, 30%))
   .course
-    border-top: 1em solid $c-course
+    border-top: 0.3em solid $c-course
+    +box-shadow(2px 0 1px lighten($c-course, 20%), -2px 0 1px lighten($c-course, 20%), 0 2px 1px lighten($c-course, 20%))
 
 
 // activities
