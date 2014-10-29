@@ -24,28 +24,30 @@ title: 表演 36 房
         <a href="show/news_list.html" class="index_news-title trans-05s"><i class="fa fa-circle"></i> 最新消息 <span>more ></span></a>
         <div class="index_news-inner">
 
-          <% data.index.news.each do |f| %>
-          <!-- news unit -->
-          <a href="<%= f.link %>" class="unit curl-top-right trans-05s">
+          <% data.index.news.each_with_index do |f, index| %>
+            <% if index < 5 %>
+            <!-- news unit -->
+            <a href="<%= f.link %>" class="unit curl-top-right trans-05s">
 
-            <!-- left for feature pic -->
-            <div class="left">
-              <img class="img-responsive" src="<%= f.img %>" alt="">
-            </div>
+              <!-- left for feature pic -->
+              <div class="left">
+                <img class="img-responsive" src="<%= f.img %>" alt="">
+              </div>
 
-            <!-- right for detail info -->
-            <div class="right">
-              <div class="date">
-                <span>◎ <%= f.date %></span>
+              <!-- right for detail info -->
+              <div class="right">
+                <div class="date">
+                  <span>◎ <%= f.date %></span>
+                </div>
+                <div class="title">
+                  <h3><%= f.title %></h3>
+                </div>
+                <div class="summary only-desktop-up">
+                  <p><%= f.summary %></p>
+                </div>
               </div>
-              <div class="title">
-                <h3><%= f.title %></h3>
-              </div>
-              <div class="summary only-desktop-up">
-                <p><%= f.summary %></p>
-              </div>
-            </div>
-          </a>
+            </a>
+            <% end %>
           <% end %>
 
           <!-- <div class="index_news-more">

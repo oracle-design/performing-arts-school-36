@@ -1,5 +1,23 @@
 news:
   -
+    date: 2014-10-28
+    title: 全新課程菩提功夫禪11/28開班，熱烈招生中，欲報從速。
+    img: "./img/news/004.jpg"
+    summary: 菩提功夫禪體驗工作坊頗受好評，即將於11/28開辦常態班⋯⋯<br /><span class="more">more</span>
+    link: "/show/news06.html"
+  -
+    date: 2014-10-28
+    title: 2015優人神鼓兒童冬令營即日起開始報名，12月底前享早鳥優惠！
+    img: "./img/news/003.jpg"
+    summary: 2015寒假最豐富的藝術營隊⋯⋯<br /><span class="more">more</span>
+    link: "/show/news05.html"
+  -
+    date: 2014-10-28
+    title: 2014文山藝術季精彩活動在這裡！
+    img: "./img/news/005.jpg"
+    summary: 各項精彩活動，歡迎提早報名！⋯⋯<br /><span class="more">more</span>
+    link: "/show/news04.html"
+  -
     date: 2014-09-26
     title: 秋日好養生，太極導引、菩提功夫禪系列課程健康招生中！
     img: "./img/news/002.jpg"
@@ -49,21 +67,21 @@ slider:
 banner:
   -
     title: banner1
-    img: "./img/index_little_banner/5.jpg"
-    link: "#"
+    img: "./img/index_little_banner/9.png"
+    link: "http://www.utheatre.org.tw/ch/"
   -
     title: banner2
     img: "./img/index_little_banner/7.jpg"
-    link: "#"
+    link: "http://pas36.tw/jyclass.html"
   -
     title: banner3
     img: "./img/index_little_banner/8.jpg"
-    link: "#"
+    link: "/show/course05.html"
   -
     title: banner4
-    img: "./img/index_little_banner/6.jpg"
-    link: "#"
+    img: "./img/index_little_banner/10.jpg"
+    link: "http://wenshantheater.pixnet.net/blog"
   -
     title: banner5
-    img: "./img/index_little_banner/4.jpg"
-    link: "#"
+    img: "./img/index_little_banner/11.jpg"
+    link: "http://artist.nccu.edu.tw/"

@@ -1,0 +1,39 @@
+---
+title: 表演 36 房 || NEWS
+banner: ""
+feature_img: "/img/news/detail-001.jpg"
+---
+<!-- show/news.html -->
+
+  <!-- content area -->
+  <div class="show_main_content">
+    <div class="container">
+      <div class="zen_main-wrapper">
+
+        <!-- title -->
+        <h3><%= data.news.id05.title %></h3>
+
+        <div class="banner-divider"></div>
+
+        <!-- content -->
+        <div class="show_image">
+          <img class="img-responsive" src="<%= data.news.id05.img %>" alt="">
+        </div>
+
+        <div class="show_text">
+          <% data.news.id05.content.each do |f| %>
+          <p><%= f %></p>
+          <% end %>
+        </div>
+
+        <div class="navi-buttons">
+          <!-- <div class="back">
+            <button>回上一頁</button>
+          </div>
+          <div class="next">
+            <button>下一則</button>
+          </div> -->
+        </div>
+      </div>
+    </div>
+  </div>
