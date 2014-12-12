@@ -30,7 +30,7 @@ $(window).load ->
   facebookBlock.height(newsHeight)
   setTimeout(1000)
   facebookBlock.html('<div class="fb-like-box"' +
-    'data-href="https://www.facebook.com/pas36"' +
+    'data-href="https://www.facebook.com/jw.utheatre"' +
     'data-width="' + facebookBlockWidth + '" data-height="' + newsHeight + '" data-show-faces="false"' +
     'data-stream="true" data-show-border="false" data-header="false"></div>'
     )
