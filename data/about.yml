@@ -1,28 +1,27 @@
 tabs:
   -
-    title: 表演36房緣起
-    anchor: "#name"
+    title: 景文高中優人表演藝術班
+    anchor: "#jw"
   -
-    title: 使命與目標
-    anchor: "#goals"
+    title: 當下的表演者
+    anchor: "#performer"
   -
-    title: 財團法人優人文化藝術基金會
-    anchor: "#utheatre"
+    title: 東西交流、內外整合
+    anchor: "#integration"
   -
-    title: 志工招募
-    anchor: "#hire"
+    title: 教育傳承是什麼
+    anchor: "#edu"
   -
-    title: 社區專案
-    anchor: "#comm"
+    title: 未來展望
+    anchor: "#future"
   -
-    title: 參訪體驗
-    en: Missions and Goals
-    anchor: "#tour"
+    title: 升學成果
+    anchor: "#result"
 
 content:
   -
-    title: 表演36房緣起
-    anchor: name
+    title: 景文高中優人表演藝術班
+    anchor: jw
     pic: "/img/about/005.jpg"
     content:
      - 一百多年以前，三德和尚用他的汗水、毅力和智慧，從少林35房的擔水砍柴，一步步向上努力，終於從身體與心智艱苦的磨練中，踏進最高功房，但他一心牽掛山下村人的無助與苦難，則央請方丈特開方便法門，在最基礎的35房之外，另開外一房「少林36房」，並以此門指引山下有志青年，習拳練身，自此少林功夫開始外傳。
@@ -30,8 +29,8 @@ content:
      - <img class="img-responsive" src="/img/about/007.png" alt="" />
 
   -
-    title: 使命與目標
-    anchor: goals
+    title: 當下的表演者
+    anchor: performer
     pic: "/img/about/003.jpg"
     content:
       - "<b>專業表演藝術人才搖籃 × 社區藝文教育推廣基地</b>"
@@ -43,8 +42,8 @@ content:
 
 
   -
-    title: 財團法人優人文化藝術基金會
-    anchor: utheatre
+    title: 東西交流、內外整合
+    anchor: integration
     pic: "/img/about/001.png"
     content:
       - "優人神鼓於1988年創團，迄今已25年，從以「道藝合一」創立優人神鼓具東方元素又兼具世界與當代美學獨一無二的表演藝術風格後，於國內、國外均受到高度的讚譽，亦廣受國內外各地藝術節及劇院之邀演，如：法國亞維儂藝術節、美國紐約下一波藝術節、巴西聖保羅國際藝術節、義大利威尼斯雙年舞蹈節、羅維多東西方藝術節、里昂雙年舞蹈節、新加坡藝術節、盧昂諾曼地藝術節、德國柏林藝術節、巴黎夏日藝術節、香港新視野藝術節…等，足跡遍及五大洲、31國家、70城市，共190場以上的演出，成為臺灣優質文化藝術的象徵，是臺灣最傑出的表演藝術團隊之一，2013、2014年連續獲選為臺灣品牌團隊。"
@@ -52,8 +51,8 @@ content:
       - "<ol><li>戲劇、音樂、舞蹈、美術等藝術之國內外展演及推廣。</li><li>提升藝術、人文素養及心靈淨化之各項研修課程及訓練計畫。</li></ol>"
 
   -
-    title: 志工招募
-    anchor: hire
+    title: 教育傳承是什麼
+    anchor: edu
     pic: "/img/about/002.jpg"
     content:
       - "你對藝文館舍充滿好奇嗎？你願意為藝術教育推廣盡一份力嗎？你喜歡和社區的大小朋友談天說笑嗎？歡迎熱愛表演藝術、擁有滿腔服務熱忱的你，加入表演36房的志工行列，發揮長才，和我們一起分享經驗，共創回憶！"
@@ -64,8 +63,8 @@ content:
       - "下載<a href='./download.html'>報名表</a>，填妥後寄至 <a href='mailto:pas36.ut@msa.hinet.net'>pas36.ut@msa.hinet.net</a>"
 
   -
-    title: 社區專案
-    anchor: comm
+    title: 未來展望
+    anchor: future
     pic: "/img/about/004.jpg"
     content:
       - "永安藝文館-表演36房是文山地區極具代表性的藝文館舍，設置有各種活動空間，適合舉辦會議、課程、講座、演出活動，並提供文山區在地單位各項合作優惠方案，歡迎多加利用。"
@@ -75,8 +74,8 @@ content:
       - "<b>合作辦理活動</b><br />歡迎文山地區的朋友與我們合辦活動，可依據活動內容提供場租優惠及行銷宣傳。請將提案企劃mail至：<a href='mailto:pas36.ut@msa.hinet.net'>pas36.ut@msa.hinet.net</a>"
 
   -
-    title: 參訪體驗
-    anchor: tour
+    title: 升學成果
+    anchor: result
     pic: "/img/about/006.jpg"
     content:
       - "<ol><li>僅提供團體預約參觀導覽服務。</li><li>請於預定參訪日期一個月前提出申請。<a href='download.html'>申請表下載</a></li><li>申請表請以傳真或E-mail至表演36房-永安藝文館，並請務必來電確認。</li><li>申請表請以傳真或E-mail至表演36房-永安藝文館，並請務必來電確認。</li></ol>"

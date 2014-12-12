@@ -1,32 +1,19 @@
 -
-  title: 關於我們
+  title: 關於景優
   link: "/about.html"
 
 -
-  title: 場地租借
-  link: "/spaces.html"
-
--
-  title: 課程活動
+  title: 教師團隊
   link: "/courses.html"
 
 -
-  title: 參訪體驗
-  link: "/about.html#tour"
+  title: 課程資訊
+  link: "/courses.html"
 
 -
   title: 活動花絮
   link: "/activities.html"
 
 -
-  title: 志工招募
-  link: "/about.html#hire"
-
--
-  title: 景優專班
-  link: "/jyclass.html"
-
--
-  title: 下載專區
-  link: "/download.html"
-
+  title: 聯絡我們
+  link: "/contact.html"

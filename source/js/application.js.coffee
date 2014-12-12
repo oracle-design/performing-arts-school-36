@@ -25,7 +25,7 @@ $(window).load ->
     nextText: "下一張"
     null
 
-  newsHeight= indexNewsBlock.height()-34
+  newsHeight = indexNewsBlock.height()-34
   facebookBlockWidth = facebookBlock.width()
   facebookBlock.height(newsHeight)
   setTimeout(1000)
