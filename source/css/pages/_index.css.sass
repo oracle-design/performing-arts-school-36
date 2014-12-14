@@ -100,6 +100,7 @@ button::-moz-focus-inner
   .header_banner-logo
     +span(12)
     // background: image-url("asset/nav-houses.png") bottom right no-repeat
+    margin-bottom: -40px
     +background-size(contain)
     +breakpoint($b-mobile)
       background: none
@@ -134,12 +135,14 @@ button::-moz-focus-inner
     list-style: none
     margin: 1px 0 0 0
     +span(11)
-    +push(0.3)
+    // +push(0.3)
+    float: right
 
   li
-    float: left
     +span(1.5)
+    float: right
     +transition(border-bottom 0.5s)
+    border-left: 1px solid lighten($c-logo, 30%)
     &:hover
       border-bottom: 5px solid $c-nav-border-hover
     a
@@ -151,9 +154,8 @@ button::-moz-focus-inner
       &:hover
         color: lighten($c-red, 5%)
         text-decoration: none
-
-  li + li
-    border-left: 1px solid lighten($c-logo, 30%)
+  li:last-child
+    border-left: none
   .active
     border-bottom: 5px solid $c-nav-border-hover
     &:hover

@@ -1,19 +1,19 @@
 -
-  title: 關於景優
-  link: "/about.html"
-
--
-  title: 教師團隊
-  link: "/courses.html"
-
--
-  title: 課程資訊
-  link: "/courses.html"
+  title: 聯絡我們
+  link: "/contact.html"
 
 -
   title: 活動花絮
   link: "/activities.html"
 
 -
-  title: 聯絡我們
-  link: "/contact.html"
+  title: 課程資訊
+  link: "/courses.html"
+
+-
+  title: 教師團隊
+  link: "/courses.html"
+
+-
+  title: 關於景優
+  link: "/about.html"
