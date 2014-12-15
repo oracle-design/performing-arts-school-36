@@ -74,7 +74,7 @@
   <nav class="pushy pushy-left">
     <ul>
       <li><a href="/">回到首頁 <i class="fa fa-home"></i></a></li>
-      <% data.navi.each do |f| %>
+      <% data.navi.reverse_each do |f| %>
       <li><%= nav_link f.title, f.link %></li>
       <% end %>
     </ul>
