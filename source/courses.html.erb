@@ -1,5 +1,5 @@
 ---
-title: 表演 36 房 || 活動課程
+title: 景文高中優人表演藝術班 || 課程資訊
 ---
 <!-- courses.html -->
 
@@ -16,10 +16,10 @@ title: 表演 36 房 || 活動課程
     <div class="container">
       <div class="course_list-wrapper">
 
-        <!-- 課程 -->
+        <!-- 音樂課程 -->
         <div class="course_block">
 
-          <% data.courses.courses.each do |f| %>
+          <% data.courses.music.each do |f| %>
           <!-- 課程單元 -->
           <div class="unit">
             <a href="<%= f.link %>">
@@ -41,10 +41,10 @@ title: 表演 36 房 || 活動課程
 
         </div>
 
-        <!-- 活動 -->
+        <!-- 肢體課程 -->
         <div class="event_block">
 
-          <% data.courses.events.each do |f| %>
+          <% data.courses.body.each do |f| %>
           <!-- 活動單元 -->
           <div class="unit">
             <a href="<%= f.link %>">
@@ -58,6 +58,56 @@ title: 表演 36 房 || 活動課程
                 </div>
                 <div class="readmore">
                   <a href="<%= f.link %>" class="b-event">了解更多</a>
+                </div>
+              </div>
+            </a>
+          </div><!-- e/o 活動單元 -->
+          <% end %>
+
+        </div>
+
+        <!-- 靜心課程 -->
+        <div class="heart_block">
+
+          <% data.courses.heart.each do |f| %>
+          <!-- 活動單元 -->
+          <div class="unit">
+            <a href="<%= f.link %>">
+              <div class="unit-inner heart">
+                <h3><%= f.title %></h3>
+                <div class="mobile-photo">
+                  <img class="img-responsive" src="<%= f.img %>" alt="">
+                </div>
+                <div class="description">
+                  <p><%= f.content %></p>
+                </div>
+                <div class="readmore">
+                  <a href="<%= f.link %>" class="b-heart">了解更多</a>
+                </div>
+              </div>
+            </a>
+          </div><!-- e/o 活動單元 -->
+          <% end %>
+
+        </div>
+
+        <!-- 演出 -->
+        <div class="perform_block">
+
+          <% data.courses.perform.each do |f| %>
+          <!-- 活動單元 -->
+          <div class="unit">
+            <a href="<%= f.link %>">
+              <div class="unit-inner perform">
+                <h3><%= f.title %></h3>
+                <div class="mobile-photo">
+                  <img class="img-responsive" src="<%= f.img %>" alt="">
+                </div>
+                <div class="description">
+                  <p><%= f.content %></p>
+                </div>
+                <div class="readmore">
+                  <a href="<%= f.link %>" class="b-perform">了解更多</a>
                 </div>
               </div>
             </a>

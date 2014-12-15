@@ -1,0 +1,27 @@
+slider:
+  -
+    img: "./img/teachers/slider001.jpg"
+    title: Title 標題一
+  -
+    img: "./img/teachers/slider002.jpg"
+    title: Title 標題二
+  # -
+  #   img: "./img/index_slider/03.jpg"
+  #   title: Title 標題三
+  # -
+  #   img: "./img/index_slider/04.jpg"
+  #   title: Title 標題四
+
+teachers:
+  -
+    title: 音樂科目總召集人 － 王小尹
+    img: "./img/teachers/001.jpg"
+    content: "畢業於台南家專音樂系、東吳大學音樂系，獲法國國立馬爾梅森音樂院擊樂演奏文憑。擊樂及音樂劇場之學習先後師事徐伯年、Gaston Sylvestre、François Bedel、Jean Pierre Drouet等教授。留法期間應邀參加多次校內外獨奏、合奏之演出。並多次與作曲家們研討作品：M.H.Founier、 F.B.Mâche、J-P.Drouet等。"
+    link: "/show/teacher01.html"
+  -
+    title: 優人神鼓教學部總監 － 王永順
+    img: "./img/teachers/002.jpg"
+    content: "教授科目：武術、毯子功"
+    link: "/show/teacher02.html"
+
+

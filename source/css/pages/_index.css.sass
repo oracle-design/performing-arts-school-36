@@ -100,10 +100,10 @@ button::-moz-focus-inner
   .header_banner-logo
     +span(12)
     // background: image-url("asset/nav-houses.png") bottom right no-repeat
-    margin-bottom: -40px
     +background-size(contain)
     +breakpoint($b-mobile)
       background: none
+      margin-bottom: -40px
 
 
     .logo-wrapper
@@ -468,9 +468,10 @@ button::-moz-focus-inner
   background-color: rgba($c-background, 0.7)
   padding: $polaroid/2
   border: 1px solid $c-border
-  .event_block
-    @extend %mainBlock
-  .course_block
+  .event_block,
+  .course_block,
+  .heart_block,
+  .perform_block
     @extend %mainBlock
     // margin-top: $polaroid
 
@@ -520,6 +521,14 @@ button::-moz-focus-inner
         +sassy-button("simple", 3px, $fz-s, $c-course, $c-course, #fff, "inset")
         width: 100%
         text-align: center
+      .b-heart
+        +sassy-button("simple", 3px, $fz-s, $c-heart, $c-heart, #fff, "inset")
+        width: 100%
+        text-align: center
+      .b-perform
+        +sassy-button("simple", 3px, $fz-s, $c-perform, $c-perform, #fff, "inset")
+        width: 100%
+        text-align: center
 
     +breakpoint($b-mobile)
       +gallery(6)
@@ -528,10 +537,12 @@ button::-moz-focus-inner
 
   .event
     border-top: 0.3em solid $c-event
-    // +box-shadow(2px 0 1px lighten($c-event, 30%), -2px 0 1px lighten($c-event, 30%), 0 2px 1px lighten($c-event, 30%))
   .course
     border-top: 0.3em solid $c-course
-    // +box-shadow(2px 0 1px lighten($c-course, 20%), -2px 0 1px lighten($c-course, 20%), 0 2px 1px lighten($c-course, 20%))
+  .heart
+    border-top: 0.3em solid $c-heart
+  .perform
+    border-top: 0.3em solid $c-perform
 
 
 // activities
