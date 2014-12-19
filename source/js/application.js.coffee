@@ -35,12 +35,33 @@ $(window).load ->
     'data-stream="true" data-show-border="false" data-header="false"></div>'
     )
 
-  $(".bxslider").bxSlider
+  onlyBxSlider = $(".bxslider").bxSlider
     # video: true
-    auto: true
+    auto:true
+    autoStart:true
+    stopAuto:false
     speed: 1500
     adaptiveHeight: true
     captions: true
+
+  $(".bxslider > li > iframe").iframeTracker
+    blurCallback: ->
+      onlyBxSlider.stopAuto()
+
+  $(".bx-pager-item a").click (e) ->
+    i = $(this).index()
+    onlyBxSlider.goToSlide i
+    onlyBxSlider.stopAuto()
+    restart = setTimeout(->
+      onlyBxSlider.startAuto()
+      return
+    , 500)
+  $(".bx-controls-direction").click (e) ->
+    restart = setTimeout(->
+      onlyBxSlider.startAuto()
+      return
+    , 500)
+
   $('body').animate
     'opacity': "1", 1000
     ->
