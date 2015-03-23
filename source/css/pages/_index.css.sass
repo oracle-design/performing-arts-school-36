@@ -355,17 +355,34 @@ button::-moz-focus-inner
     height: 400px
     border: 1px solid #ccc
 .contact_info-wrapper
+  +clearfix
   padding: $polaroid
   background-color: $c-background
   border: 1px solid $c-border
   h3
     font-size: $fz-l
     text-align: center
+    padding-bottom: .5em
+    border-bottom: 1px solid darken($c-border, 20)
     +breakpoint($b-mobile)
       +container(600px)
-  p
+  .detail-wrapper
+    font-size: $fz-s
     +breakpoint($b-mobile)
       +container(600px)
+  .col-left, .col-right
+    +span(12)
+    +breakpoint($b-mobile)
+      +span(6)
+      padding: 0 1em
+  .mail-us
+    text-align: center
+    +sassy-button("flat", 3px, $fz-l, $c-course, #fff)
+    display: block
+    margin: 0 auto
+    margin-bottom: 2em
+
+
 
 
 // about
