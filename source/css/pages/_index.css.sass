@@ -474,6 +474,18 @@ button::-moz-focus-inner
   .perform_block
     @extend %mainBlock
     // margin-top: $polaroid
+  .course_block
+    h3
+      background-color: $c-course
+  .event_block
+    h3
+      background-color: $c-event
+  .heart_block
+    h3
+      background-color: $c-heart
+  .perform_block
+    h3
+      background-color: $c-perform
 
   .unit
     padding: $polaroid/2
@@ -483,12 +495,16 @@ button::-moz-focus-inner
     h3
       text-align: center
       font-size: $fz-l
-      padding: 0.5em 0
+      padding: 0.2em 0
+      padding-bottom: 0.3em
       margin: 0
+      color: #fff
     & + .unit
       margin-top: $polaroid
     a
       color: $c-ptext
+      &:hover
+        text-decoration: none
     .mobile-photo
       padding: $polaroid
       +breakpoint($b-pad)
@@ -536,13 +552,13 @@ button::-moz-focus-inner
         margin-top: 0
 
   .event
-    border-top: 0.3em solid $c-event
+    border-top: 0.3em solid darken($c-event, 5)
   .course
-    border-top: 0.3em solid $c-course
+    border-top: 0.3em solid darken($c-course, 5)
   .heart
-    border-top: 0.3em solid $c-heart
+    border-top: 0.3em solid darken($c-heart, 5)
   .perform
-    border-top: 0.3em solid $c-perform
+    border-top: 0.3em solid darken($c-perform, 5)
 
 
 // activities
