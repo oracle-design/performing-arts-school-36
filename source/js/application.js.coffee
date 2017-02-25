@@ -123,7 +123,7 @@ $(window).load ->
         #calculate and define container height
         if $.timeline_left_position_top > $.timeline_right_position_top
           $("#templatemo_timeline .container-fluid").height $.timeline_left_position_top - 40
-          $("#templatemo_timeline").height $.timeline_left_position_top + 80
+          $("#templatemo_timeline").height $.timeline_left_position_top + 150
         else
           $("#templatemo_timeline .container-fluid").height $.timeline_right_position_top - 40
           $("#templatemo_timeline").height $.timeline_right_position_top + 70
