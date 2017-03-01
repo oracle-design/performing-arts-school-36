@@ -138,7 +138,7 @@ button::-moz-focus-inner
 
   li
     float: left
-    +span(1.5)
+    +span(1.7)
     +transition(border-bottom 0.5s)
     &:hover
       border-bottom: 5px solid $c-nav-border-hover
@@ -600,14 +600,16 @@ button::-moz-focus-inner
       background: url("../img/time_line_bg.jpg") repeat-y center top
     #templatemo_timeline .right_timer span
       display: block
+  .separator
+    border-top: 3px solid white
 #templatemo_timeline
   opacity: 0
 .time_line_paragraph
   h4
     font-size: $fz-m
+    font-weight: 600
     padding-left: 20px
     margin: 0 0 $polaroid 0
-    text-decoration: underline
     +breakpoint($b-pad)
       font-size: $fz-l
     i
